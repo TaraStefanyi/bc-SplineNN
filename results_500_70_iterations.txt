@@ -1,0 +1,3000 @@
+test [0, 0]: got -4.150281694421873E-4 - expected 0
+test [0, 1]: got 0.9993318967212995 - expected 1
+test [1, 0]: got 1.0007353129009435 - expected 1
+test [1, 1]: got -7.633150178435189E-4 - expected 0
+
+
+test [0, 0]: got -0.0031854275303878727 - expected 0
+test [0, 1]: got 0.99409788250468 - expected 1
+test [1, 0]: got 1.008634448772572 - expected 1
+test [1, 1]: got -3.2714471334441275E-4 - expected 0
+
+
+test [0, 0]: got -3.322988229509799E-4 - expected 0
+test [0, 1]: got 1.0001189950416223 - expected 1
+test [1, 0]: got 1.0003277745024137 - expected 1
+test [1, 1]: got -3.200288291452802E-4 - expected 0
+
+
+test [0, 0]: got 3.9368377455631376E-4 - expected 0
+test [0, 1]: got 1.0001622378378885 - expected 1
+test [1, 0]: got 0.9996500295992946 - expected 1
+test [1, 1]: got 0.0010460033249380125 - expected 0
+
+
+test [0, 0]: got 0.008502121325379114 - expected 0
+test [0, 1]: got 1.0171935862576402 - expected 1
+test [1, 0]: got 0.967641071962971 - expected 1
+test [1, 1]: got -0.05956070398600946 - expected 0
+
+
+test [0, 0]: got 0.037321538482271474 - expected 0
+test [0, 1]: got 1.0396190991050616 - expected 1
+test [1, 0]: got 0.9645441964609991 - expected 1
+test [1, 1]: got 0.36430599685054915 - expected 0
+
+
+test [0, 0]: got -0.01168187284273603 - expected 0
+test [0, 1]: got 1.0002424907312049 - expected 1
+test [1, 0]: got 1.0043022386413363 - expected 1
+test [1, 1]: got -0.003928051999424666 - expected 0
+
+
+test [0, 0]: got 0.3818624198458459 - expected 0
+test [0, 1]: got 0.44874981368593453 - expected 1
+test [1, 0]: got 0.6601255737119206 - expected 1
+test [1, 1]: got 0.6078871334243545 - expected 0
+
+
+test [0, 0]: got 3.0682810875821975E-5 - expected 0
+test [0, 1]: got 1.0000392602309913 - expected 1
+test [1, 0]: got 1.0000103865130776 - expected 1
+test [1, 1]: got 1.580218826081675E-5 - expected 0
+
+
+test [0, 0]: got 1.0960082109290337E-4 - expected 0
+test [0, 1]: got 0.9998370117452612 - expected 1
+test [1, 0]: got 0.9998600746679078 - expected 1
+test [1, 1]: got 1.451708396042889E-4 - expected 0
+
+
+test [0, 0]: got 2.8250638178560494E-4 - expected 0
+test [0, 1]: got 1.0000506309105792 - expected 1
+test [1, 0]: got 0.999837326947747 - expected 1
+test [1, 1]: got 1.543892667272076E-4 - expected 0
+
+
+test [0, 0]: got -0.0054955946518581425 - expected 0
+test [0, 1]: got 1.00222748148704 - expected 1
+test [1, 0]: got 0.999340713069559 - expected 1
+test [1, 1]: got -0.0021914327152190993 - expected 0
+
+
+test [0, 0]: got 1.2030784312989289E-5 - expected 0
+test [0, 1]: got 1.0000957996280324 - expected 1
+test [1, 0]: got 1.0000602262228568 - expected 1
+test [1, 1]: got -1.445257777061039E-4 - expected 0
+
+
+test [0, 0]: got 0.31997489910946636 - expected 0
+test [0, 1]: got 0.7946340017389827 - expected 1
+test [1, 0]: got 0.7011404517904296 - expected 1
+test [1, 1]: got 0.38840654675689984 - expected 0
+
+
+test [0, 0]: got -2.1110068544560878E-4 - expected 0
+test [0, 1]: got 1.0000256910005005 - expected 1
+test [1, 0]: got 0.9999460584864681 - expected 1
+test [1, 1]: got 8.94304674246664E-6 - expected 0
+
+
+test [0, 0]: got 0.49019369541140323 - expected 0
+test [0, 1]: got 0.49181408176678054 - expected 1
+test [1, 0]: got 0.5299848434525954 - expected 1
+test [1, 1]: got 0.4809527712728727 - expected 0
+
+
+test [0, 0]: got -7.265385969235094E-7 - expected 0
+test [0, 1]: got 0.999999076618116 - expected 1
+test [1, 0]: got 1.0000001128832001 - expected 1
+test [1, 1]: got 6.257895599451335E-6 - expected 0
+
+
+test [0, 0]: got 0.0012947030385798367 - expected 0
+test [0, 1]: got 1.0002694329157473 - expected 1
+test [1, 0]: got 0.9997978630529863 - expected 1
+test [1, 1]: got 2.7029839636148745E-4 - expected 0
+
+
+test [0, 0]: got 2.3468839499497796E-4 - expected 0
+test [0, 1]: got 0.8738360639435785 - expected 1
+test [1, 0]: got 0.9778462966578073 - expected 1
+test [1, 1]: got 0.05688254862199553 - expected 0
+
+
+test [0, 0]: got 0.40046077686992015 - expected 0
+test [0, 1]: got 0.53677413943204 - expected 1
+test [1, 0]: got 0.34857689343803744 - expected 1
+test [1, 1]: got 0.27434754103735054 - expected 0
+
+
+test [0, 0]: got 0.0024825169996192387 - expected 0
+test [0, 1]: got 0.9959143801037362 - expected 1
+test [1, 0]: got 0.9993302575811711 - expected 1
+test [1, 1]: got 0.0018227571178270287 - expected 0
+
+
+test [0, 0]: got 1.6890502971346477E-4 - expected 0
+test [0, 1]: got 0.9998751322308324 - expected 1
+test [1, 0]: got 1.0000850905916943 - expected 1
+test [1, 1]: got -1.3490605373085544E-4 - expected 0
+
+
+test [0, 0]: got -5.2190763119923725E-5 - expected 0
+test [0, 1]: got 1.001512987329315 - expected 1
+test [1, 0]: got 0.9987294901396684 - expected 1
+test [1, 1]: got 6.667530953197269E-4 - expected 0
+
+
+test [0, 0]: got -0.0010707184483473159 - expected 0
+test [0, 1]: got 0.996532477442639 - expected 1
+test [1, 0]: got 0.9997087412145588 - expected 1
+test [1, 1]: got 7.739849703513862E-4 - expected 0
+
+
+test [0, 0]: got -2.9708458110556946E-4 - expected 0
+test [0, 1]: got 0.9998203167756236 - expected 1
+test [1, 0]: got 1.0007133808213846 - expected 1
+test [1, 1]: got -6.508950952363035E-4 - expected 0
+
+
+test [0, 0]: got -2.795476769977892E-4 - expected 0
+test [0, 1]: got 1.0037365491714105 - expected 1
+test [1, 0]: got 0.9978562523027239 - expected 1
+test [1, 1]: got 0.0034860603353344746 - expected 0
+
+
+test [0, 0]: got 0.002585888038003434 - expected 0
+test [0, 1]: got 1.0032667036820282 - expected 1
+test [1, 0]: got 1.0011862439969221 - expected 1
+test [1, 1]: got 0.003146390418702129 - expected 0
+
+
+test [0, 0]: got -0.0660659964433864 - expected 0
+test [0, 1]: got 0.8592992890277477 - expected 1
+test [1, 0]: got 1.0183506650194531 - expected 1
+test [1, 1]: got 0.444449138823473 - expected 0
+
+
+test [0, 0]: got 7.65183706555241E-6 - expected 0
+test [0, 1]: got 1.0000308727378697 - expected 1
+test [1, 0]: got 0.9999742273901115 - expected 1
+test [1, 1]: got 1.2987268767827853E-4 - expected 0
+
+
+test [0, 0]: got -9.3601765095222E-5 - expected 0
+test [0, 1]: got 1.0000785394050224 - expected 1
+test [1, 0]: got 1.0000493332076152 - expected 1
+test [1, 1]: got -3.6802423724641153E-5 - expected 0
+
+
+test [0, 0]: got -9.165985011832557E-4 - expected 0
+test [0, 1]: got 0.9946453548527882 - expected 1
+test [1, 0]: got 0.9991860622437221 - expected 1
+test [1, 1]: got -1.8557544692127115E-5 - expected 0
+
+
+test [0, 0]: got 0.0029083871270576336 - expected 0
+test [0, 1]: got 0.9654034455493472 - expected 1
+test [1, 0]: got 0.9970082404707125 - expected 1
+test [1, 1]: got 0.04749145995553758 - expected 0
+
+
+test [0, 0]: got -1.3980234765798754E-4 - expected 0
+test [0, 1]: got 1.0000030982966066 - expected 1
+test [1, 0]: got 0.9994563552818155 - expected 1
+test [1, 1]: got 2.0166836098436947E-4 - expected 0
+
+
+test [0, 0]: got -0.001183079234405835 - expected 0
+test [0, 1]: got 1.000169225103589 - expected 1
+test [1, 0]: got 1.0008142351914486 - expected 1
+test [1, 1]: got -4.154217294456003E-6 - expected 0
+
+
+test [0, 0]: got 0.5877601910266258 - expected 0
+test [0, 1]: got 0.3293261882962185 - expected 1
+test [1, 0]: got 0.6228121699249903 - expected 1
+test [1, 1]: got 0.1498270155246373 - expected 0
+
+
+test [0, 0]: got 0.005289686226315857 - expected 0
+test [0, 1]: got 1.000501294686377 - expected 1
+test [1, 0]: got 1.0009028172236831 - expected 1
+test [1, 1]: got 3.5253995221029566E-5 - expected 0
+
+
+test [0, 0]: got 4.2797407713512545E-5 - expected 0
+test [0, 1]: got 0.999823677671444 - expected 1
+test [1, 0]: got 1.0001558462297844 - expected 1
+test [1, 1]: got 3.032438004434007E-4 - expected 0
+
+
+test [0, 0]: got -1.9847197061485106E-5 - expected 0
+test [0, 1]: got 1.0002596594420663 - expected 1
+test [1, 0]: got 1.0003030411357776 - expected 1
+test [1, 1]: got 1.630307331131134E-4 - expected 0
+
+
+test [0, 0]: got 0.00124309493073567 - expected 0
+test [0, 1]: got 0.9995363109327459 - expected 1
+test [1, 0]: got 1.001350249695351 - expected 1
+test [1, 1]: got -0.0034886045252919932 - expected 0
+
+
+test [0, 0]: got -5.069256924811194E-5 - expected 0
+test [0, 1]: got 0.9998818930312681 - expected 1
+test [1, 0]: got 1.0000430228451458 - expected 1
+test [1, 1]: got 3.9530382461983385E-5 - expected 0
+
+
+test [0, 0]: got 1.064176423857463E-4 - expected 0
+test [0, 1]: got 1.0043083992415722 - expected 1
+test [1, 0]: got 1.0038518685684354 - expected 1
+test [1, 1]: got 1.691300182473758E-4 - expected 0
+
+
+test [0, 0]: got 4.3036447216047297E-4 - expected 0
+test [0, 1]: got 1.0003987446143687 - expected 1
+test [1, 0]: got 0.9992665095488782 - expected 1
+test [1, 1]: got 9.51722166140738E-4 - expected 0
+
+
+test [0, 0]: got -0.0012050708974417762 - expected 0
+test [0, 1]: got 1.0023367758634767 - expected 1
+test [1, 0]: got 0.9997005499413978 - expected 1
+test [1, 1]: got 0.0039033729639962197 - expected 0
+
+
+test [0, 0]: got 5.132136640961099E-5 - expected 0
+test [0, 1]: got 1.000060123104962 - expected 1
+test [1, 0]: got 1.0000852305499555 - expected 1
+test [1, 1]: got 1.1658541839130662E-4 - expected 0
+
+
+test [0, 0]: got 0.45035405422301894 - expected 0
+test [0, 1]: got 0.5460584566177797 - expected 1
+test [1, 0]: got 0.560254847131922 - expected 1
+test [1, 1]: got 0.5784341260844896 - expected 0
+
+
+test [0, 0]: got -0.01850655040436093 - expected 0
+test [0, 1]: got 0.8723278706562364 - expected 1
+test [1, 0]: got 0.7805424532666313 - expected 1
+test [1, 1]: got 0.03295677124878664 - expected 0
+
+
+test [0, 0]: got -0.0014258704642653164 - expected 0
+test [0, 1]: got 1.0032593434969714 - expected 1
+test [1, 0]: got 1.0006433714336909 - expected 1
+test [1, 1]: got -0.002318378940977056 - expected 0
+
+
+test [0, 0]: got -4.278107285021087E-5 - expected 0
+test [0, 1]: got 1.0000639574615202 - expected 1
+test [1, 0]: got 0.9999915590442882 - expected 1
+test [1, 1]: got -6.33228062303301E-7 - expected 0
+
+
+test [0, 0]: got -0.006806986103725644 - expected 0
+test [0, 1]: got 0.995839284526273 - expected 1
+test [1, 0]: got 0.9906550988473395 - expected 1
+test [1, 1]: got 0.0027192504642630858 - expected 0
+
+
+test [0, 0]: got 2.257968210525596E-5 - expected 0
+test [0, 1]: got 1.0000063687901444 - expected 1
+test [1, 0]: got 1.000029223718578 - expected 1
+test [1, 1]: got 7.825228008188673E-5 - expected 0
+
+
+test [0, 0]: got -0.004726366639248466 - expected 0
+test [0, 1]: got 1.0081383832436817 - expected 1
+test [1, 0]: got 1.0112131701785805 - expected 1
+test [1, 1]: got -0.017685185131086363 - expected 0
+
+
+test [0, 0]: got -0.04614113084608215 - expected 0
+test [0, 1]: got 1.043061790903095 - expected 1
+test [1, 0]: got 0.9871162650330403 - expected 1
+test [1, 1]: got -0.0010966982880667641 - expected 0
+
+
+test [0, 0]: got 0.021993340248769363 - expected 0
+test [0, 1]: got 1.02548577746749 - expected 1
+test [1, 0]: got 1.0028611440154918 - expected 1
+test [1, 1]: got 0.020825099503929734 - expected 0
+
+
+test [0, 0]: got 7.514163247904929E-4 - expected 0
+test [0, 1]: got 0.9184339471998992 - expected 1
+test [1, 0]: got 0.9858884217149548 - expected 1
+test [1, 1]: got 0.0314512214920353 - expected 0
+
+
+test [0, 0]: got -0.010422896756034722 - expected 0
+test [0, 1]: got 1.0402108574857079 - expected 1
+test [1, 0]: got 0.9794078422339584 - expected 1
+test [1, 1]: got 0.024790940391893397 - expected 0
+
+
+test [0, 0]: got 2.3754511752156066E-4 - expected 0
+test [0, 1]: got 0.9959087446828983 - expected 1
+test [1, 0]: got 0.9961195084345437 - expected 1
+test [1, 1]: got 3.691675050039346E-4 - expected 0
+
+
+test [0, 0]: got 4.69870139778808E-4 - expected 0
+test [0, 1]: got 0.9998978246745664 - expected 1
+test [1, 0]: got 1.000178945054402 - expected 1
+test [1, 1]: got -6.411001434566167E-4 - expected 0
+
+
+test [0, 0]: got 0.0028088280639008575 - expected 0
+test [0, 1]: got 0.9964965509357996 - expected 1
+test [1, 0]: got 1.0056074042347363 - expected 1
+test [1, 1]: got -0.003771113841862254 - expected 0
+
+
+test [0, 0]: got 2.9479608361812973E-5 - expected 0
+test [0, 1]: got 0.9999916250059309 - expected 1
+test [1, 0]: got 0.9999956359991904 - expected 1
+test [1, 1]: got 9.319762593656229E-5 - expected 0
+
+
+test [0, 0]: got -0.004615330608525647 - expected 0
+test [0, 1]: got 1.0074319606139737 - expected 1
+test [1, 0]: got 1.0004337255953404 - expected 1
+test [1, 1]: got -5.315342071987687E-4 - expected 0
+
+
+test [0, 0]: got -6.53938631716023E-5 - expected 0
+test [0, 1]: got 1.0000399479654702 - expected 1
+test [1, 0]: got 1.000124014819773 - expected 1
+test [1, 1]: got 3.554461839403913E-4 - expected 0
+
+
+test [0, 0]: got -3.940797834637161E-4 - expected 0
+test [0, 1]: got 0.9993236294126938 - expected 1
+test [1, 0]: got 0.9995212391289611 - expected 1
+test [1, 1]: got 2.1013174034134607E-8 - expected 0
+
+
+test [0, 0]: got -0.007092169095351637 - expected 0
+test [0, 1]: got 1.0021610091517124 - expected 1
+test [1, 0]: got 1.000078098623001 - expected 1
+test [1, 1]: got 0.0033494935645823135 - expected 0
+
+
+test [0, 0]: got -9.279311978220312E-4 - expected 0
+test [0, 1]: got 0.9990511281220366 - expected 1
+test [1, 0]: got 1.001519227861973 - expected 1
+test [1, 1]: got 0.0011162203666660007 - expected 0
+
+
+test [0, 0]: got -0.04872919274604917 - expected 0
+test [0, 1]: got 0.9199504053754074 - expected 1
+test [1, 0]: got 0.917309871787421 - expected 1
+test [1, 1]: got -0.09880890238005552 - expected 0
+
+
+test [0, 0]: got -1.1661202359203229E-4 - expected 0
+test [0, 1]: got 0.9991375158445084 - expected 1
+test [1, 0]: got 0.999876064470387 - expected 1
+test [1, 1]: got -3.398587175515854E-4 - expected 0
+
+
+test [0, 0]: got -0.03450910167712956 - expected 0
+test [0, 1]: got 0.9997162403886197 - expected 1
+test [1, 0]: got 0.9661057310510268 - expected 1
+test [1, 1]: got 0.036744842980938254 - expected 0
+
+
+test [0, 0]: got 3.5392907993106633E-4 - expected 0
+test [0, 1]: got 0.9999522813181427 - expected 1
+test [1, 0]: got 0.9998267042459256 - expected 1
+test [1, 1]: got -7.371904387716566E-6 - expected 0
+
+
+test [0, 0]: got 0.008480392922297408 - expected 0
+test [0, 1]: got 1.0119612577975712 - expected 1
+test [1, 0]: got 1.0210986713757337 - expected 1
+test [1, 1]: got -0.0024778348031823036 - expected 0
+
+
+test [0, 0]: got 0.01118869719097022 - expected 0
+test [0, 1]: got 1.0020297413218355 - expected 1
+test [1, 0]: got 1.0052980115530274 - expected 1
+test [1, 1]: got -0.0044067969572360345 - expected 0
+
+
+test [0, 0]: got -2.466457097409372E-4 - expected 0
+test [0, 1]: got 0.9999533367449686 - expected 1
+test [1, 0]: got 0.9999136485141159 - expected 1
+test [1, 1]: got 2.70552711408004E-4 - expected 0
+
+
+test [0, 0]: got -2.5362626544638E-4 - expected 0
+test [0, 1]: got 1.0002585918606965 - expected 1
+test [1, 0]: got 1.000000120934656 - expected 1
+test [1, 1]: got 3.1825558117145464E-5 - expected 0
+
+
+test [0, 0]: got -0.0016750126482430808 - expected 0
+test [0, 1]: got 0.9690942822515962 - expected 1
+test [1, 0]: got 1.0235850207252999 - expected 1
+test [1, 1]: got -0.012044345110379329 - expected 0
+
+
+test [0, 0]: got 4.1731825188080773E-4 - expected 0
+test [0, 1]: got 0.9878219767558986 - expected 1
+test [1, 0]: got 0.998037200648588 - expected 1
+test [1, 1]: got 7.166813562953511E-4 - expected 0
+
+
+test [0, 0]: got 0.0016752783564761946 - expected 0
+test [0, 1]: got 0.9958259235363358 - expected 1
+test [1, 0]: got 0.9820148932151512 - expected 1
+test [1, 1]: got -0.006097185969084292 - expected 0
+
+
+test [0, 0]: got 0.016013372543512257 - expected 0
+test [0, 1]: got 0.9948242668860571 - expected 1
+test [1, 0]: got 0.9939411890558739 - expected 1
+test [1, 1]: got 0.004262276338640836 - expected 0
+
+
+test [0, 0]: got -0.010424936829634223 - expected 0
+test [0, 1]: got 0.9815943099677363 - expected 1
+test [1, 0]: got 0.9985489815220224 - expected 1
+test [1, 1]: got 0.023892722325968688 - expected 0
+
+
+test [0, 0]: got 4.459251405131148E-6 - expected 0
+test [0, 1]: got 0.9999969274471493 - expected 1
+test [1, 0]: got 1.0000033231816745 - expected 1
+test [1, 1]: got 1.8616281477251174E-5 - expected 0
+
+
+test [0, 0]: got -4.968169606761608E-5 - expected 0
+test [0, 1]: got 1.0000545995973964 - expected 1
+test [1, 0]: got 0.9999930200823648 - expected 1
+test [1, 1]: got -6.0680925016806664E-5 - expected 0
+
+
+test [0, 0]: got -0.02562666221988274 - expected 0
+test [0, 1]: got 0.9764516607292261 - expected 1
+test [1, 0]: got 0.9836126736378888 - expected 1
+test [1, 1]: got 0.07307401562705051 - expected 0
+
+
+test [0, 0]: got -1.1302439771610981E-5 - expected 0
+test [0, 1]: got 0.998351280510727 - expected 1
+test [1, 0]: got 0.9995918298596762 - expected 1
+test [1, 1]: got 0.004307737248679773 - expected 0
+
+
+test [0, 0]: got -1.3636790094749204E-5 - expected 0
+test [0, 1]: got 0.9994307954089968 - expected 1
+test [1, 0]: got 1.0001633809971582 - expected 1
+test [1, 1]: got -6.437014032474944E-5 - expected 0
+
+
+test [0, 0]: got -5.633219811538442E-4 - expected 0
+test [0, 1]: got 0.9987338407083441 - expected 1
+test [1, 0]: got 0.9996216327809203 - expected 1
+test [1, 1]: got -2.56792791280859E-4 - expected 0
+
+
+test [0, 0]: got 0.05662156427227949 - expected 0
+test [0, 1]: got 1.0307110161412147 - expected 1
+test [1, 0]: got 1.0082368992495416 - expected 1
+test [1, 1]: got -0.017343475198760165 - expected 0
+
+
+test [0, 0]: got -8.907776400156331E-5 - expected 0
+test [0, 1]: got 0.9998978117785485 - expected 1
+test [1, 0]: got 0.9997729413725105 - expected 1
+test [1, 1]: got 1.0263868611306258E-4 - expected 0
+
+
+test [0, 0]: got 0.007706355597882443 - expected 0
+test [0, 1]: got 0.9811557502178612 - expected 1
+test [1, 0]: got 1.0109123635816268 - expected 1
+test [1, 1]: got 0.012359545833068128 - expected 0
+
+
+test [0, 0]: got 5.781649338352374E-5 - expected 0
+test [0, 1]: got 1.0000840847809567 - expected 1
+test [1, 0]: got 1.0000483625939898 - expected 1
+test [1, 1]: got 6.174327734363369E-6 - expected 0
+
+
+test [0, 0]: got 0.01232671231576904 - expected 0
+test [0, 1]: got 1.000685487906942 - expected 1
+test [1, 0]: got 0.9939221288510726 - expected 1
+test [1, 1]: got 0.017467526133507133 - expected 0
+
+
+test [0, 0]: got 0.09101975545403841 - expected 0
+test [0, 1]: got 1.0723830833661627 - expected 1
+test [1, 0]: got 1.0058254208963757 - expected 1
+test [1, 1]: got 0.040104952265650584 - expected 0
+
+
+test [0, 0]: got 0.005954063898211473 - expected 0
+test [0, 1]: got 0.9966489341603596 - expected 1
+test [1, 0]: got 1.0009153406840692 - expected 1
+test [1, 1]: got -0.00831182729053627 - expected 0
+
+
+test [0, 0]: got 3.4351187106446135E-4 - expected 0
+test [0, 1]: got 0.9988707526425157 - expected 1
+test [1, 0]: got 1.0006116153229598 - expected 1
+test [1, 1]: got 6.228857932769685E-4 - expected 0
+
+
+test [0, 0]: got 2.1018585664756007E-4 - expected 0
+test [0, 1]: got 0.9999781195866718 - expected 1
+test [1, 0]: got 0.99997713325403 - expected 1
+test [1, 1]: got -1.0484646877971781E-4 - expected 0
+
+
+test [0, 0]: got 0.19592232803818704 - expected 0
+test [0, 1]: got 0.6099692430043311 - expected 1
+test [1, 0]: got 0.890749110245777 - expected 1
+test [1, 1]: got 0.3706815855071057 - expected 0
+
+
+test [0, 0]: got -0.0033246206481896343 - expected 0
+test [0, 1]: got 0.9987335458765632 - expected 1
+test [1, 0]: got 0.9943650483464058 - expected 1
+test [1, 1]: got -0.015946929380532257 - expected 0
+
+
+test [0, 0]: got -6.153055040739042E-5 - expected 0
+test [0, 1]: got 1.0009182442742677 - expected 1
+test [1, 0]: got 0.999610632690955 - expected 1
+test [1, 1]: got -9.456995934003717E-5 - expected 0
+
+
+test [0, 0]: got -7.29355581509071E-5 - expected 0
+test [0, 1]: got 1.0000892776664714 - expected 1
+test [1, 0]: got 1.0004297596554967 - expected 1
+test [1, 1]: got -8.975562334367915E-5 - expected 0
+
+
+test [0, 0]: got 0.09455214033188045 - expected 0
+test [0, 1]: got 0.8834354048272858 - expected 1
+test [1, 0]: got 0.6313019716836752 - expected 1
+test [1, 1]: got 0.2996432762758499 - expected 0
+
+
+test [0, 0]: got -0.0026734652389518027 - expected 0
+test [0, 1]: got 1.0051014447561042 - expected 1
+test [1, 0]: got 0.994272427731718 - expected 1
+test [1, 1]: got 0.010113036290866934 - expected 0
+
+
+test [0, 0]: got 6.339273402673762E-5 - expected 0
+test [0, 1]: got 0.9999195302154976 - expected 1
+test [1, 0]: got 0.9992760193044182 - expected 1
+test [1, 1]: got 2.4219853239766664E-4 - expected 0
+
+
+test [0, 0]: got 2.371160988499585E-5 - expected 0
+test [0, 1]: got 0.9999975524242267 - expected 1
+test [1, 0]: got 1.0000156556900945 - expected 1
+test [1, 1]: got 2.0138609764366877E-5 - expected 0
+
+
+test [0, 0]: got 0.008512866969572777 - expected 0
+test [0, 1]: got 0.9534671791523311 - expected 1
+test [1, 0]: got 0.9536886493923671 - expected 1
+test [1, 1]: got -0.004496613642875454 - expected 0
+
+
+test [0, 0]: got -0.11836122476480986 - expected 0
+test [0, 1]: got 0.6819631534638665 - expected 1
+test [1, 0]: got 0.9123541650645257 - expected 1
+test [1, 1]: got 0.30620724689747464 - expected 0
+
+
+test [0, 0]: got 0.005541836330016939 - expected 0
+test [0, 1]: got 0.9997344500862516 - expected 1
+test [1, 0]: got 0.9996321450630344 - expected 1
+test [1, 1]: got 0.011515773368205175 - expected 0
+
+
+test [0, 0]: got 9.727084885706432E-4 - expected 0
+test [0, 1]: got 0.9992856647469566 - expected 1
+test [1, 0]: got 0.9997533779418613 - expected 1
+test [1, 1]: got 0.001299582575863 - expected 0
+
+
+test [0, 0]: got -0.06486227041970799 - expected 0
+test [0, 1]: got 0.9664138484634934 - expected 1
+test [1, 0]: got 0.9635378739738105 - expected 1
+test [1, 1]: got -0.09171972598290998 - expected 0
+
+
+test [0, 0]: got 4.087923615709449E-5 - expected 0
+test [0, 1]: got 1.000019634749376 - expected 1
+test [1, 0]: got 0.9997873569998664 - expected 1
+test [1, 1]: got -1.7673731939164827E-5 - expected 0
+
+
+test [0, 0]: got -0.0033665818464582165 - expected 0
+test [0, 1]: got 0.9993319955001858 - expected 1
+test [1, 0]: got 1.0007358835964457 - expected 1
+test [1, 1]: got -0.007328719491159683 - expected 0
+
+
+test [0, 0]: got 0.003983359570701769 - expected 0
+test [0, 1]: got 1.0001594048290239 - expected 1
+test [1, 0]: got 0.9873201720691299 - expected 1
+test [1, 1]: got -0.002584238798774518 - expected 0
+
+
+test [0, 0]: got 0.019784484895136997 - expected 0
+test [0, 1]: got 0.9994786763653806 - expected 1
+test [1, 0]: got 0.998696514145689 - expected 1
+test [1, 1]: got 0.06073274830055564 - expected 0
+
+
+test [0, 0]: got 0.003103850776111153 - expected 0
+test [0, 1]: got 0.9935675400723534 - expected 1
+test [1, 0]: got 0.9608288463060848 - expected 1
+test [1, 1]: got -0.001132922089377944 - expected 0
+
+
+test [0, 0]: got 0.007623973184292029 - expected 0
+test [0, 1]: got 0.9786211476546068 - expected 1
+test [1, 0]: got 1.0153811060859934 - expected 1
+test [1, 1]: got 0.00776806837792441 - expected 0
+
+
+test [0, 0]: got 0.014964773829549624 - expected 0
+test [0, 1]: got 0.2250990897864113 - expected 1
+test [1, 0]: got 0.7134893950391744 - expected 1
+test [1, 1]: got 0.2241884511984109 - expected 0
+
+
+test [0, 0]: got 0.005403659737028665 - expected 0
+test [0, 1]: got 1.018020499386724 - expected 1
+test [1, 0]: got 0.9967620641140917 - expected 1
+test [1, 1]: got -0.06034682147559445 - expected 0
+
+
+test [0, 0]: got 0.02347672170822171 - expected 0
+test [0, 1]: got 0.9930048638977413 - expected 1
+test [1, 0]: got 0.997371773156706 - expected 1
+test [1, 1]: got 0.07831452809178593 - expected 0
+
+
+test [0, 0]: got -0.008788764805640344 - expected 0
+test [0, 1]: got 0.9947049781312987 - expected 1
+test [1, 0]: got 0.9964799114110412 - expected 1
+test [1, 1]: got 0.01459935839125355 - expected 0
+
+
+test [0, 0]: got 2.4558592159947684E-4 - expected 0
+test [0, 1]: got 0.998961684635405 - expected 1
+test [1, 0]: got 0.9990939849785728 - expected 1
+test [1, 1]: got -4.899927244522984E-4 - expected 0
+
+
+test [0, 0]: got -2.3767738789245985E-5 - expected 0
+test [0, 1]: got 0.9996796285027849 - expected 1
+test [1, 0]: got 0.9999426444120905 - expected 1
+test [1, 1]: got -1.1391069664499738E-4 - expected 0
+
+
+test [0, 0]: got 0.012608380537294977 - expected 0
+test [0, 1]: got 1.0557133775203578 - expected 1
+test [1, 0]: got 0.9818596069345569 - expected 1
+test [1, 1]: got -0.058566249609867116 - expected 0
+
+
+test [0, 0]: got -0.0024997978941995284 - expected 0
+test [0, 1]: got 1.0018842112942261 - expected 1
+test [1, 0]: got 0.9958926355111942 - expected 1
+test [1, 1]: got 0.001861182276491808 - expected 0
+
+
+test [0, 0]: got 4.60287202945716E-4 - expected 0
+test [0, 1]: got 0.9985032558453556 - expected 1
+test [1, 0]: got 0.9992525997718744 - expected 1
+test [1, 1]: got -0.005565821155381784 - expected 0
+
+
+test [0, 0]: got -0.004986275392071381 - expected 0
+test [0, 1]: got 1.0151901537502905 - expected 1
+test [1, 0]: got 1.0008312905260646 - expected 1
+test [1, 1]: got 0.008262253547761209 - expected 0
+
+
+test [0, 0]: got 0.034489720873591645 - expected 0
+test [0, 1]: got 0.873373845860829 - expected 1
+test [1, 0]: got 1.0335477150206467 - expected 1
+test [1, 1]: got -0.05415059760857026 - expected 0
+
+
+test [0, 0]: got 0.03777376115985336 - expected 0
+test [0, 1]: got 0.9655009889334699 - expected 1
+test [1, 0]: got 0.9710549570024894 - expected 1
+test [1, 1]: got 0.1637450933657827 - expected 0
+
+
+test [0, 0]: got -0.008603435282009585 - expected 0
+test [0, 1]: got 0.9948610537824855 - expected 1
+test [1, 0]: got 0.9967740183003826 - expected 1
+test [1, 1]: got 0.02327974314491495 - expected 0
+
+
+test [0, 0]: got 4.8487911241451055E-5 - expected 0
+test [0, 1]: got 1.000110545281555 - expected 1
+test [1, 0]: got 1.000012728771844 - expected 1
+test [1, 1]: got -4.575221888410315E-5 - expected 0
+
+
+test [0, 0]: got -0.006852836685356051 - expected 0
+test [0, 1]: got 1.003836335378818 - expected 1
+test [1, 0]: got 0.997496323706873 - expected 1
+test [1, 1]: got -0.0052355463162090735 - expected 0
+
+
+test [0, 0]: got 7.822497566700032E-5 - expected 0
+test [0, 1]: got 1.0000109317438428 - expected 1
+test [1, 0]: got 1.0000364803903605 - expected 1
+test [1, 1]: got 1.0063316711860643E-4 - expected 0
+
+
+test [0, 0]: got 0.010680367454155753 - expected 0
+test [0, 1]: got 0.7020537184784581 - expected 1
+test [1, 0]: got 0.7890807964739733 - expected 1
+test [1, 1]: got 0.19362637799848056 - expected 0
+
+
+test [0, 0]: got 1.639334192377051E-5 - expected 0
+test [0, 1]: got 1.0000014813176943 - expected 1
+test [1, 0]: got 0.9999818715384606 - expected 1
+test [1, 1]: got 1.7285149293019524E-5 - expected 0
+
+
+test [0, 0]: got 0.002873516424338487 - expected 0
+test [0, 1]: got 1.0394806121210027 - expected 1
+test [1, 0]: got 1.028356316456618 - expected 1
+test [1, 1]: got -7.491909612278858E-4 - expected 0
+
+
+test [0, 0]: got 5.690736603675474E-4 - expected 0
+test [0, 1]: got 0.9994263380267794 - expected 1
+test [1, 0]: got 1.0005313905162574 - expected 1
+test [1, 1]: got 5.664912981217244E-4 - expected 0
+
+
+test [0, 0]: got -2.022823949691284E-4 - expected 0
+test [0, 1]: got 1.0000225013930277 - expected 1
+test [1, 0]: got 0.998820329060503 - expected 1
+test [1, 1]: got 6.923903407661525E-5 - expected 0
+
+
+test [0, 0]: got -0.014186415665304264 - expected 0
+test [0, 1]: got 1.0036099391185234 - expected 1
+test [1, 0]: got 0.9960850198461101 - expected 1
+test [1, 1]: got 0.005514047628444131 - expected 0
+
+
+test [0, 0]: got 0.0010152048994910914 - expected 0
+test [0, 1]: got 1.0002705019064104 - expected 1
+test [1, 0]: got 1.000198730992014 - expected 1
+test [1, 1]: got 1.0611165841550556E-4 - expected 0
+
+
+test [0, 0]: got 5.0469221610005555E-5 - expected 0
+test [0, 1]: got 0.9999426169547259 - expected 1
+test [1, 0]: got 1.0000341833520094 - expected 1
+test [1, 1]: got 5.48381974140727E-5 - expected 0
+
+
+test [0, 0]: got -2.6312887852611433E-5 - expected 0
+test [0, 1]: got 0.9997789454797367 - expected 1
+test [1, 0]: got 0.9999874628302463 - expected 1
+test [1, 1]: got 3.586996857244812E-4 - expected 0
+
+
+test [0, 0]: got -3.136938202275008E-5 - expected 0
+test [0, 1]: got 0.9999996139408578 - expected 1
+test [1, 0]: got 0.9999925568214515 - expected 1
+test [1, 1]: got -8.549053465288503E-5 - expected 0
+
+
+test [0, 0]: got 0.016309136588035143 - expected 0
+test [0, 1]: got 0.9914163657162471 - expected 1
+test [1, 0]: got 1.024601002309683 - expected 1
+test [1, 1]: got 0.01219033504234731 - expected 0
+
+
+test [0, 0]: got 0.03728986692214431 - expected 0
+test [0, 1]: got 0.9883550476352371 - expected 1
+test [1, 0]: got 0.9603945866252903 - expected 1
+test [1, 1]: got -0.008610119900915682 - expected 0
+
+
+test [0, 0]: got 8.408741307121964E-5 - expected 0
+test [0, 1]: got 1.0000026923362237 - expected 1
+test [1, 0]: got 0.9999793086472513 - expected 1
+test [1, 1]: got -4.376201558592696E-4 - expected 0
+
+
+test [0, 0]: got -1.5094880008709177E-4 - expected 0
+test [0, 1]: got 1.0000054262414835 - expected 1
+test [1, 0]: got 1.0000224543093807 - expected 1
+test [1, 1]: got -1.7921237191535766E-4 - expected 0
+
+
+test [0, 0]: got 0.2158264749749996 - expected 0
+test [0, 1]: got 0.8137679092949629 - expected 1
+test [1, 0]: got 0.8634022505713086 - expected 1
+test [1, 1]: got 0.2603899184564909 - expected 0
+
+
+test [0, 0]: got 0.028212230306116075 - expected 0
+test [0, 1]: got 0.9910288839828805 - expected 1
+test [1, 0]: got 0.9652543339536319 - expected 1
+test [1, 1]: got 0.021172748746360416 - expected 0
+
+
+test [0, 0]: got -2.0532788127703566E-4 - expected 0
+test [0, 1]: got 1.000007940050209 - expected 1
+test [1, 0]: got 1.0000597974016978 - expected 1
+test [1, 1]: got 1.4417381843312427E-4 - expected 0
+
+
+test [0, 0]: got -1.045416706438318E-5 - expected 0
+test [0, 1]: got 0.9999356134426777 - expected 1
+test [1, 0]: got 0.9999483687979775 - expected 1
+test [1, 1]: got -4.288270672397898E-5 - expected 0
+
+
+test [0, 0]: got 3.40846438479953E-5 - expected 0
+test [0, 1]: got 1.0000982426541902 - expected 1
+test [1, 0]: got 1.0000004883801201 - expected 1
+test [1, 1]: got 9.350590216021526E-5 - expected 0
+
+
+test [0, 0]: got -0.056190099632848954 - expected 0
+test [0, 1]: got 1.0108106869368099 - expected 1
+test [1, 0]: got 1.0081734407209353 - expected 1
+test [1, 1]: got 0.007811954685064529 - expected 0
+
+
+test [0, 0]: got -4.466069847847143E-5 - expected 0
+test [0, 1]: got 0.9999627855212175 - expected 1
+test [1, 0]: got 0.9999720208457504 - expected 1
+test [1, 1]: got 2.9083645966987426E-5 - expected 0
+
+
+test [0, 0]: got -0.008335220949344857 - expected 0
+test [0, 1]: got 0.9726889944371417 - expected 1
+test [1, 0]: got 0.9697271793691447 - expected 1
+test [1, 1]: got 0.21044039965101954 - expected 0
+
+
+test [0, 0]: got 0.22286862157801904 - expected 0
+test [0, 1]: got 0.9657222893092829 - expected 1
+test [1, 0]: got 0.951919045821606 - expected 1
+test [1, 1]: got 0.2428320613367604 - expected 0
+
+
+test [0, 0]: got 0.002199000532509307 - expected 0
+test [0, 1]: got 0.9999661354057214 - expected 1
+test [1, 0]: got 0.9973731067625985 - expected 1
+test [1, 1]: got -0.005095959401515866 - expected 0
+
+
+test [0, 0]: got 0.0701754312889822 - expected 0
+test [0, 1]: got 0.6523243524139031 - expected 1
+test [1, 0]: got 0.6810983843796804 - expected 1
+test [1, 1]: got 0.33378123393312403 - expected 0
+
+
+test [0, 0]: got 2.201366491327364E-4 - expected 0
+test [0, 1]: got 0.9997359593302094 - expected 1
+test [1, 0]: got 0.9999285954659234 - expected 1
+test [1, 1]: got -4.4148098689392526E-5 - expected 0
+
+
+test [0, 0]: got 3.614472713289879E-4 - expected 0
+test [0, 1]: got 1.0003775499011145 - expected 1
+test [1, 0]: got 1.000741986057328 - expected 1
+test [1, 1]: got 2.5129825884490087E-4 - expected 0
+
+
+test [0, 0]: got 2.481562169801218E-6 - expected 0
+test [0, 1]: got 0.999983081094305 - expected 1
+test [1, 0]: got 1.0000075103359276 - expected 1
+test [1, 1]: got 1.1496671659374114E-5 - expected 0
+
+
+test [0, 0]: got -1.3679203284237915E-4 - expected 0
+test [0, 1]: got 0.9998713415325605 - expected 1
+test [1, 0]: got 0.9999329471637761 - expected 1
+test [1, 1]: got 5.9037538766201205E-6 - expected 0
+
+
+test [0, 0]: got -9.55769380788507E-5 - expected 0
+test [0, 1]: got 0.9999036541864673 - expected 1
+test [1, 0]: got 1.0001685514340686 - expected 1
+test [1, 1]: got 1.1350618395955525E-4 - expected 0
+
+
+test [0, 0]: got 0.07026084975315841 - expected 0
+test [0, 1]: got 0.9489489904216986 - expected 1
+test [1, 0]: got 1.007510685481461 - expected 1
+test [1, 1]: got 0.05959537493276743 - expected 0
+
+
+test [0, 0]: got -3.591895202393475E-5 - expected 0
+test [0, 1]: got 0.9996252371609153 - expected 1
+test [1, 0]: got 0.9998890415165099 - expected 1
+test [1, 1]: got 3.865439349271479E-4 - expected 0
+
+
+test [0, 0]: got -0.010560543467709438 - expected 0
+test [0, 1]: got 0.9082499257639631 - expected 1
+test [1, 0]: got 0.9724102808798178 - expected 1
+test [1, 1]: got -0.004347591737295146 - expected 0
+
+
+test [0, 0]: got -3.583787789412477E-5 - expected 0
+test [0, 1]: got 1.0000101320516983 - expected 1
+test [1, 0]: got 0.9999724653275355 - expected 1
+test [1, 1]: got -1.2528094233076048E-4 - expected 0
+
+
+test [0, 0]: got 1.326001412299549E-5 - expected 0
+test [0, 1]: got 1.0000127482357195 - expected 1
+test [1, 0]: got 1.0000559981559343 - expected 1
+test [1, 1]: got 2.548559070905676E-6 - expected 0
+
+
+test [0, 0]: got 4.2343902482979215E-5 - expected 0
+test [0, 1]: got 0.9999439765796021 - expected 1
+test [1, 0]: got 1.0000844991774 - expected 1
+test [1, 1]: got -1.0965510783971411E-4 - expected 0
+
+
+test [0, 0]: got 0.029366909038136005 - expected 0
+test [0, 1]: got 0.8698630219242212 - expected 1
+test [1, 0]: got 1.042638141557574 - expected 1
+test [1, 1]: got 0.006201523472878584 - expected 0
+
+
+test [0, 0]: got 0.21457965240040872 - expected 0
+test [0, 1]: got 0.7081811094016134 - expected 1
+test [1, 0]: got 0.8631309915747353 - expected 1
+test [1, 1]: got 0.24297323707843874 - expected 0
+
+
+test [0, 0]: got -1.9997294992278765E-5 - expected 0
+test [0, 1]: got 0.9999615890530738 - expected 1
+test [1, 0]: got 0.999780931848352 - expected 1
+test [1, 1]: got -3.4004798688674898E-6 - expected 0
+
+
+test [0, 0]: got -4.416429853650039E-5 - expected 0
+test [0, 1]: got 1.0000222188420091 - expected 1
+test [1, 0]: got 0.9999998470798325 - expected 1
+test [1, 1]: got -2.7845006741104503E-5 - expected 0
+
+
+test [0, 0]: got -0.01209598580680854 - expected 0
+test [0, 1]: got 1.0181385554447746 - expected 1
+test [1, 0]: got 0.9967811950876088 - expected 1
+test [1, 1]: got 0.004996908359342037 - expected 0
+
+
+test [0, 0]: got -0.004580628053800318 - expected 0
+test [0, 1]: got 0.8943524818940009 - expected 1
+test [1, 0]: got 0.9181969350351322 - expected 1
+test [1, 1]: got 0.031157071655952842 - expected 0
+
+
+test [0, 0]: got 0.0038135826740562516 - expected 0
+test [0, 1]: got 0.9979052798935378 - expected 1
+test [1, 0]: got 0.988419099448497 - expected 1
+test [1, 1]: got -0.006095081864930324 - expected 0
+
+
+test [0, 0]: got -5.407131283523964E-5 - expected 0
+test [0, 1]: got 1.0000088034663246 - expected 1
+test [1, 0]: got 0.9999366986537737 - expected 1
+test [1, 1]: got 5.682875233341288E-5 - expected 0
+
+
+test [0, 0]: got -7.306107889280475E-5 - expected 0
+test [0, 1]: got 1.0004300634750278 - expected 1
+test [1, 0]: got 0.999547560696949 - expected 1
+test [1, 1]: got 1.1213091783252374E-4 - expected 0
+
+
+test [0, 0]: got 0.6306412229576766 - expected 0
+test [0, 1]: got 0.8943042992407438 - expected 1
+test [1, 0]: got 0.6759279286499872 - expected 1
+test [1, 1]: got 0.7158216285099663 - expected 0
+
+
+test [0, 0]: got -0.002807418634693498 - expected 0
+test [0, 1]: got 1.0003630444462677 - expected 1
+test [1, 0]: got 0.9990059555703455 - expected 1
+test [1, 1]: got -0.008820121394681153 - expected 0
+
+
+test [0, 0]: got -0.02675004590994402 - expected 0
+test [0, 1]: got 0.8798206721348281 - expected 1
+test [1, 0]: got 1.0533455851090896 - expected 1
+test [1, 1]: got 0.273289012574541 - expected 0
+
+
+test [0, 0]: got -0.014309948197772187 - expected 0
+test [0, 1]: got 0.994813868040648 - expected 1
+test [1, 0]: got 0.9936391568553778 - expected 1
+test [1, 1]: got -0.002114994813833003 - expected 0
+
+
+test [0, 0]: got 0.0035714400923019113 - expected 0
+test [0, 1]: got 1.0009779055379264 - expected 1
+test [1, 0]: got 1.0038195855910539 - expected 1
+test [1, 1]: got -1.258460118568755E-5 - expected 0
+
+
+test [0, 0]: got 5.401843075873312E-5 - expected 0
+test [0, 1]: got 1.0000540797748334 - expected 1
+test [1, 0]: got 0.9999985260967814 - expected 1
+test [1, 1]: got -1.8010505887098432E-5 - expected 0
+
+
+test [0, 0]: got 0.0011667121214878314 - expected 0
+test [0, 1]: got 0.9954687234898281 - expected 1
+test [1, 0]: got 0.9955810090337904 - expected 1
+test [1, 1]: got 0.003762603074426112 - expected 0
+
+
+test [0, 0]: got -0.021650102284985616 - expected 0
+test [0, 1]: got 0.7324267912463902 - expected 1
+test [1, 0]: got 0.9777954378104582 - expected 1
+test [1, 1]: got 0.030001381161794308 - expected 0
+
+
+test [0, 0]: got 7.912096565412356E-4 - expected 0
+test [0, 1]: got 0.9999842108859346 - expected 1
+test [1, 0]: got 1.000362183848665 - expected 1
+test [1, 1]: got -6.863810249329292E-4 - expected 0
+
+
+test [0, 0]: got 1.7698414365378834E-5 - expected 0
+test [0, 1]: got 1.0005878945377735 - expected 1
+test [1, 0]: got 0.9988884974322231 - expected 1
+test [1, 1]: got -4.2651903554074243E-4 - expected 0
+
+
+test [0, 0]: got -1.8680426586530074E-5 - expected 0
+test [0, 1]: got 0.9999669465633556 - expected 1
+test [1, 0]: got 0.9998959340667603 - expected 1
+test [1, 1]: got -9.986927215276456E-5 - expected 0
+
+
+test [0, 0]: got 3.655889020048181E-5 - expected 0
+test [0, 1]: got 1.0002210247868348 - expected 1
+test [1, 0]: got 1.0008885760306834 - expected 1
+test [1, 1]: got 2.9593696555252347E-6 - expected 0
+
+
+test [0, 0]: got -3.4533444149318845E-4 - expected 0
+test [0, 1]: got 1.0001478937181927 - expected 1
+test [1, 0]: got 1.000249756976195 - expected 1
+test [1, 1]: got 0.001039570410176327 - expected 0
+
+
+test [0, 0]: got 0.00674683462278379 - expected 0
+test [0, 1]: got 0.9986416705723035 - expected 1
+test [1, 0]: got 1.0023152807221085 - expected 1
+test [1, 1]: got 0.018313369236203678 - expected 0
+
+
+test [0, 0]: got -5.6058267753275604E-5 - expected 0
+test [0, 1]: got 0.9999966389002249 - expected 1
+test [1, 0]: got 0.9998935121839176 - expected 1
+test [1, 1]: got -1.9323296235339987E-5 - expected 0
+
+
+test [0, 0]: got 0.025333499247185847 - expected 0
+test [0, 1]: got 1.0029360234216282 - expected 1
+test [1, 0]: got 0.9902121734035868 - expected 1
+test [1, 1]: got 0.005267816351743344 - expected 0
+
+
+test [0, 0]: got 0.45380215343455377 - expected 0
+test [0, 1]: got 0.5396128020083512 - expected 1
+test [1, 0]: got 0.4498909708124299 - expected 1
+test [1, 1]: got 0.4722230251690717 - expected 0
+
+
+test [0, 0]: got 2.310378415538994E-5 - expected 0
+test [0, 1]: got 1.000000912208882 - expected 1
+test [1, 0]: got 0.999997979859189 - expected 1
+test [1, 1]: got 1.0578331107678751E-4 - expected 0
+
+
+test [0, 0]: got 7.030797695031718E-4 - expected 0
+test [0, 1]: got 0.9999620463162799 - expected 1
+test [1, 0]: got 1.000611891077924 - expected 1
+test [1, 1]: got -8.845873467300258E-5 - expected 0
+
+
+test [0, 0]: got 0.30258491698158785 - expected 0
+test [0, 1]: got 0.6530626849697013 - expected 1
+test [1, 0]: got 0.6229017535354512 - expected 1
+test [1, 1]: got 0.3166119342428389 - expected 0
+
+
+test [0, 0]: got -0.002114299749726067 - expected 0
+test [0, 1]: got 0.9964618979634073 - expected 1
+test [1, 0]: got 1.0033567947892876 - expected 1
+test [1, 1]: got 0.0014663273338752988 - expected 0
+
+
+test [0, 0]: got 0.01399842706630395 - expected 0
+test [0, 1]: got 0.8943417665768413 - expected 1
+test [1, 0]: got 0.9702917664367776 - expected 1
+test [1, 1]: got -0.05378021433386945 - expected 0
+
+
+test [0, 0]: got -0.009326487891653214 - expected 0
+test [0, 1]: got 0.9827529569013752 - expected 1
+test [1, 0]: got 1.0190708504566757 - expected 1
+test [1, 1]: got -0.00764329655972959 - expected 0
+
+
+test [0, 0]: got 4.3804141755664217E-5 - expected 0
+test [0, 1]: got 0.9998674446215158 - expected 1
+test [1, 0]: got 1.0000009694249554 - expected 1
+test [1, 1]: got 2.2075890398334103E-4 - expected 0
+
+
+test [0, 0]: got -7.109181051770972E-4 - expected 0
+test [0, 1]: got 0.9972844687851226 - expected 1
+test [1, 0]: got 0.9946655741833249 - expected 1
+test [1, 1]: got -0.002574124037975814 - expected 0
+
+
+test [0, 0]: got -4.572838049710787E-6 - expected 0
+test [0, 1]: got 0.9999243277199951 - expected 1
+test [1, 0]: got 0.9998834684867208 - expected 1
+test [1, 1]: got 1.2641415674620807E-4 - expected 0
+
+
+test [0, 0]: got 2.6318722521187846E-5 - expected 0
+test [0, 1]: got 0.9998857140584106 - expected 1
+test [1, 0]: got 1.00003215670751 - expected 1
+test [1, 1]: got -6.184551850269178E-5 - expected 0
+
+
+test [0, 0]: got 1.4890339971835448E-5 - expected 0
+test [0, 1]: got 0.9999341427569582 - expected 1
+test [1, 0]: got 0.9999996039528696 - expected 1
+test [1, 1]: got 4.974859924235936E-5 - expected 0
+
+
+test [0, 0]: got 0.00166476184554457 - expected 0
+test [0, 1]: got 0.9991990919992876 - expected 1
+test [1, 0]: got 0.9991442182081036 - expected 1
+test [1, 1]: got -3.951171629328343E-4 - expected 0
+
+
+test [0, 0]: got 3.8897118060087464E-4 - expected 0
+test [0, 1]: got 1.0009590519925062 - expected 1
+test [1, 0]: got 1.0006344638969593 - expected 1
+test [1, 1]: got -9.040517079653143E-4 - expected 0
+
+
+test [0, 0]: got -3.5418993104978196E-5 - expected 0
+test [0, 1]: got 1.0003223722232355 - expected 1
+test [1, 0]: got 0.9997981853907412 - expected 1
+test [1, 1]: got 3.1490310646229563E-5 - expected 0
+
+
+test [0, 0]: got -1.2042397895856496E-4 - expected 0
+test [0, 1]: got 0.9996032968751135 - expected 1
+test [1, 0]: got 0.999601361419781 - expected 1
+test [1, 1]: got -2.1850064734610375E-5 - expected 0
+
+
+test [0, 0]: got -5.469616074017872E-4 - expected 0
+test [0, 1]: got 0.9946467826101283 - expected 1
+test [1, 0]: got 0.9982271203082113 - expected 1
+test [1, 1]: got -4.790200032198551E-4 - expected 0
+
+
+test [0, 0]: got 5.727045434861242E-4 - expected 0
+test [0, 1]: got 1.000222784043176 - expected 1
+test [1, 0]: got 0.9998732097274058 - expected 1
+test [1, 1]: got 4.6606353267349826E-4 - expected 0
+
+
+test [0, 0]: got 0.001868964899094827 - expected 0
+test [0, 1]: got 1.0025904131298495 - expected 1
+test [1, 0]: got 1.0009472057191355 - expected 1
+test [1, 1]: got -0.002970072339993812 - expected 0
+
+
+test [0, 0]: got 1.98885130592465E-4 - expected 0
+test [0, 1]: got 1.0000130264464417 - expected 1
+test [1, 0]: got 0.9998363021646394 - expected 1
+test [1, 1]: got -2.1117480158110678E-4 - expected 0
+
+
+test [0, 0]: got 0.03627637858626758 - expected 0
+test [0, 1]: got 0.9671466234639647 - expected 1
+test [1, 0]: got 1.0141295115905258 - expected 1
+test [1, 1]: got 0.09512917032258184 - expected 0
+
+
+test [0, 0]: got 3.141142530820821E-4 - expected 0
+test [0, 1]: got 1.0002230138287782 - expected 1
+test [1, 0]: got 1.0004229226089525 - expected 1
+test [1, 1]: got 2.275475619933215E-4 - expected 0
+
+
+test [0, 0]: got 0.048243788053206824 - expected 0
+test [0, 1]: got 0.9905662605165012 - expected 1
+test [1, 0]: got 1.074793606597667 - expected 1
+test [1, 1]: got 0.0066858827973643314 - expected 0
+
+
+test [0, 0]: got -1.1283173092049154E-4 - expected 0
+test [0, 1]: got 1.0003100189609095 - expected 1
+test [1, 0]: got 1.0006839667645344 - expected 1
+test [1, 1]: got 7.970689948600743E-4 - expected 0
+
+
+test [0, 0]: got 0.0018983252880964974 - expected 0
+test [0, 1]: got 1.0127814718196373 - expected 1
+test [1, 0]: got 0.9971646875538741 - expected 1
+test [1, 1]: got -0.0010901479875159853 - expected 0
+
+
+test [0, 0]: got -4.901935794839052E-6 - expected 0
+test [0, 1]: got 0.9999887652019347 - expected 1
+test [1, 0]: got 0.9999965602502207 - expected 1
+test [1, 1]: got -3.5190956094235948E-6 - expected 0
+
+
+test [0, 0]: got 4.440554623838175E-5 - expected 0
+test [0, 1]: got 0.9999111657336199 - expected 1
+test [1, 0]: got 1.0000333937967603 - expected 1
+test [1, 1]: got -7.825712550610835E-5 - expected 0
+
+
+test [0, 0]: got -7.048905103282377E-4 - expected 0
+test [0, 1]: got 0.9950672602919666 - expected 1
+test [1, 0]: got 1.0119782918264821 - expected 1
+test [1, 1]: got -0.0013196597352523876 - expected 0
+
+
+test [0, 0]: got -6.495974736814292E-6 - expected 0
+test [0, 1]: got 1.0000043063393937 - expected 1
+test [1, 0]: got 1.0000045494164482 - expected 1
+test [1, 1]: got -3.053958502620413E-5 - expected 0
+
+
+test [0, 0]: got 1.4497753056060686E-4 - expected 0
+test [0, 1]: got 0.9997161070916672 - expected 1
+test [1, 0]: got 0.9998284123780996 - expected 1
+test [1, 1]: got -5.25947096341059E-4 - expected 0
+
+
+test [0, 0]: got 1.4833684080471643E-6 - expected 0
+test [0, 1]: got 0.999709893532291 - expected 1
+test [1, 0]: got 1.0000584764342895 - expected 1
+test [1, 1]: got 5.047144102812394E-4 - expected 0
+
+
+test [0, 0]: got 7.68346876048136E-5 - expected 0
+test [0, 1]: got 1.0003340996069863 - expected 1
+test [1, 0]: got 0.9999745285846493 - expected 1
+test [1, 1]: got -2.4469162770210775E-6 - expected 0
+
+
+test [0, 0]: got 0.014764852411454043 - expected 0
+test [0, 1]: got 0.993520846711274 - expected 1
+test [1, 0]: got 1.002513793532383 - expected 1
+test [1, 1]: got 0.08668309506002221 - expected 0
+
+
+test [0, 0]: got 0.00816412007329393 - expected 0
+test [0, 1]: got 0.9893740316915751 - expected 1
+test [1, 0]: got 1.001380797474545 - expected 1
+test [1, 1]: got 3.249896186734492E-4 - expected 0
+
+
+test [0, 0]: got -1.8749859875821784E-5 - expected 0
+test [0, 1]: got 0.9999658961173277 - expected 1
+test [1, 0]: got 0.999992480843725 - expected 1
+test [1, 1]: got -4.126743479486786E-5 - expected 0
+
+
+test [0, 0]: got -0.0037502535997452086 - expected 0
+test [0, 1]: got 0.994244798240729 - expected 1
+test [1, 0]: got 1.028856920033143 - expected 1
+test [1, 1]: got 0.004383368992089223 - expected 0
+
+
+test [0, 0]: got 8.704240141208682E-5 - expected 0
+test [0, 1]: got 1.00000470819082 - expected 1
+test [1, 0]: got 1.000042683230227 - expected 1
+test [1, 1]: got -6.092836913463087E-5 - expected 0
+
+
+test [0, 0]: got 0.03069387070896844 - expected 0
+test [0, 1]: got 0.9885615308679376 - expected 1
+test [1, 0]: got 1.006506752582064 - expected 1
+test [1, 1]: got -0.00588858876780211 - expected 0
+
+
+test [0, 0]: got -0.004991354121507384 - expected 0
+test [0, 1]: got 1.0006001996295215 - expected 1
+test [1, 0]: got 1.008145262446114 - expected 1
+test [1, 1]: got -0.01816274470786341 - expected 0
+
+
+test [0, 0]: got -1.1914251305059163E-4 - expected 0
+test [0, 1]: got 0.9998969919865416 - expected 1
+test [1, 0]: got 1.0000639437178447 - expected 1
+test [1, 1]: got 8.192261864363448E-5 - expected 0
+
+
+test [0, 0]: got 5.5807807085440746E-6 - expected 0
+test [0, 1]: got 0.9998612788483081 - expected 1
+test [1, 0]: got 1.0004704460717357 - expected 1
+test [1, 1]: got 4.6263502382650596E-4 - expected 0
+
+
+test [0, 0]: got -0.0011329151709176602 - expected 0
+test [0, 1]: got 1.0002879549118113 - expected 1
+test [1, 0]: got 0.9994011882304125 - expected 1
+test [1, 1]: got 0.0021628846953784405 - expected 0
+
+
+test [0, 0]: got 7.408983041038916E-4 - expected 0
+test [0, 1]: got 0.999872787916395 - expected 1
+test [1, 0]: got 1.00059726558992 - expected 1
+test [1, 1]: got 7.527044785950177E-5 - expected 0
+
+
+test [0, 0]: got 0.0019461088775811486 - expected 0
+test [0, 1]: got 1.001764541318662 - expected 1
+test [1, 0]: got 1.001017210067622 - expected 1
+test [1, 1]: got 0.0010695407277851476 - expected 0
+
+
+test [0, 0]: got 0.0408875496357166 - expected 0
+test [0, 1]: got 0.9938810129261098 - expected 1
+test [1, 0]: got 1.0002392440266787 - expected 1
+test [1, 1]: got 0.007612615215616861 - expected 0
+
+
+test [0, 0]: got -9.436337682134331E-5 - expected 0
+test [0, 1]: got 0.9999556215846643 - expected 1
+test [1, 0]: got 0.9998968218514757 - expected 1
+test [1, 1]: got -1.9602532187508806E-4 - expected 0
+
+
+test [0, 0]: got 9.093681830762632E-5 - expected 0
+test [0, 1]: got 1.0000205670252258 - expected 1
+test [1, 0]: got 0.9999247482976158 - expected 1
+test [1, 1]: got 8.813734048375335E-5 - expected 0
+
+
+test [0, 0]: got -2.7882230518575316E-4 - expected 0
+test [0, 1]: got 0.9962311501630318 - expected 1
+test [1, 0]: got 0.9989021823279459 - expected 1
+test [1, 1]: got 0.0016832967045694626 - expected 0
+
+
+test [0, 0]: got 1.2143708257439292E-5 - expected 0
+test [0, 1]: got 0.9999781135456305 - expected 1
+test [1, 0]: got 0.9999924784092171 - expected 1
+test [1, 1]: got 4.266882331536992E-5 - expected 0
+
+
+test [0, 0]: got -8.944708472127805E-5 - expected 0
+test [0, 1]: got 1.0001809934954793 - expected 1
+test [1, 0]: got 0.9998491117058343 - expected 1
+test [1, 1]: got 1.6191740347316105E-4 - expected 0
+
+
+test [0, 0]: got 0.00993424572605728 - expected 0
+test [0, 1]: got 0.987316938664915 - expected 1
+test [1, 0]: got 1.0076148907781213 - expected 1
+test [1, 1]: got 0.0032079471420144315 - expected 0
+
+
+test [0, 0]: got 2.1414896921805038E-5 - expected 0
+test [0, 1]: got 0.9999917243925446 - expected 1
+test [1, 0]: got 0.9999822414624058 - expected 1
+test [1, 1]: got 2.124427260258993E-5 - expected 0
+
+
+test [0, 0]: got 7.502943756997754E-5 - expected 0
+test [0, 1]: got 1.0006634170523254 - expected 1
+test [1, 0]: got 1.000470663423577 - expected 1
+test [1, 1]: got -5.01660396919297E-4 - expected 0
+
+
+test [0, 0]: got 0.0018653243024512323 - expected 0
+test [0, 1]: got 0.9992574857517547 - expected 1
+test [1, 0]: got 1.0000777262266296 - expected 1
+test [1, 1]: got -0.0019813477279047448 - expected 0
+
+
+test [0, 0]: got -0.01047118479769701 - expected 0
+test [0, 1]: got 1.0126057458403774 - expected 1
+test [1, 0]: got 1.003592447456335 - expected 1
+test [1, 1]: got 0.0016988611983594429 - expected 0
+
+
+test [0, 0]: got 1.594845270733525E-4 - expected 0
+test [0, 1]: got 0.9999682135738381 - expected 1
+test [1, 0]: got 1.0000864266512501 - expected 1
+test [1, 1]: got 5.557970344080045E-4 - expected 0
+
+
+test [0, 0]: got 0.005392486821510081 - expected 0
+test [0, 1]: got 0.9950889877535589 - expected 1
+test [1, 0]: got 1.0062639241518465 - expected 1
+test [1, 1]: got -0.008563995556985563 - expected 0
+
+
+test [0, 0]: got -5.774942001653127E-5 - expected 0
+test [0, 1]: got 0.9999547324243193 - expected 1
+test [1, 0]: got 1.0000165509352452 - expected 1
+test [1, 1]: got -3.806289604586094E-5 - expected 0
+
+
+test [0, 0]: got 8.392284303953453E-4 - expected 0
+test [0, 1]: got 1.000510854353632 - expected 1
+test [1, 0]: got 0.999002399072631 - expected 1
+test [1, 1]: got 0.0011762206971413086 - expected 0
+
+
+test [0, 0]: got 1.3136486758078686E-5 - expected 0
+test [0, 1]: got 1.0000106934254287 - expected 1
+test [1, 0]: got 1.0000326183826291 - expected 1
+test [1, 1]: got 1.955098988739093E-5 - expected 0
+
+
+test [0, 0]: got -5.815277729584456E-5 - expected 0
+test [0, 1]: got 0.9999944799431831 - expected 1
+test [1, 0]: got 0.9999919457041099 - expected 1
+test [1, 1]: got 4.68336447061212E-5 - expected 0
+
+
+test [0, 0]: got 0.02917477453355163 - expected 0
+test [0, 1]: got 1.0008860006686773 - expected 1
+test [1, 0]: got 1.0124560865909418 - expected 1
+test [1, 1]: got -0.002163849198581397 - expected 0
+
+
+test [0, 0]: got -2.7758425525777324E-4 - expected 0
+test [0, 1]: got 0.9998668252967029 - expected 1
+test [1, 0]: got 0.9999823341248464 - expected 1
+test [1, 1]: got 1.7963579881985503E-4 - expected 0
+
+
+test [0, 0]: got -0.013697633056647882 - expected 0
+test [0, 1]: got 0.994293437226959 - expected 1
+test [1, 0]: got 0.9926779536104928 - expected 1
+test [1, 1]: got 0.013577730636256911 - expected 0
+
+
+test [0, 0]: got -3.91474151975324E-5 - expected 0
+test [0, 1]: got 1.001301598113487 - expected 1
+test [1, 0]: got 0.9992855062973183 - expected 1
+test [1, 1]: got 1.497187633147561E-4 - expected 0
+
+
+test [0, 0]: got 2.0383536770861993E-4 - expected 0
+test [0, 1]: got 0.999636046490439 - expected 1
+test [1, 0]: got 1.0006704065414733 - expected 1
+test [1, 1]: got 4.844966880722598E-4 - expected 0
+
+
+test [0, 0]: got -0.0034769722822068187 - expected 0
+test [0, 1]: got 0.9989570674626925 - expected 1
+test [1, 0]: got 1.0020748518820406 - expected 1
+test [1, 1]: got 0.01018904244178985 - expected 0
+
+
+test [0, 0]: got -0.07396634322598854 - expected 0
+test [0, 1]: got 1.0801979613154433 - expected 1
+test [1, 0]: got 0.9814996378873528 - expected 1
+test [1, 1]: got 0.013426223138726226 - expected 0
+
+
+test [0, 0]: got -0.0022540927942990147 - expected 0
+test [0, 1]: got 1.0124174141071076 - expected 1
+test [1, 0]: got 0.9973079828518795 - expected 1
+test [1, 1]: got -4.7145945250545024E-4 - expected 0
+
+
+test [0, 0]: got -0.021171414539827425 - expected 0
+test [0, 1]: got 0.9880920720507983 - expected 1
+test [1, 0]: got 0.9598610001288982 - expected 1
+test [1, 1]: got 0.001321558464016586 - expected 0
+
+
+test [0, 0]: got -1.0708159322211355E-5 - expected 0
+test [0, 1]: got 1.0000390451065215 - expected 1
+test [1, 0]: got 0.9999701830436932 - expected 1
+test [1, 1]: got 4.330508230072916E-5 - expected 0
+
+
+test [0, 0]: got -2.0962212319058232E-4 - expected 0
+test [0, 1]: got 0.9999741433220753 - expected 1
+test [1, 0]: got 1.0000385708076076 - expected 1
+test [1, 1]: got 1.363851278675986E-4 - expected 0
+
+
+test [0, 0]: got -1.500052279928936E-5 - expected 0
+test [0, 1]: got 0.9999549193519417 - expected 1
+test [1, 0]: got 1.0000786025607193 - expected 1
+test [1, 1]: got -6.957050035727441E-6 - expected 0
+
+
+test [0, 0]: got 1.0725343164348644E-4 - expected 0
+test [0, 1]: got 1.0000518214013263 - expected 1
+test [1, 0]: got 1.0000606624110129 - expected 1
+test [1, 1]: got 8.699051283164727E-5 - expected 0
+
+
+test [0, 0]: got 0.025183501879403884 - expected 0
+test [0, 1]: got 0.653813726012404 - expected 1
+test [1, 0]: got 0.33122716802149366 - expected 1
+test [1, 1]: got -0.16339564953614888 - expected 0
+
+
+test [0, 0]: got 0.03489939241124516 - expected 0
+test [0, 1]: got 0.9547552990386122 - expected 1
+test [1, 0]: got 0.9979874328940803 - expected 1
+test [1, 1]: got 0.045288168533829 - expected 0
+
+
+test [0, 0]: got -9.741768487170274E-4 - expected 0
+test [0, 1]: got 0.9998477455314372 - expected 1
+test [1, 0]: got 0.9986212298371261 - expected 1
+test [1, 1]: got 5.969203613971769E-4 - expected 0
+
+
+test [0, 0]: got 1.9574857069105944E-4 - expected 0
+test [0, 1]: got 1.0004124813970574 - expected 1
+test [1, 0]: got 1.0000750349367133 - expected 1
+test [1, 1]: got 2.754590086210384E-4 - expected 0
+
+
+test [0, 0]: got 0.01711777568933573 - expected 0
+test [0, 1]: got 0.9582713451450101 - expected 1
+test [1, 0]: got 0.9906595446630412 - expected 1
+test [1, 1]: got 0.07487751632998108 - expected 0
+
+
+test [0, 0]: got -0.003634529646844034 - expected 0
+test [0, 1]: got 1.002697491228836 - expected 1
+test [1, 0]: got 0.9995737295537266 - expected 1
+test [1, 1]: got -2.7085675255183474E-4 - expected 0
+
+
+test [0, 0]: got -4.8700709398045994E-5 - expected 0
+test [0, 1]: got 0.9998852872243769 - expected 1
+test [1, 0]: got 0.9999966359146736 - expected 1
+test [1, 1]: got 3.613208422396444E-4 - expected 0
+
+
+test [0, 0]: got -4.943035309623422E-4 - expected 0
+test [0, 1]: got 0.9992948407722643 - expected 1
+test [1, 0]: got 1.0006065812763079 - expected 1
+test [1, 1]: got 3.946503503603205E-4 - expected 0
+
+
+test [0, 0]: got -4.126532917338513E-5 - expected 0
+test [0, 1]: got 0.999863421493541 - expected 1
+test [1, 0]: got 1.0002141738453523 - expected 1
+test [1, 1]: got -1.6487185855686842E-4 - expected 0
+
+
+test [0, 0]: got -4.0544086557051887E-4 - expected 0
+test [0, 1]: got 0.9939544516616958 - expected 1
+test [1, 0]: got 1.0036921700219457 - expected 1
+test [1, 1]: got -3.1755800517630633E-4 - expected 0
+
+
+test [0, 0]: got -0.007533837694177939 - expected 0
+test [0, 1]: got 0.9954395256374997 - expected 1
+test [1, 0]: got 0.9973757596628879 - expected 1
+test [1, 1]: got 0.00681486581832357 - expected 0
+
+
+test [0, 0]: got 6.369501893318391E-4 - expected 0
+test [0, 1]: got 0.9919325420436172 - expected 1
+test [1, 0]: got 0.9964652254603839 - expected 1
+test [1, 1]: got -0.0040296687176627 - expected 0
+
+
+test [0, 0]: got 0.1584883307773358 - expected 0
+test [0, 1]: got 0.9360198184854058 - expected 1
+test [1, 0]: got 0.8358525694134675 - expected 1
+test [1, 1]: got 0.05685078816116812 - expected 0
+
+
+test [0, 0]: got 0.19522452586604772 - expected 0
+test [0, 1]: got 1.1852722338059738 - expected 1
+test [1, 0]: got 0.9463510122258305 - expected 1
+test [1, 1]: got 0.1554522327290815 - expected 0
+
+
+test [0, 0]: got 0.01251791721782651 - expected 0
+test [0, 1]: got 0.9821762334272355 - expected 1
+test [1, 0]: got 1.0165987247869601 - expected 1
+test [1, 1]: got 0.01310942211743998 - expected 0
+
+
+test [0, 0]: got 5.501842215175773E-4 - expected 0
+test [0, 1]: got 0.9985503852756483 - expected 1
+test [1, 0]: got 0.9956475011251513 - expected 1
+test [1, 1]: got -5.787645128368657E-4 - expected 0
+
+
+test [0, 0]: got -5.164914395965624E-4 - expected 0
+test [0, 1]: got 1.0000894862462097 - expected 1
+test [1, 0]: got 1.00010573482579 - expected 1
+test [1, 1]: got -1.2432353084539045E-4 - expected 0
+
+
+test [0, 0]: got -2.3098207601715548E-4 - expected 0
+test [0, 1]: got 1.0006727870541756 - expected 1
+test [1, 0]: got 0.9998230890891769 - expected 1
+test [1, 1]: got -1.7922224184779845E-4 - expected 0
+
+
+test [0, 0]: got 0.03539815738990445 - expected 0
+test [0, 1]: got 0.8110293297872946 - expected 1
+test [1, 0]: got 0.9347149049231441 - expected 1
+test [1, 1]: got 0.1171422632545528 - expected 0
+
+
+test [0, 0]: got 3.1440806551293055E-4 - expected 0
+test [0, 1]: got 0.9998518957319208 - expected 1
+test [1, 0]: got 0.999561333911988 - expected 1
+test [1, 1]: got -1.3176174951585497E-4 - expected 0
+
+
+test [0, 0]: got -0.0018387069656844827 - expected 0
+test [0, 1]: got 0.9972992899631145 - expected 1
+test [1, 0]: got 0.9961145456275932 - expected 1
+test [1, 1]: got 0.0021037802991802877 - expected 0
+
+
+test [0, 0]: got 9.149200767773202E-5 - expected 0
+test [0, 1]: got 0.9999841722742739 - expected 1
+test [1, 0]: got 0.9999063062441153 - expected 1
+test [1, 1]: got -2.86220311812857E-5 - expected 0
+
+
+test [0, 0]: got 0.0010271064073264684 - expected 0
+test [0, 1]: got 0.9921030539652919 - expected 1
+test [1, 0]: got 0.9982376391589627 - expected 1
+test [1, 1]: got -0.003977234757768733 - expected 0
+
+
+test [0, 0]: got 0.02013248857997759 - expected 0
+test [0, 1]: got 0.9634482355855232 - expected 1
+test [1, 0]: got 1.0382360472352965 - expected 1
+test [1, 1]: got -0.014399729217037669 - expected 0
+
+
+test [0, 0]: got -0.07071467898506618 - expected 0
+test [0, 1]: got 0.9760743133311187 - expected 1
+test [1, 0]: got 0.9183160358738907 - expected 1
+test [1, 1]: got -0.05440747508674496 - expected 0
+
+
+test [0, 0]: got -0.007992693305965828 - expected 0
+test [0, 1]: got 0.9962604665140624 - expected 1
+test [1, 0]: got 0.992526738296856 - expected 1
+test [1, 1]: got -0.0038377961383965556 - expected 0
+
+
+test [0, 0]: got 0.08975489830987628 - expected 0
+test [0, 1]: got 0.8999132481830113 - expected 1
+test [1, 0]: got 0.9188122216940589 - expected 1
+test [1, 1]: got 0.04083791262037905 - expected 0
+
+
+test [0, 0]: got -7.517839983974418E-4 - expected 0
+test [0, 1]: got 1.0003291218394468 - expected 1
+test [1, 0]: got 0.9976938947431213 - expected 1
+test [1, 1]: got 0.0171319482815726 - expected 0
+
+
+test [0, 0]: got -1.4753240004714463E-4 - expected 0
+test [0, 1]: got 0.9997657121704424 - expected 1
+test [1, 0]: got 1.0000046458369778 - expected 1
+test [1, 1]: got 1.6435692354288545E-4 - expected 0
+
+
+test [0, 0]: got 2.7284148620965176E-7 - expected 0
+test [0, 1]: got 1.0000022005144367 - expected 1
+test [1, 0]: got 0.9999358640155179 - expected 1
+test [1, 1]: got 7.367303277008852E-6 - expected 0
+
+
+test [0, 0]: got 1.6486733696714426E-4 - expected 0
+test [0, 1]: got 0.9996436552438872 - expected 1
+test [1, 0]: got 0.9999332592647738 - expected 1
+test [1, 1]: got 3.2799812763968737E-4 - expected 0
+
+
+test [0, 0]: got 1.3264144189927517E-4 - expected 0
+test [0, 1]: got 0.9999425811688294 - expected 1
+test [1, 0]: got 1.0003507380623398 - expected 1
+test [1, 1]: got 7.506798079966008E-5 - expected 0
+
+
+test [0, 0]: got 0.005431816239215216 - expected 0
+test [0, 1]: got 0.9950676774458079 - expected 1
+test [1, 0]: got 0.9991729415687657 - expected 1
+test [1, 1]: got -0.011107774887288896 - expected 0
+
+
+test [0, 0]: got 0.23404123830747603 - expected 0
+test [0, 1]: got 0.9458381401790131 - expected 1
+test [1, 0]: got 0.8881369882741479 - expected 1
+test [1, 1]: got 0.08417611347601756 - expected 0
+
+
+test [0, 0]: got 0.020648952593822267 - expected 0
+test [0, 1]: got 0.9886598332824191 - expected 1
+test [1, 0]: got 0.9975342867361642 - expected 1
+test [1, 1]: got 0.10225446430563584 - expected 0
+
+
+test [0, 0]: got 7.87106566124438E-4 - expected 0
+test [0, 1]: got 1.0001762300970096 - expected 1
+test [1, 0]: got 1.003911776045784 - expected 1
+test [1, 1]: got -0.010376450114577072 - expected 0
+
+
+test [0, 0]: got -1.0148605385135005E-4 - expected 0
+test [0, 1]: got 1.0000925334295274 - expected 1
+test [1, 0]: got 0.9999333325254285 - expected 1
+test [1, 1]: got -6.818390247849502E-5 - expected 0
+
+
+test [0, 0]: got 7.847784787210488E-4 - expected 0
+test [0, 1]: got 0.9999463790196906 - expected 1
+test [1, 0]: got 1.0002268573801787 - expected 1
+test [1, 1]: got 7.28887857651441E-5 - expected 0
+
+
+test [0, 0]: got 7.515570583875282E-4 - expected 0
+test [0, 1]: got 1.0017848400641465 - expected 1
+test [1, 0]: got 1.0002351349553305 - expected 1
+test [1, 1]: got 0.0024169465076651075 - expected 0
+
+
+test [0, 0]: got 0.22208515130182938 - expected 0
+test [0, 1]: got 0.8062013814074277 - expected 1
+test [1, 0]: got 0.9538035382002612 - expected 1
+test [1, 1]: got 0.5987103405196633 - expected 0
+
+
+test [0, 0]: got 0.15390963154689336 - expected 0
+test [0, 1]: got 0.6423805097139652 - expected 1
+test [1, 0]: got 0.4687549749229445 - expected 1
+test [1, 1]: got 0.5271969445463593 - expected 0
+
+
+test [0, 0]: got -4.086119930928056E-5 - expected 0
+test [0, 1]: got 1.0000027107966267 - expected 1
+test [1, 0]: got 0.9999392376291638 - expected 1
+test [1, 1]: got -9.623564615691277E-6 - expected 0
+
+
+test [0, 0]: got -5.780991601599516E-4 - expected 0
+test [0, 1]: got 1.0001102615687967 - expected 1
+test [1, 0]: got 1.0000998922762439 - expected 1
+test [1, 1]: got 1.1217077494674044E-4 - expected 0
+
+
+test [0, 0]: got -0.010801985608646612 - expected 0
+test [0, 1]: got 1.0063657447498782 - expected 1
+test [1, 0]: got 0.9806897704910444 - expected 1
+test [1, 1]: got 0.00435954571555271 - expected 0
+
+
+test [0, 0]: got 7.074937464379705E-6 - expected 0
+test [0, 1]: got 1.0000090454738402 - expected 1
+test [1, 0]: got 0.9999081767339908 - expected 1
+test [1, 1]: got 3.0213631894440707E-5 - expected 0
+
+
+test [0, 0]: got 3.772049373134828E-4 - expected 0
+test [0, 1]: got 1.0000361195767176 - expected 1
+test [1, 0]: got 0.999705593776218 - expected 1
+test [1, 1]: got -5.434667773316498E-5 - expected 0
+
+
+test [0, 0]: got 0.20220166841940018 - expected 0
+test [0, 1]: got 1.083951110124769 - expected 1
+test [1, 0]: got 0.951012336702588 - expected 1
+test [1, 1]: got -0.07441875145272019 - expected 0
+
+
+test [0, 0]: got -0.007112061918171559 - expected 0
+test [0, 1]: got 0.9987518390438713 - expected 1
+test [1, 0]: got 0.9966834993181921 - expected 1
+test [1, 1]: got 0.008007702007037668 - expected 0
+
+
+test [0, 0]: got 5.074901018581324E-5 - expected 0
+test [0, 1]: got 0.999985239665415 - expected 1
+test [1, 0]: got 1.000025213677749 - expected 1
+test [1, 1]: got -3.3102909449966855E-6 - expected 0
+
+
+test [0, 0]: got -4.956149871126825E-4 - expected 0
+test [0, 1]: got 0.9990892084733495 - expected 1
+test [1, 0]: got 0.9989628439671742 - expected 1
+test [1, 1]: got 4.69793222101611E-4 - expected 0
+
+
+test [0, 0]: got 1.3935615267319287E-4 - expected 0
+test [0, 1]: got 0.9998888757136151 - expected 1
+test [1, 0]: got 1.000005189953542 - expected 1
+test [1, 1]: got 4.6523834573044924E-5 - expected 0
+
+
+test [0, 0]: got 4.897555205229248E-6 - expected 0
+test [0, 1]: got 0.9999804241885095 - expected 1
+test [1, 0]: got 1.0000276876760366 - expected 1
+test [1, 1]: got 2.526448832998159E-5 - expected 0
+
+
+test [0, 0]: got -8.8195175122735E-5 - expected 0
+test [0, 1]: got 0.9999410756457987 - expected 1
+test [1, 0]: got 1.0000188120629574 - expected 1
+test [1, 1]: got -8.757806782650965E-6 - expected 0
+
+
+test [0, 0]: got 8.269992548334991E-5 - expected 0
+test [0, 1]: got 0.9998544114806671 - expected 1
+test [1, 0]: got 0.9998968169336786 - expected 1
+test [1, 1]: got 7.033396363142347E-5 - expected 0
+
+
+test [0, 0]: got 7.002103004170174E-5 - expected 0
+test [0, 1]: got 0.9998335693076531 - expected 1
+test [1, 0]: got 1.0000734423717041 - expected 1
+test [1, 1]: got -1.3685009638865486E-5 - expected 0
+
+
+test [0, 0]: got 9.361311860059222E-5 - expected 0
+test [0, 1]: got 1.0001443084706534 - expected 1
+test [1, 0]: got 1.0000199807621368 - expected 1
+test [1, 1]: got -5.80706025481454E-5 - expected 0
+
+
+test [0, 0]: got -8.169529637038148E-6 - expected 0
+test [0, 1]: got 0.999927790904043 - expected 1
+test [1, 0]: got 1.0000045544547342 - expected 1
+test [1, 1]: got -6.177544354152038E-6 - expected 0
+
+
+test [0, 0]: got 0.44105984818609756 - expected 0
+test [0, 1]: got 0.7834095610153454 - expected 1
+test [1, 0]: got 0.4161116124634393 - expected 1
+test [1, 1]: got 0.3639690338573814 - expected 0
+
+
+test [0, 0]: got -2.281332845639907E-5 - expected 0
+test [0, 1]: got 1.0000246788076639 - expected 1
+test [1, 0]: got 0.9999953073005577 - expected 1
+test [1, 1]: got 9.992487443455725E-6 - expected 0
+
+
+test [0, 0]: got -0.00414191530241656 - expected 0
+test [0, 1]: got 0.9791179548942761 - expected 1
+test [1, 0]: got 1.0085201270950748 - expected 1
+test [1, 1]: got 0.00947310530480074 - expected 0
+
+
+test [0, 0]: got -4.070232484431127E-5 - expected 0
+test [0, 1]: got 0.9999144338392948 - expected 1
+test [1, 0]: got 1.0001543969798545 - expected 1
+test [1, 1]: got 8.376585480119117E-5 - expected 0
+
+
+test [0, 0]: got 0.041731520027942406 - expected 0
+test [0, 1]: got 0.9316943832177581 - expected 1
+test [1, 0]: got 0.9893878807606751 - expected 1
+test [1, 1]: got 0.10747787655332165 - expected 0
+
+
+test [0, 0]: got 0.0013644213188115876 - expected 0
+test [0, 1]: got 0.9999277349485572 - expected 1
+test [1, 0]: got 1.0022372388460226 - expected 1
+test [1, 1]: got -3.138872118362678E-4 - expected 0
+
+
+test [0, 0]: got -3.0119857940633793E-5 - expected 0
+test [0, 1]: got 1.000259632967401 - expected 1
+test [1, 0]: got 0.9997363466956686 - expected 1
+test [1, 1]: got -3.9391556740728945E-4 - expected 0
+
+
+test [0, 0]: got -4.631905772760709E-6 - expected 0
+test [0, 1]: got 1.0000081255314088 - expected 1
+test [1, 0]: got 0.9999971322116311 - expected 1
+test [1, 1]: got 8.977084438308199E-6 - expected 0
+
+
+test [0, 0]: got -0.0010973247601957642 - expected 0
+test [0, 1]: got 0.9865786372276847 - expected 1
+test [1, 0]: got 0.9835855380747649 - expected 1
+test [1, 1]: got -0.009969217716179174 - expected 0
+
+
+test [0, 0]: got 7.393025254068958E-5 - expected 0
+test [0, 1]: got 1.000123974900091 - expected 1
+test [1, 0]: got 0.9998606869515514 - expected 1
+test [1, 1]: got 1.2477081264476025E-4 - expected 0
+
+
+test [0, 0]: got 3.9340319546350277E-5 - expected 0
+test [0, 1]: got 0.999925897961202 - expected 1
+test [1, 0]: got 0.9999899496516146 - expected 1
+test [1, 1]: got 2.623518831790933E-5 - expected 0
+
+
+test [0, 0]: got 0.016284966649680918 - expected 0
+test [0, 1]: got 1.002871327829626 - expected 1
+test [1, 0]: got 0.9980917937215558 - expected 1
+test [1, 1]: got -0.03138440984774609 - expected 0
+
+
+test [0, 0]: got -8.513649783606226E-5 - expected 0
+test [0, 1]: got 0.9998563831379333 - expected 1
+test [1, 0]: got 0.9998639228642894 - expected 1
+test [1, 1]: got 1.8882840663661526E-4 - expected 0
+
+
+test [0, 0]: got 0.104833114162607 - expected 0
+test [0, 1]: got 0.9240380768425605 - expected 1
+test [1, 0]: got 0.9651290244750177 - expected 1
+test [1, 1]: got 0.04971525334182869 - expected 0
+
+
+test [0, 0]: got -1.9202237667712306E-4 - expected 0
+test [0, 1]: got 0.9997939166962568 - expected 1
+test [1, 0]: got 1.0003731603062875 - expected 1
+test [1, 1]: got 1.0767969143402056E-4 - expected 0
+
+
+test [0, 0]: got -0.0038182059797312595 - expected 0
+test [0, 1]: got 0.9997757298018622 - expected 1
+test [1, 0]: got 0.9997465746883605 - expected 1
+test [1, 1]: got 0.0025656175194350046 - expected 0
+
+
+test [0, 0]: got -3.5047210017694064E-5 - expected 0
+test [0, 1]: got 0.9999612647582283 - expected 1
+test [1, 0]: got 0.9999317491493601 - expected 1
+test [1, 1]: got 1.4725171018465207E-4 - expected 0
+
+
+test [0, 0]: got -0.1579766869677826 - expected 0
+test [0, 1]: got 1.153344875626816 - expected 1
+test [1, 0]: got 1.046627643755621 - expected 1
+test [1, 1]: got 0.9941245765460935 - expected 0
+
+
+test [0, 0]: got -3.4540056837829847E-4 - expected 0
+test [0, 1]: got 1.0003261499866323 - expected 1
+test [1, 0]: got 0.9997945266194992 - expected 1
+test [1, 1]: got -4.0934962117997534E-4 - expected 0
+
+
+test [0, 0]: got -7.248778995527436E-5 - expected 0
+test [0, 1]: got 1.0000185899483347 - expected 1
+test [1, 0]: got 1.0000088774747433 - expected 1
+test [1, 1]: got -1.2518740564189932E-5 - expected 0
+
+
+test [0, 0]: got -2.9044201175851777E-5 - expected 0
+test [0, 1]: got 1.000003303889863 - expected 1
+test [1, 0]: got 0.999893895153317 - expected 1
+test [1, 1]: got 1.4222393111556396E-5 - expected 0
+
+
+test [0, 0]: got 0.001166313776014366 - expected 0
+test [0, 1]: got 0.9989967059963012 - expected 1
+test [1, 0]: got 0.9968913454605896 - expected 1
+test [1, 1]: got -2.4627815276198617E-4 - expected 0
+
+
+test [0, 0]: got 0.0014456866407087062 - expected 0
+test [0, 1]: got 0.9997100474006044 - expected 1
+test [1, 0]: got 1.0000932636719535 - expected 1
+test [1, 1]: got 0.0010273174346222503 - expected 0
+
+
+test [0, 0]: got 1.1507072633125479E-4 - expected 0
+test [0, 1]: got 1.0001567314912128 - expected 1
+test [1, 0]: got 1.0001591831389718 - expected 1
+test [1, 1]: got 2.6167640922015664E-5 - expected 0
+
+
+test [0, 0]: got -0.05289937973591681 - expected 0
+test [0, 1]: got 1.0005499820709274 - expected 1
+test [1, 0]: got 0.9815806033802212 - expected 1
+test [1, 1]: got 0.008473006441355464 - expected 0
+
+
+test [0, 0]: got 2.760579835759461E-4 - expected 0
+test [0, 1]: got 1.0051538405450668 - expected 1
+test [1, 0]: got 0.9999007730983519 - expected 1
+test [1, 1]: got 3.083444333706383E-4 - expected 0
+
+
+test [0, 0]: got 8.447388418184043E-5 - expected 0
+test [0, 1]: got 1.000033560405919 - expected 1
+test [1, 0]: got 0.9999990307280062 - expected 1
+test [1, 1]: got 1.1008623046497926E-5 - expected 0
+
+
+test [0, 0]: got -0.009181203637770613 - expected 0
+test [0, 1]: got 0.9962720013626235 - expected 1
+test [1, 0]: got 0.9444437330584081 - expected 1
+test [1, 1]: got -0.013544378440242782 - expected 0
+
+
+test [0, 0]: got 5.1100169151975516E-5 - expected 0
+test [0, 1]: got 1.0000435888733923 - expected 1
+test [1, 0]: got 1.0000788332805899 - expected 1
+test [1, 1]: got 3.5207091766783854E-4 - expected 0
+
+
+test [0, 0]: got -0.03213684692218427 - expected 0
+test [0, 1]: got 1.0052549291395634 - expected 1
+test [1, 0]: got 1.0079548423359384 - expected 1
+test [1, 1]: got 0.021076300739369586 - expected 0
+
+
+test [0, 0]: got 6.428602760247398E-4 - expected 0
+test [0, 1]: got 0.9995752201920476 - expected 1
+test [1, 0]: got 0.9997484418445652 - expected 1
+test [1, 1]: got 8.806119742646445E-7 - expected 0
+
+
+test [0, 0]: got -0.004200194817368981 - expected 0
+test [0, 1]: got 0.9960286028833287 - expected 1
+test [1, 0]: got 1.0016057157115503 - expected 1
+test [1, 1]: got 0.0018679945414888165 - expected 0
+
+
+test [0, 0]: got 3.2269406201550915E-4 - expected 0
+test [0, 1]: got 0.9987352195163176 - expected 1
+test [1, 0]: got 1.0001109403660586 - expected 1
+test [1, 1]: got -1.2781787658350252E-4 - expected 0
+
+
+test [0, 0]: got 5.940229653510834E-4 - expected 0
+test [0, 1]: got 1.0023634004283242 - expected 1
+test [1, 0]: got 1.000916230036384 - expected 1
+test [1, 1]: got 4.336833081430014E-4 - expected 0
+
+
+test [0, 0]: got 0.04119018763340716 - expected 0
+test [0, 1]: got 0.9693456729583543 - expected 1
+test [1, 0]: got 0.9620187457547265 - expected 1
+test [1, 1]: got 0.09133772472684581 - expected 0
+
+
+test [0, 0]: got -0.010909444091311574 - expected 0
+test [0, 1]: got 0.9090564227677427 - expected 1
+test [1, 0]: got 1.017536555798185 - expected 1
+test [1, 1]: got 1.954598028499066E-4 - expected 0
+
+
+test [0, 0]: got 0.0056909367927604065 - expected 0
+test [0, 1]: got 1.0275542935072794 - expected 1
+test [1, 0]: got 1.0017896278935838 - expected 1
+test [1, 1]: got -0.003316930144816245 - expected 0
+
+
+test [0, 0]: got 1.0294862822089398E-4 - expected 0
+test [0, 1]: got 1.0000279142193556 - expected 1
+test [1, 0]: got 1.0000787530185475 - expected 1
+test [1, 1]: got 1.679437157616273E-4 - expected 0
+
+
+test [0, 0]: got -5.017824609679384E-4 - expected 0
+test [0, 1]: got 0.9999274086284865 - expected 1
+test [1, 0]: got 0.9999855927289888 - expected 1
+test [1, 1]: got 4.238594596367197E-4 - expected 0
+
+
+test [0, 0]: got 6.101631219821089E-4 - expected 0
+test [0, 1]: got 1.0001680876576535 - expected 1
+test [1, 0]: got 0.9997870457976262 - expected 1
+test [1, 1]: got 3.0440650161361882E-5 - expected 0
+
+
+test [0, 0]: got 0.0016394114961856832 - expected 0
+test [0, 1]: got 1.0059513168682641 - expected 1
+test [1, 0]: got 1.0053737924804573 - expected 1
+test [1, 1]: got 0.01055058214558188 - expected 0
+
+
+test [0, 0]: got -7.938920598042857E-4 - expected 0
+test [0, 1]: got 0.9996685296456906 - expected 1
+test [1, 0]: got 1.0002007538215771 - expected 1
+test [1, 1]: got 2.262787757795707E-4 - expected 0
+
+
+test [0, 0]: got 0.36300353681918396 - expected 0
+test [0, 1]: got 0.7541071185099709 - expected 1
+test [1, 0]: got 0.7756087488210694 - expected 1
+test [1, 1]: got 0.18507516825908515 - expected 0
+
+
+test [0, 0]: got -7.168217800400077E-4 - expected 0
+test [0, 1]: got 1.0034317681054992 - expected 1
+test [1, 0]: got 1.0014653772022937 - expected 1
+test [1, 1]: got -0.0012823660216193522 - expected 0
+
+
+test [0, 0]: got -1.1774980470461143E-4 - expected 0
+test [0, 1]: got 1.0000126594380008 - expected 1
+test [1, 0]: got 0.9998445589259253 - expected 1
+test [1, 1]: got 2.1955770362687638E-4 - expected 0
+
+
+test [0, 0]: got -1.3357907846693953E-5 - expected 0
+test [0, 1]: got 0.9998741214543944 - expected 1
+test [1, 0]: got 1.0001585667525554 - expected 1
+test [1, 1]: got -3.395240332188659E-5 - expected 0
+
+
+test [0, 0]: got -1.0145131810711944E-4 - expected 0
+test [0, 1]: got 0.9999900100223652 - expected 1
+test [1, 0]: got 0.99998313702653 - expected 1
+test [1, 1]: got 1.2284853814642505E-4 - expected 0
+
+
+test [0, 0]: got 2.3511740050423044E-4 - expected 0
+test [0, 1]: got 1.0000252355143708 - expected 1
+test [1, 0]: got 0.9998404726904289 - expected 1
+test [1, 1]: got -3.851306364124202E-5 - expected 0
+
+
+test [0, 0]: got -0.024476662002348368 - expected 0
+test [0, 1]: got 1.01266958398434 - expected 1
+test [1, 0]: got 0.9910465553592598 - expected 1
+test [1, 1]: got 0.029811743962251076 - expected 0
+
+
+test [0, 0]: got -2.439069159466123E-4 - expected 0
+test [0, 1]: got 0.9990305261259668 - expected 1
+test [1, 0]: got 1.000138828753994 - expected 1
+test [1, 1]: got -5.0428423398623384E-5 - expected 0
+
+
+test [0, 0]: got -0.0012409427354650587 - expected 0
+test [0, 1]: got 1.0038318521594143 - expected 1
+test [1, 0]: got 0.9934925887657713 - expected 1
+test [1, 1]: got -0.004378654722164768 - expected 0
+
+
+test [0, 0]: got -2.933388326362262E-4 - expected 0
+test [0, 1]: got 0.9995742693713703 - expected 1
+test [1, 0]: got 1.000390921542941 - expected 1
+test [1, 1]: got 1.7353970216942016E-4 - expected 0
+
+
+test [0, 0]: got 8.624355836148352E-6 - expected 0
+test [0, 1]: got 0.999913381928946 - expected 1
+test [1, 0]: got 0.999971474360011 - expected 1
+test [1, 1]: got 5.361274815833539E-5 - expected 0
+
+
+test [0, 0]: got -7.123135202399298E-4 - expected 0
+test [0, 1]: got 0.9998883434097959 - expected 1
+test [1, 0]: got 1.0001051803657324 - expected 1
+test [1, 1]: got 6.2537096916504E-6 - expected 0
+
+
+test [0, 0]: got -3.337131678407719E-6 - expected 0
+test [0, 1]: got 1.000027830339519 - expected 1
+test [1, 0]: got 0.9999708729362681 - expected 1
+test [1, 1]: got -2.732117929427451E-4 - expected 0
+
+
+test [0, 0]: got 0.0031261410239055328 - expected 0
+test [0, 1]: got 1.0003396157923936 - expected 1
+test [1, 0]: got 1.0050263924318537 - expected 1
+test [1, 1]: got 0.0019439094913243186 - expected 0
+
+
+test [0, 0]: got -1.8530413665415052E-4 - expected 0
+test [0, 1]: got 0.9992158549111996 - expected 1
+test [1, 0]: got 0.9999496784125687 - expected 1
+test [1, 1]: got 1.7236592956618169E-4 - expected 0
+
+
+test [0, 0]: got -0.015533908073746803 - expected 0
+test [0, 1]: got 1.0129974458263336 - expected 1
+test [1, 0]: got 1.0143103700827982 - expected 1
+test [1, 1]: got 0.01737033524511282 - expected 0
+
+
+test [0, 0]: got 4.993735688813769E-4 - expected 0
+test [0, 1]: got 1.000100498226522 - expected 1
+test [1, 0]: got 1.0003538777835435 - expected 1
+test [1, 1]: got -1.9034304548178754E-4 - expected 0
+
+
+test [0, 0]: got 0.043404473349580974 - expected 0
+test [0, 1]: got 0.8848935655613845 - expected 1
+test [1, 0]: got 0.8123987138323571 - expected 1
+test [1, 1]: got 0.2882860006297342 - expected 0
+
+
+test [0, 0]: got -3.5881154840473536E-5 - expected 0
+test [0, 1]: got 1.0000265583612666 - expected 1
+test [1, 0]: got 1.0000269912138327 - expected 1
+test [1, 1]: got 1.2162019196918991E-4 - expected 0
+
+
+test [0, 0]: got -1.1091464896732448E-4 - expected 0
+test [0, 1]: got 1.0000001070905913 - expected 1
+test [1, 0]: got 0.9999561329478959 - expected 1
+test [1, 1]: got -4.738757822584944E-5 - expected 0
+
+
+test [0, 0]: got 0.0033457046775053623 - expected 0
+test [0, 1]: got 0.9966566828865829 - expected 1
+test [1, 0]: got 1.004263788654915 - expected 1
+test [1, 1]: got 8.523425318120725E-4 - expected 0
+
+
+test [0, 0]: got -0.0029274615163562487 - expected 0
+test [0, 1]: got 1.0113745919793622 - expected 1
+test [1, 0]: got 0.9986941333086363 - expected 1
+test [1, 1]: got 0.0028808298864799672 - expected 0
+
+
+test [0, 0]: got -7.858413739163726E-5 - expected 0
+test [0, 1]: got 0.9999787711968755 - expected 1
+test [1, 0]: got 0.999989243186981 - expected 1
+test [1, 1]: got 3.147753154252725E-5 - expected 0
+
+
+test [0, 0]: got -3.8014412457293856E-5 - expected 0
+test [0, 1]: got 1.000153047465124 - expected 1
+test [1, 0]: got 1.0000564102866532 - expected 1
+test [1, 1]: got -1.0934398210158194E-4 - expected 0
+
+
+test [0, 0]: got 3.0050557392455324E-5 - expected 0
+test [0, 1]: got 1.000180466301794 - expected 1
+test [1, 0]: got 0.9999292535499748 - expected 1
+test [1, 1]: got -3.3614329598989217E-4 - expected 0
+
+
+test [0, 0]: got -3.874076286743411E-4 - expected 0
+test [0, 1]: got 1.001097873034544 - expected 1
+test [1, 0]: got 0.9991655422643344 - expected 1
+test [1, 1]: got 3.226246767585525E-4 - expected 0
+
+
+test [0, 0]: got 0.0018255005329170931 - expected 0
+test [0, 1]: got 1.0073014193925423 - expected 1
+test [1, 0]: got 0.9941660936948549 - expected 1
+test [1, 1]: got 0.029841726368645197 - expected 0
+
+
+test [0, 0]: got 3.613041016820723E-5 - expected 0
+test [0, 1]: got 0.9690938191942308 - expected 1
+test [1, 0]: got 0.9115674901171849 - expected 1
+test [1, 1]: got -0.02111820964348464 - expected 0
+
+
+test [0, 0]: got -0.010545130810416081 - expected 0
+test [0, 1]: got 1.0012688263089522 - expected 1
+test [1, 0]: got 1.0095681917919206 - expected 1
+test [1, 1]: got -0.002611457264828837 - expected 0
+
+
+test [0, 0]: got 0.0012276003518870038 - expected 0
+test [0, 1]: got 1.0003831328173332 - expected 1
+test [1, 0]: got 1.0001037089138192 - expected 1
+test [1, 1]: got -4.591166139637781E-5 - expected 0
+
+
+test [0, 0]: got -0.003933607001059318 - expected 0
+test [0, 1]: got 1.0018856412216945 - expected 1
+test [1, 0]: got 0.9980916774812517 - expected 1
+test [1, 1]: got -0.004800422212517816 - expected 0
+
+
+test [0, 0]: got -7.094627526250102E-5 - expected 0
+test [0, 1]: got 0.9993202757552833 - expected 1
+test [1, 0]: got 0.9999411805255893 - expected 1
+test [1, 1]: got 8.105551845913918E-4 - expected 0
+
+
+test [0, 0]: got 4.689743955432876E-5 - expected 0
+test [0, 1]: got 0.9999993668175643 - expected 1
+test [1, 0]: got 0.9999780618737816 - expected 1
+test [1, 1]: got 3.717248615188462E-5 - expected 0
+
+
+test [0, 0]: got -0.003061649961714023 - expected 0
+test [0, 1]: got 1.0002974845352826 - expected 1
+test [1, 0]: got 0.9995565714537812 - expected 1
+test [1, 1]: got -9.839750528477834E-4 - expected 0
+
+
+test [0, 0]: got 0.2550751433245573 - expected 0
+test [0, 1]: got 0.7657023084095823 - expected 1
+test [1, 0]: got 1.0610085815358588 - expected 1
+test [1, 1]: got 0.4596800199821369 - expected 0
+
+
+test [0, 0]: got -8.061214685648743E-4 - expected 0
+test [0, 1]: got 1.0003759997265083 - expected 1
+test [1, 0]: got 1.0003549009615271 - expected 1
+test [1, 1]: got 1.7002240679942805E-4 - expected 0
+
+
+test [0, 0]: got 3.0142368343075154E-5 - expected 0
+test [0, 1]: got 1.000223475960029 - expected 1
+test [1, 0]: got 0.9999557554214747 - expected 1
+test [1, 1]: got 1.58438371933578E-5 - expected 0
+
+
+test [0, 0]: got -2.588294849348166E-4 - expected 0
+test [0, 1]: got 0.9995402112793174 - expected 1
+test [1, 0]: got 1.000245285225041 - expected 1
+test [1, 1]: got -0.0012297750575915312 - expected 0
+
+
+test [0, 0]: got 5.021926720590324E-4 - expected 0
+test [0, 1]: got 1.000290956970856 - expected 1
+test [1, 0]: got 0.9999843397356661 - expected 1
+test [1, 1]: got 9.132185852974784E-4 - expected 0
+
+
+test [0, 0]: got 0.27318685114968744 - expected 0
+test [0, 1]: got 1.0409059957473816 - expected 1
+test [1, 0]: got 0.647269239516159 - expected 1
+test [1, 1]: got 0.18943955277481048 - expected 0
+
+
+test [0, 0]: got -1.17088730039083E-4 - expected 0
+test [0, 1]: got 1.0000336369743517 - expected 1
+test [1, 0]: got 0.9998403807110084 - expected 1
+test [1, 1]: got 5.251501925487151E-5 - expected 0
+
+
+test [0, 0]: got -1.4962161725780992E-4 - expected 0
+test [0, 1]: got 1.0000920005277756 - expected 1
+test [1, 0]: got 0.9998717948681456 - expected 1
+test [1, 1]: got -3.218377106316145E-4 - expected 0
+
+
+test [0, 0]: got 6.035938890409888E-4 - expected 0
+test [0, 1]: got 1.002811729837635 - expected 1
+test [1, 0]: got 0.9984357630146979 - expected 1
+test [1, 1]: got 0.0012831671996451216 - expected 0
+
+
+test [0, 0]: got 0.16148956051052585 - expected 0
+test [0, 1]: got 1.025658836646166 - expected 1
+test [1, 0]: got 0.9955840912918452 - expected 1
+test [1, 1]: got 0.001070804906158282 - expected 0
+
+
+test [0, 0]: got -6.979189275915093E-6 - expected 0
+test [0, 1]: got 1.0000265258493473 - expected 1
+test [1, 0]: got 1.0000575321348792 - expected 1
+test [1, 1]: got 1.054989310630347E-4 - expected 0
+
+
+test [0, 0]: got -1.0491878210451902E-5 - expected 0
+test [0, 1]: got 0.9999102850700051 - expected 1
+test [1, 0]: got 0.999966771242833 - expected 1
+test [1, 1]: got -4.97125317339836E-5 - expected 0
+
+
+test [0, 0]: got -1.5333365026286294E-5 - expected 0
+test [0, 1]: got 0.9999802013477266 - expected 1
+test [1, 0]: got 0.9999877129623924 - expected 1
+test [1, 1]: got -2.927521284121215E-5 - expected 0
+
+
+test [0, 0]: got 0.17861048414697936 - expected 0
+test [0, 1]: got 0.6376329389073201 - expected 1
+test [1, 0]: got 0.6978385447416542 - expected 1
+test [1, 1]: got 0.7027315148934655 - expected 0
+
+
+test [0, 0]: got 0.21098761747325528 - expected 0
+test [0, 1]: got 0.870265058564277 - expected 1
+test [1, 0]: got 0.7964389753670843 - expected 1
+test [1, 1]: got 0.3575494991119041 - expected 0
+
+
+test [0, 0]: got 5.471774376166541E-4 - expected 0
+test [0, 1]: got 0.9853294391559556 - expected 1
+test [1, 0]: got 0.9999246001034378 - expected 1
+test [1, 1]: got 0.0013308730725287883 - expected 0
+
+
+test [0, 0]: got 1.7747785472931044E-4 - expected 0
+test [0, 1]: got 0.999942494617159 - expected 1
+test [1, 0]: got 0.9998658978846238 - expected 1
+test [1, 1]: got -4.70252561965423E-6 - expected 0
+
+
+test [0, 0]: got 0.12536974777028617 - expected 0
+test [0, 1]: got 0.8855420203586076 - expected 1
+test [1, 0]: got 0.936165259226562 - expected 1
+test [1, 1]: got 0.12488207726985003 - expected 0
+
+
+test [0, 0]: got -0.018042526467850144 - expected 0
+test [0, 1]: got 0.9929573852794289 - expected 1
+test [1, 0]: got 1.0247669676989843 - expected 1
+test [1, 1]: got 0.025082947547342097 - expected 0
+
+
+test [0, 0]: got -0.07882628965487673 - expected 0
+test [0, 1]: got 0.7758421131835876 - expected 1
+test [1, 0]: got 0.9557719498400665 - expected 1
+test [1, 1]: got 0.24269357449829088 - expected 0
+
+
+test [0, 0]: got -0.0073560339933316345 - expected 0
+test [0, 1]: got 0.9772879336953447 - expected 1
+test [1, 0]: got 0.8949600744925403 - expected 1
+test [1, 1]: got -0.005030337216515815 - expected 0
+
+
+test [0, 0]: got -0.05277994739760802 - expected 0
+test [0, 1]: got 1.0408722011639204 - expected 1
+test [1, 0]: got 0.9654350955946572 - expected 1
+test [1, 1]: got 0.3772423022615162 - expected 0
+
+
+test [0, 0]: got 0.007445252442901618 - expected 0
+test [0, 1]: got 0.9897357235664036 - expected 1
+test [1, 0]: got 0.9674027325280241 - expected 1
+test [1, 1]: got 0.0022992869695468293 - expected 0
+
+
+test [0, 0]: got 0.010447306765902636 - expected 0
+test [0, 1]: got 0.9942424250356431 - expected 1
+test [1, 0]: got 0.9892030677256378 - expected 1
+test [1, 1]: got 0.0015319558139745004 - expected 0
+
+
+test [0, 0]: got 0.10834135451690594 - expected 0
+test [0, 1]: got 0.9991781330723778 - expected 1
+test [1, 0]: got 0.6590299947319139 - expected 1
+test [1, 1]: got 0.3047544129437234 - expected 0
+
+
+test [0, 0]: got -1.3891646496456316E-4 - expected 0
+test [0, 1]: got 0.9999072254348499 - expected 1
+test [1, 0]: got 0.9999830026889794 - expected 1
+test [1, 1]: got -5.557732745377526E-5 - expected 0
+
+
+test [0, 0]: got 0.07866419340142129 - expected 0
+test [0, 1]: got 1.072677269485641 - expected 1
+test [1, 0]: got 0.9675963044723682 - expected 1
+test [1, 1]: got 0.010827949645012465 - expected 0
+
+
+test [0, 0]: got 4.918558452718311E-4 - expected 0
+test [0, 1]: got 0.9998842618846252 - expected 1
+test [1, 0]: got 1.000263087550884 - expected 1
+test [1, 1]: got -2.0890057353541158E-4 - expected 0
+
+
+test [0, 0]: got 0.30303162171698406 - expected 0
+test [0, 1]: got 0.58577112961548 - expected 1
+test [1, 0]: got 0.564274157301089 - expected 1
+test [1, 1]: got 0.6288748722564771 - expected 0
+
+
+test [0, 0]: got 0.006346013363241287 - expected 0
+test [0, 1]: got 0.967225862312252 - expected 1
+test [1, 0]: got 0.9940672670218502 - expected 1
+test [1, 1]: got -0.02237597979889351 - expected 0
+
+
+test [0, 0]: got -0.018563243463760006 - expected 0
+test [0, 1]: got 0.970902027067205 - expected 1
+test [1, 0]: got 1.0019852229552804 - expected 1
+test [1, 1]: got 0.037888988045900795 - expected 0
+
+
+test [0, 0]: got 0.017779240976569965 - expected 0
+test [0, 1]: got 1.002947179849439 - expected 1
+test [1, 0]: got 1.0261674840737107 - expected 1
+test [1, 1]: got 0.01130737789251414 - expected 0
+
+
+test [0, 0]: got -0.009614709860059502 - expected 0
+test [0, 1]: got 0.9998874561705556 - expected 1
+test [1, 0]: got 1.0000786588077772 - expected 1
+test [1, 1]: got 0.0015420558268731148 - expected 0
+
+
+test [0, 0]: got 3.7297466657683896E-5 - expected 0
+test [0, 1]: got 0.9999762233205947 - expected 1
+test [1, 0]: got 0.9999378110124719 - expected 1
+test [1, 1]: got -1.4204921956126326E-4 - expected 0
+
+
+test [0, 0]: got -0.0056159897956481394 - expected 0
+test [0, 1]: got 0.9606284171601125 - expected 1
+test [1, 0]: got 1.0107381136472584 - expected 1
+test [1, 1]: got 0.02461858736806151 - expected 0
+
+
+test [0, 0]: got -4.3643664546982874E-5 - expected 0
+test [0, 1]: got 0.9999559850265307 - expected 1
+test [1, 0]: got 1.000056873035457 - expected 1
+test [1, 1]: got -1.2005459208280604E-5 - expected 0
+
+
+test [0, 0]: got 0.08876438719064669 - expected 0
+test [0, 1]: got 1.1043029647146643 - expected 1
+test [1, 0]: got 1.064089472782499 - expected 1
+test [1, 1]: got 0.09072229196000843 - expected 0
+
+
+test [0, 0]: got 0.012842309516656717 - expected 0
+test [0, 1]: got 1.0068830068801198 - expected 1
+test [1, 0]: got 0.999890813714136 - expected 1
+test [1, 1]: got 0.031357018873996945 - expected 0
+
+
+test [0, 0]: got -1.5947128083557138E-4 - expected 0
+test [0, 1]: got 1.0004687002454689 - expected 1
+test [1, 0]: got 1.0004175425305735 - expected 1
+test [1, 1]: got 8.969794997759697E-4 - expected 0
+
+
+test [0, 0]: got 0.23026303243064847 - expected 0
+test [0, 1]: got 0.991342295438594 - expected 1
+test [1, 0]: got 0.7185200129789077 - expected 1
+test [1, 1]: got 0.28797658868849296 - expected 0
+
+
+test [0, 0]: got -2.3254255622153636E-4 - expected 0
+test [0, 1]: got 1.0049949245602907 - expected 1
+test [1, 0]: got 0.9998461300545157 - expected 1
+test [1, 1]: got -0.0012632624571712347 - expected 0
+
+
+test [0, 0]: got 0.002332782181967411 - expected 0
+test [0, 1]: got 0.9936254977647144 - expected 1
+test [1, 0]: got 0.9948396752670696 - expected 1
+test [1, 1]: got -0.007813333937047168 - expected 0
+
+
+test [0, 0]: got 0.019232813092372923 - expected 0
+test [0, 1]: got 1.0032504670608098 - expected 1
+test [1, 0]: got 1.0003775707686342 - expected 1
+test [1, 1]: got 0.01345414202826449 - expected 0
+
+
+test [0, 0]: got 3.386009160880332E-4 - expected 0
+test [0, 1]: got 0.9994702137898845 - expected 1
+test [1, 0]: got 1.000562669302125 - expected 1
+test [1, 1]: got 1.6846952629877288E-4 - expected 0
+
+
+test [0, 0]: got 0.047232482767379874 - expected 0
+test [0, 1]: got 0.9654295689745731 - expected 1
+test [1, 0]: got 0.9610682915587285 - expected 1
+test [1, 1]: got -0.007699554818066751 - expected 0
+
+
+test [0, 0]: got 0.008081330166741037 - expected 0
+test [0, 1]: got 0.9922647486243962 - expected 1
+test [1, 0]: got 0.978526418696462 - expected 1
+test [1, 1]: got 0.005888907235880356 - expected 0
+
+
+test [0, 0]: got -8.129616249353318E-5 - expected 0
+test [0, 1]: got 1.0001824453847692 - expected 1
+test [1, 0]: got 0.9998378056873157 - expected 1
+test [1, 1]: got -2.0226479938509432E-5 - expected 0
+
+
+test [0, 0]: got 1.079572026634972E-4 - expected 0
+test [0, 1]: got 0.9998518715459108 - expected 1
+test [1, 0]: got 1.0000992425613382 - expected 1
+test [1, 1]: got -1.4471935414998166E-4 - expected 0
+
+
+test [0, 0]: got -3.733052442742024E-5 - expected 0
+test [0, 1]: got 0.9995714940019812 - expected 1
+test [1, 0]: got 1.0002796068992414 - expected 1
+test [1, 1]: got 9.567491085639077E-5 - expected 0
+
+
+test [0, 0]: got -0.00988846631284715 - expected 0
+test [0, 1]: got 0.9841325495511932 - expected 1
+test [1, 0]: got 1.0375241910276536 - expected 1
+test [1, 1]: got 0.06916324630466221 - expected 0
+
+
+test [0, 0]: got 0.2681782626468824 - expected 0
+test [0, 1]: got 0.8581790600360626 - expected 1
+test [1, 0]: got 0.8463331774136523 - expected 1
+test [1, 1]: got 0.2510350734088247 - expected 0
+
+
+test [0, 0]: got -3.807337769870349E-5 - expected 0
+test [0, 1]: got 0.9999531002965277 - expected 1
+test [1, 0]: got 0.9998871280755227 - expected 1
+test [1, 1]: got 3.977906632744374E-5 - expected 0
+
+
+test [0, 0]: got -0.0039380940183898205 - expected 0
+test [0, 1]: got 0.955536808819787 - expected 1
+test [1, 0]: got 0.9614429919414592 - expected 1
+test [1, 1]: got -0.0017228032029168033 - expected 0
+
+
+test [0, 0]: got 0.0011974683315471232 - expected 0
+test [0, 1]: got 0.9966321855539485 - expected 1
+test [1, 0]: got 0.9983881622441625 - expected 1
+test [1, 1]: got -0.0015794515119590732 - expected 0
+
+
+test [0, 0]: got -8.595858582796032E-4 - expected 0
+test [0, 1]: got 1.0004734596495162 - expected 1
+test [1, 0]: got 1.0036350705576569 - expected 1
+test [1, 1]: got 0.002585957290617044 - expected 0
+
+
+test [0, 0]: got -9.477672484388498E-5 - expected 0
+test [0, 1]: got 1.0000202434938616 - expected 1
+test [1, 0]: got 1.000009590738184 - expected 1
+test [1, 1]: got -6.35925802067918E-5 - expected 0
+
+
+test [0, 0]: got 4.578194346037401E-5 - expected 0
+test [0, 1]: got 1.0000711280891528 - expected 1
+test [1, 0]: got 0.9998791242929386 - expected 1
+test [1, 1]: got 2.3382580241206735E-4 - expected 0
+
+
+test [0, 0]: got 1.5815673495682642E-5 - expected 0
+test [0, 1]: got 0.9999814509007999 - expected 1
+test [1, 0]: got 0.9999872620811677 - expected 1
+test [1, 1]: got 1.008114286942946E-4 - expected 0
+
+
+test [0, 0]: got 0.2290176680790113 - expected 0
+test [0, 1]: got 0.8480920761040996 - expected 1
+test [1, 0]: got 0.7150406261303317 - expected 1
+test [1, 1]: got 0.388615018692135 - expected 0
+
+
+test [0, 0]: got 3.491095386070705E-4 - expected 0
+test [0, 1]: got 1.000876799863029 - expected 1
+test [1, 0]: got 0.9995232545688751 - expected 1
+test [1, 1]: got 6.736497027932005E-4 - expected 0
+
+
+test [0, 0]: got 0.07230012336119855 - expected 0
+test [0, 1]: got 0.9811001817773435 - expected 1
+test [1, 0]: got 0.9999242476554413 - expected 1
+test [1, 1]: got 0.11367714362846719 - expected 0
+
+
+test [0, 0]: got -2.4137010024543465E-4 - expected 0
+test [0, 1]: got 1.000146539196888 - expected 1
+test [1, 0]: got 1.000373249581201 - expected 1
+test [1, 1]: got -7.834112743599492E-5 - expected 0
+
+
+test [0, 0]: got 0.5215625256595937 - expected 0
+test [0, 1]: got 0.9749000737030222 - expected 1
+test [1, 0]: got 0.886752317622744 - expected 1
+test [1, 1]: got 0.567874979307672 - expected 0
+
+
+test [0, 0]: got -0.003327654882134821 - expected 0
+test [0, 1]: got 1.0005229061874001 - expected 1
+test [1, 0]: got 1.000588901008163 - expected 1
+test [1, 1]: got -0.0012301403484917504 - expected 0
+
+
+test [0, 0]: got 6.361843423643293E-5 - expected 0
+test [0, 1]: got 1.00007124662947 - expected 1
+test [1, 0]: got 0.9997188078635068 - expected 1
+test [1, 1]: got 3.510798959174867E-4 - expected 0
+
+
+test [0, 0]: got -0.0013167438287191545 - expected 0
+test [0, 1]: got 0.993024787440032 - expected 1
+test [1, 0]: got 0.9726126169182948 - expected 1
+test [1, 1]: got 0.0031273774293369416 - expected 0
+
+
+test [0, 0]: got 3.816092202887922E-6 - expected 0
+test [0, 1]: got 0.9761179303044029 - expected 1
+test [1, 0]: got 0.9971414462451043 - expected 1
+test [1, 1]: got 0.0030398744046953724 - expected 0
+
+
+test [0, 0]: got 2.975692065205343E-4 - expected 0
+test [0, 1]: got 1.005091526681536 - expected 1
+test [1, 0]: got 0.9989357139214912 - expected 1
+test [1, 1]: got 0.0011318920458269627 - expected 0
+
+
+test [0, 0]: got 3.686308465968707E-5 - expected 0
+test [0, 1]: got 0.999963275306139 - expected 1
+test [1, 0]: got 0.999990319382261 - expected 1
+test [1, 1]: got -1.937150165699092E-5 - expected 0
+
+
+test [0, 0]: got 8.062325631186839E-4 - expected 0
+test [0, 1]: got 1.0001235030777882 - expected 1
+test [1, 0]: got 1.000118297182305 - expected 1
+test [1, 1]: got -4.797110530381742E-4 - expected 0
+
+
+test [0, 0]: got -5.418931045010969E-5 - expected 0
+test [0, 1]: got 1.0000386364568343 - expected 1
+test [1, 0]: got 0.99996309049954 - expected 1
+test [1, 1]: got 4.35075672151064E-5 - expected 0
+
+
+test [0, 0]: got -0.019793544452615996 - expected 0
+test [0, 1]: got 0.9890608592271286 - expected 1
+test [1, 0]: got 0.9912442685360581 - expected 1
+test [1, 1]: got -0.010723498648737936 - expected 0
+
+
+test [0, 0]: got -0.008182509155297077 - expected 0
+test [0, 1]: got 1.0562721513209832 - expected 1
+test [1, 0]: got 1.0675862847533624 - expected 1
+test [1, 1]: got 0.10852939027315125 - expected 0
+
+
+test [0, 0]: got -1.7513087017299866E-5 - expected 0
+test [0, 1]: got 1.0001293713211517 - expected 1
+test [1, 0]: got 1.0000046648495324 - expected 1
+test [1, 1]: got 4.6397094320738824E-5 - expected 0
+
+
+test [0, 0]: got 2.788192373364036E-5 - expected 0
+test [0, 1]: got 0.9998892622103815 - expected 1
+test [1, 0]: got 1.000020531418453 - expected 1
+test [1, 1]: got -8.594734192247239E-5 - expected 0
+
+
+test [0, 0]: got 0.22324411586518345 - expected 0
+test [0, 1]: got 0.9107118285941852 - expected 1
+test [1, 0]: got 0.9505705055359728 - expected 1
+test [1, 1]: got 0.2263127783923511 - expected 0
+
+
+test [0, 0]: got -1.1760313991494972E-4 - expected 0
+test [0, 1]: got 0.9998521939981191 - expected 1
+test [1, 0]: got 1.0000005792116524 - expected 1
+test [1, 1]: got -2.034118779371888E-4 - expected 0
+
+
+test [0, 0]: got -0.0015396430126400466 - expected 0
+test [0, 1]: got 1.0004574582138208 - expected 1
+test [1, 0]: got 1.0009101268015308 - expected 1
+test [1, 1]: got -0.0036373485987049132 - expected 0
+
+
+test [0, 0]: got -0.002060408248172829 - expected 0
+test [0, 1]: got 1.0023151589380106 - expected 1
+test [1, 0]: got 1.0010717673188876 - expected 1
+test [1, 1]: got 0.003088343565793017 - expected 0
+
+
+test [0, 0]: got 0.0010043637373346528 - expected 0
+test [0, 1]: got 0.99950062540933 - expected 1
+test [1, 0]: got 1.000006043521423 - expected 1
+test [1, 1]: got 0.001036859600698839 - expected 0
+
+
+test [0, 0]: got -3.3788592476987483E-5 - expected 0
+test [0, 1]: got 1.0000017759934214 - expected 1
+test [1, 0]: got 0.999983498751094 - expected 1
+test [1, 1]: got 3.268212178210439E-5 - expected 0
+
+
+test [0, 0]: got -3.6394433585674665E-6 - expected 0
+test [0, 1]: got 1.000024690184365 - expected 1
+test [1, 0]: got 0.9999689810693483 - expected 1
+test [1, 1]: got -1.1769411437382443E-5 - expected 0
+
+
+test [0, 0]: got 1.7367905433079978E-5 - expected 0
+test [0, 1]: got 0.9999933489986399 - expected 1
+test [1, 0]: got 0.9999374089161737 - expected 1
+test [1, 1]: got 8.284112739728039E-5 - expected 0
+
+
+test [0, 0]: got 0.49295889231625756 - expected 0
+test [0, 1]: got 0.5013854653345071 - expected 1
+test [1, 0]: got 0.5043696244399339 - expected 1
+test [1, 1]: got 0.4311905783354597 - expected 0
+
+
+test [0, 0]: got -6.096580793368955E-4 - expected 0
+test [0, 1]: got 1.0009455252627626 - expected 1
+test [1, 0]: got 0.9987614122776038 - expected 1
+test [1, 1]: got -9.143016586752217E-4 - expected 0
+
+
+test [0, 0]: got -4.812065477498295E-6 - expected 0
+test [0, 1]: got 1.000058230957659 - expected 1
+test [1, 0]: got 0.9999986163498349 - expected 1
+test [1, 1]: got -2.803847436828183E-5 - expected 0
+
+
+test [0, 0]: got -0.00902829820230297 - expected 0
+test [0, 1]: got 0.9952981568136937 - expected 1
+test [1, 0]: got 0.9936566527666397 - expected 1
+test [1, 1]: got 0.0026226071554095454 - expected 0
+
+
+test [0, 0]: got 0.0060661510989834765 - expected 0
+test [0, 1]: got 1.001273620611168 - expected 1
+test [1, 0]: got 0.9977777894104072 - expected 1
+test [1, 1]: got -7.827274562709277E-4 - expected 0
+
+
+test [0, 0]: got 8.880873466897631E-5 - expected 0
+test [0, 1]: got 1.0000162569493456 - expected 1
+test [1, 0]: got 0.9998735686197583 - expected 1
+test [1, 1]: got -3.692172740839143E-5 - expected 0
+
+
+test [0, 0]: got 5.375858087428714E-4 - expected 0
+test [0, 1]: got 0.9996829101157716 - expected 1
+test [1, 0]: got 0.9999991639643577 - expected 1
+test [1, 1]: got 1.0046725399709411E-4 - expected 0
+
+
+test [0, 0]: got 3.3601270680916947E-4 - expected 0
+test [0, 1]: got 0.9998304296423468 - expected 1
+test [1, 0]: got 0.9999538568369916 - expected 1
+test [1, 1]: got -3.6849894983186776E-5 - expected 0
+
+
+test [0, 0]: got -7.292812241103952E-5 - expected 0
+test [0, 1]: got 1.0003866119587819 - expected 1
+test [1, 0]: got 1.0006997033333833 - expected 1
+test [1, 1]: got -1.2467820490386083E-4 - expected 0
+
+
+test [0, 0]: got -0.09054095302680254 - expected 0
+test [0, 1]: got 1.0016430563675038 - expected 1
+test [1, 0]: got 1.080325394494248 - expected 1
+test [1, 1]: got 0.5958095376634979 - expected 0
+
+
+test [0, 0]: got -2.0644391561952524E-4 - expected 0
+test [0, 1]: got 0.9992886122379452 - expected 1
+test [1, 0]: got 0.9998138687736544 - expected 1
+test [1, 1]: got -3.458170315763301E-4 - expected 0
+
+
+test [0, 0]: got -0.005602947920435607 - expected 0
+test [0, 1]: got 1.0114103457470718 - expected 1
+test [1, 0]: got 1.0176192326838758 - expected 1
+test [1, 1]: got 0.010962349170097488 - expected 0
+
+
+test [0, 0]: got 0.31755884488937924 - expected 0
+test [0, 1]: got 0.7988708123937719 - expected 1
+test [1, 0]: got 0.7768581660038506 - expected 1
+test [1, 1]: got 0.27840885188548053 - expected 0
+
+
+test [0, 0]: got -2.0175849455583705E-4 - expected 0
+test [0, 1]: got 0.9981584828644988 - expected 1
+test [1, 0]: got 0.9971539503069854 - expected 1
+test [1, 1]: got -0.008213669139480018 - expected 0
+
+
+test [0, 0]: got 5.120524174540156E-4 - expected 0
+test [0, 1]: got 1.000404606399451 - expected 1
+test [1, 0]: got 1.0001713119342956 - expected 1
+test [1, 1]: got 5.370580827352529E-4 - expected 0
+
+
+test [0, 0]: got 2.9291806382323845E-5 - expected 0
+test [0, 1]: got 0.9999990774948796 - expected 1
+test [1, 0]: got 0.9999736051467466 - expected 1
+test [1, 1]: got 5.370788984054159E-5 - expected 0
+
+
+test [0, 0]: got 8.374068506248472E-5 - expected 0
+test [0, 1]: got 0.9998821380796793 - expected 1
+test [1, 0]: got 1.000430642963815 - expected 1
+test [1, 1]: got 1.5923320194664164E-4 - expected 0
+
+
+test [0, 0]: got 0.0024285314936496787 - expected 0
+test [0, 1]: got 0.978201460510379 - expected 1
+test [1, 0]: got 1.0163841429421878 - expected 1
+test [1, 1]: got 0.09019490101965072 - expected 0
+
+
+test [0, 0]: got 0.010389522435384133 - expected 0
+test [0, 1]: got 1.0049075475851807 - expected 1
+test [1, 0]: got 0.9921703663067469 - expected 1
+test [1, 1]: got -0.002278384994818428 - expected 0
+
+
+test [0, 0]: got -2.108328364017198E-6 - expected 0
+test [0, 1]: got 0.9999112219385767 - expected 1
+test [1, 0]: got 0.9999601691060139 - expected 1
+test [1, 1]: got -1.3005719214215922E-5 - expected 0
+
+
+test [0, 0]: got 7.525913094771813E-5 - expected 0
+test [0, 1]: got 1.0000448845953125 - expected 1
+test [1, 0]: got 1.0000237288488236 - expected 1
+test [1, 1]: got 3.772554492100649E-5 - expected 0
+
+
+test [0, 0]: got -2.8601515441603956E-5 - expected 0
+test [0, 1]: got 0.9998992451683849 - expected 1
+test [1, 0]: got 1.0000210001327405 - expected 1
+test [1, 1]: got 1.7406432267791892E-4 - expected 0
+
+
