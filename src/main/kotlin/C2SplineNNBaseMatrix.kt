@@ -8,9 +8,9 @@ class C2SplineNNBaseMatrix(
         private val splineInitFunction: ActivationFunction = SimpleActivationFunction.TANH,
         private val splineInitProbability: Double = 0.1,
         private val splineInitNoise: Double = 0.0,
-        private val samplingStep: Double = 0.1,
-        private val limit: Double = 2.0,
-        private val update: SplineUpdate = SplineUpdate.UPDATE_SINGLE
+        private val samplingStep: Double = 1.5,
+        private val limit: Double = 30.0,
+        private val update: SplineUpdate = SplineUpdate.UPDATE_ALL
 ): StandardNN(hiddenCounts = hiddenCounts) {
 
     private var controlPoints: Matrix<Double> = mat[0]
@@ -92,7 +92,7 @@ class C2SplineNNBaseMatrix(
         var u = passForwardInfo.first.last()
         var uIndex = passForwardInfo.second.last()
         var uVector = passForwardInfo.third.last().T
-        var baseMatrixes = baseMatrixes(uIndex)
+        var baseMatrixes = baseMatrixes(uIndex, false)
 
         var grads = -2 * copyColumnVectorHorizontally(error.T.toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col}
         gradsQ[gradsQ.lastIndex] = reshapeSplineGradients(outputsCount * inputs.numRows(), grads, uIndex)
@@ -106,7 +106,7 @@ class C2SplineNNBaseMatrix(
             u = passForwardInfo.first[hiddenLayerIndex]
             uIndex = passForwardInfo.second[hiddenLayerIndex]
             uVector = passForwardInfo.third[hiddenLayerIndex].T
-            baseMatrixes = baseMatrixes(uIndex)
+            baseMatrixes = baseMatrixes(uIndex, false)
 
             delta = (delta * weights[hiddenLayerIndex + 1].dropLastRow().T)
             grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col}
@@ -119,7 +119,7 @@ class C2SplineNNBaseMatrix(
         u = passForwardInfo.first.first()
         uIndex = passForwardInfo.second.first()
         uVector = passForwardInfo.third.first().T
-        baseMatrixes = baseMatrixes(uIndex)
+        baseMatrixes = baseMatrixes(uIndex, false)
 
         delta = (delta * weights[1].dropLastRow().T)
         grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col}
@@ -192,9 +192,11 @@ class C2SplineNNBaseMatrix(
         val qMat = computeQMat(uIndex, layer, preActFun.numRows())
 
         val baseMatrixes = baseMatrixes(uIndex)
-
+//        val baseMatrixes= listOf(SplineType.CATMULROM.baseMatrix)
         val v = if (u.count() > 1) {
-            val l = uVector.mapRowsToListIndexed { i, row -> dot(row * baseMatrixes[i], qMat.getRow(i)) }
+//            val l = uVector.mapRowsToListIndexed { i, row -> dot(row * baseMatrixes[i], qMat.getRow(i)) }
+            val l = mutableListOf<Double>()
+            (uVector * baseMatrixes[0]).eachRow { l.add(dot(it, qMat.getRow(l.size))) }
             create(l.asSequence().chunked(preActFun.numRows()).map { it.toDoubleArray() }.toList().toTypedArray()).T
         } else {
             uVector * baseMatrixes.first() * qMat.T
@@ -236,7 +238,7 @@ class C2SplineNNBaseMatrix(
         )).T
 
         val qMat = computeQMat(uIndex, layer, preActFun.numRows())
-        val baseMatrixes = baseMatrixes(uIndex)
+        val baseMatrixes = baseMatrixes(uIndex, true)
 
         val dx = if (u.count() > 1) {
             val l = du.mapRowsToListIndexed { i, row -> dot(row * baseMatrixes[i], qMat.getRow(i)) }
@@ -302,30 +304,99 @@ class C2SplineNNBaseMatrix(
         return f
     }
 
-    private fun baseMatrixes(uIndex: Matrix<Double>) = uIndex.mapRowsToList {
-        baseMatrixForAB(controlPoints[it[0].roundToInt()], controlPoints[it[0].roundToInt() + 1])
+    private fun baseMatrixes(uIndex: Matrix<Double>, derivate: Boolean = false) = uIndex.mapRowsToList {
+        if (derivate)
+            baseMatrixDerivativeForAB(controlPoints[it[0].roundToInt()], controlPoints[it[0].roundToInt() + 1])
+        else
+            baseMatrixForAB(controlPoints[it[0].roundToInt()], controlPoints[it[0].roundToInt() + 1])
     }
 
+//    fun baseMatrixForAB(a: Double, b: Double) = mat[
+//            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3),
+//            (a*(b pow 2) - 3*(b pow 3)) / ((a - b) pow 3),
+//            (-(a pow 2)*(b pow 2) + a*(b pow 3)) / ((a - b) pow 3),
+//            (-(a pow 3)*b + (a pow 2)*(b pow 2)) / ((a - b) pow 3)
+//        end
+//            (- 8*(a pow 2) + 2*a*b) / ((a - b) pow 3),
+//            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
+//            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
+//            ((a pow 3) + (a pow 2)*b  - 2*a*(b pow 2)) / ((a - b) pow 3)
+//        end
+//            (7*a - b) / ((a - b) pow 3),
+//            (a - 7*b) / ((a - b) pow 3),
+//            (-(a pow 2) - a*b + 2*(b pow 2)) / ((a - b) pow 3),
+//            (-2*(a pow 2) + a*b + (b pow 2)) / ((a - b) pow 3)
+//        end
+//            -2 / ((a - b) pow 3),
+//            2 / ((a - b) pow 3),
+//            1 / ((a - b) pow 2),
+//            1 / ((a - b) pow 2)
+//    ]
+
     fun baseMatrixForAB(a: Double, b: Double) = mat[
-            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3),
-            (a*(b pow 2) - 3*(b pow 3)) / ((a - b) pow 3),
+            (-(a pow 3)*b + (a pow 2)*(b pow 2)) / ((a - b) pow 3),
             (-(a pow 2)*(b pow 2) + a*(b pow 3)) / ((a - b) pow 3),
-            (-(a pow 3)*b + (a pow 2)*(b pow 2)) / ((a - b) pow 3)
-        end
-            (- 8*(a pow 2) + 2*a*b) / ((a - b) pow 3),
-            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
+            (a*(b pow 2) - 3*(b pow 3)) / ((a - b) pow 3),
+            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3)
+         end
+            ((a pow 3) + (a pow 2)*b  - 2*a*(b pow 2)) / ((a - b) pow 3),
             (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
-            ((a pow 3) + (a pow 2)*b  - 2*a*(b pow 2)) / ((a - b) pow 3)
-        end
-            (7*a - b) / ((a - b) pow 3),
-            (a - 7*b) / ((a - b) pow 3),
+            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
+            (- 8*(a pow 2) + 2*a*b) / ((a - b) pow 3)
+         end
+            (-2*(a pow 2) + a*b + (b pow 2)) / ((a - b) pow 3),
             (-(a pow 2) - a*b + 2*(b pow 2)) / ((a - b) pow 3),
-            (-2*(a pow 2) + a*b + (b pow 2)) / ((a - b) pow 3)
-        end
-            -2 / ((a - b) pow 3),
-            2 / ((a - b) pow 3),
+            (a - 7*b) / ((a - b) pow 3),
+            (7*a - b) / ((a - b) pow 3)
+         end
             1 / ((a - b) pow 2),
-            1 / ((a - b) pow 2)
+            1 / ((a - b) pow 2),
+            2 / ((a - b) pow 3),
+            -2 / ((a - b) pow 3)
+    ]
+
+//    fun baseMatrixDerivativeForAB(a: Double, b: Double) = mat[
+//            (-6*a*b) / ((a - b) pow 3),
+//            (6*a*b) / ((a - b) pow 3),
+//            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
+//            ((a pow 3) + (a pow 2)*b - 2*a*(b pow 2)) / ((a - b) pow 3)
+//        end
+//            (6*a + 6*b) / ((a - b) pow 3),
+//            (-6*a - 6*b) / ((a - b) pow 3),
+//            (-2*(a pow 2) - 2*a*b + 4*(b pow 2)) / ((a - b) pow 3),
+//            (-4*(a pow 2) + 2*a*b + 2*(b pow 2)) / ((a - b) pow 3)
+//        end
+//            (-6) / ((a - b) pow 3),
+//            (6) / ((a - b) pow 3),
+//            (3*a - 3*b) / ((a - b) pow 3),
+//            (3*a - 3*b) / ((a - b) pow 3)
+//        end
+//            0,
+//            0,
+//            0,
+//            0
+//    ]
+
+    fun baseMatrixDerivativeForAB(a: Double, b: Double) = mat[
+            ((a pow 3) + (a pow 2)*b - 2*a*(b pow 2)) / ((a - b) pow 3),
+            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
+            (6*a*b) / ((a - b) pow 3),
+            (-6*a*b) / ((a - b) pow 3)
+         end
+            (-4*(a pow 2) + 2*a*b + 2*(b pow 2)) / ((a - b) pow 3),
+            (-2*(a pow 2) - 2*a*b + 4*(b pow 2)) / ((a - b) pow 3),
+            (-6*a - 6*b) / ((a - b) pow 3),
+            (6*a + 6*b) / ((a - b) pow 3)
+         end
+            (3*a - 3*b) / ((a - b) pow 3),
+            (3*a - 3*b) / ((a - b) pow 3),
+            (6) / ((a - b) pow 3),
+            (-6) / ((a - b) pow 3)
+         end
+            0,
+            0,
+            0,
+            0
     ]
 
     private fun recalculateDerivates() {

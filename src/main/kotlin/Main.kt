@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
     val hiddenCounts = topology.subList(1, topology.lastIndex)
     val inputs = create(lines.asSequence().filter { it.startsWith("in: ") }.map { input -> input.split(" ").asSequence().drop(1).map { it.toDouble() }.toList().toDoubleArray() }.toList().toTypedArray())
     val outputs = create(lines.asSequence().filter { it.startsWith("out: ") }.map { output -> output.split(" ").asSequence().drop(1).map { it.toDouble() }.toList().toDoubleArray() }.toList().toTypedArray())
+//    val network = C2SplineNN(hiddenCounts = hiddenCounts)
     val network = C2SplineNNBaseMatrix(hiddenCounts = hiddenCounts)
     val matt = network.baseMatrixForAB(0.7, 0.8)
 //    val network = StandardNN(hiddenCounts = hiddenCounts)

@@ -12,21 +12,25 @@ class C2SplineNN(override val hiddenCounts: List<Int>) : SplineNN(hiddenCounts =
     }
 
     override fun getSplineValues(preActFun: Matrix<Double>, layer: Int): SplineValues {
-        val indexes = getSplineIndexes(preActFun, 2).second
-        val lower = indexes.mapMat { controlPoints[it.roundToInt()] }
-        val upper = indexes.mapMat { controlPoints[it.roundToInt() + 1] }
+        val indexes = getSplineIndexes(preActFun, 2)
+        val u = indexes.first.toSingleColumn()
+        val uIndex = indexes.second
+        val uVector = ones(u.numRows(), 4).mapMatIndexed { row, col, _ ->  pow(u[row, 0], 3 - col) }
 
-        val y = indexes.mapMatIndexed { _, col, n -> values[layer][n.roundToInt(), col] }
-        val y1 = indexes.mapMatIndexed { _, col, n -> values[layer][n.roundToInt() + 1, col] }
+        val lower = uIndex.mapMat { controlPoints[it.roundToInt()] }
+        val upper = uIndex.mapMat { controlPoints[it.roundToInt() + 1] }
 
-        val d = indexes.mapMatIndexed { _, col, n -> derivates[layer][n.roundToInt(), col] }
-        val d1 = indexes.mapMatIndexed { _, col, n -> derivates[layer][n.roundToInt() + 1, col] }
+        val y = uIndex.mapMatIndexed { _, col, n -> values[layer][n.roundToInt(), col] }
+        val y1 = uIndex.mapMatIndexed { _, col, n -> values[layer][n.roundToInt() + 1, col] }
+
+        val d = uIndex.mapMatIndexed { _, col, n -> derivates[layer][n.roundToInt(), col] }
+        val d1 = uIndex.mapMatIndexed { _, col, n -> derivates[layer][n.roundToInt() + 1, col] }
 
         val v = (y emul h0(preActFun, lower, upper)) +
                 (y1 emul h0(preActFun, upper, lower)) +
                 (d emul h1(preActFun, lower, upper)) +
                 (d1 emul h1(preActFun, upper, lower))
-        return SplineValues(v, v, v, v)
+        return SplineValues(v, u, uIndex.toSingleColumn(), uVector)
     }
 
 
@@ -113,5 +117,12 @@ class C2SplineNN(override val hiddenCounts: List<Int>) : SplineNN(hiddenCounts =
         private fun h1d(x: Matrix<Double>, a: Matrix<Double>, b: Matrix<Double>) =
                 ((b - a) epow -2) emul (x - b) emul (3*x - b - 2*a)
     }
+}
 
+fun main(args: Array<String>) {
+    val a = mat[1, 2, 3, 100 end 4, 5, 6, 945 end 5, 65, 643, 32]
+    val b = mat[1, 2, 3 end 3, 60, 4 end 5, 85, 6 end 7, 543, 8]
+    println(a * b)
+    println()
+    println((b.T* a.T))
 }
