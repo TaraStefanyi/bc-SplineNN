@@ -10,7 +10,7 @@ open class SplineNN(
         protected val samplingStep: Double = 0.1,
         private val limit: Double = 2.0,
         private val baseMatrix: Matrix<Double> = SplineType.CATMULROM.baseMatrix,
-        private val update: SplineUpdate = SplineUpdate.UPDATE_ALL
+        protected val update: SplineUpdate = SplineUpdate.UPDATE_ALL
 ): StandardNN(hiddenCounts = hiddenCounts) {
 
     protected var controlPoints: Matrix<Double> = mat[0]
@@ -251,7 +251,7 @@ open class SplineNN(
         return Pair(dx, ddx)
     }
 
-    private fun computeQMat(uIndex: Matrix<Double>, layer: Int, inputs: Int): Matrix<Double> {
+    open fun computeQMat(uIndex: Matrix<Double>, layer: Int, inputs: Int): Matrix<Double> {
         val qmat = create(Array(4) { i -> uIndex.mapIndexed { index, d ->
             val row = Math.max(d.roundToInt() + i - 1, 0)
             val col = index / inputs

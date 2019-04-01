@@ -334,25 +334,25 @@ class C2SplineNNBaseMatrix(
 //    ]
 
     fun baseMatrixForAB(a: Double, b: Double) = mat[
-            (-(a pow 3)*b + (a pow 2)*(b pow 2)) / ((a - b) pow 3),
-            (-(a pow 2)*(b pow 2) + a*(b pow 3)) / ((a - b) pow 3),
-            (a*(b pow 2) - 3*(b pow 3)) / ((a - b) pow 3),
-            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3)
-         end
-            ((a pow 3) + (a pow 2)*b  - 2*a*(b pow 2)) / ((a - b) pow 3),
-            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
-            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
-            (- 8*(a pow 2) + 2*a*b) / ((a - b) pow 3)
-         end
-            (-2*(a pow 2) + a*b + (b pow 2)) / ((a - b) pow 3),
-            (-(a pow 2) - a*b + 2*(b pow 2)) / ((a - b) pow 3),
-            (a - 7*b) / ((a - b) pow 3),
-            (7*a - b) / ((a - b) pow 3)
-         end
-            1 / ((a - b) pow 2),
-            1 / ((a - b) pow 2),
+            -2 / ((a - b) pow 3),
             2 / ((a - b) pow 3),
-            -2 / ((a - b) pow 3)
+            1 / ((a - b) pow 2),
+            1 / ((a - b) pow 2)
+        end
+            (7*a - b) / ((a - b) pow 3),
+            (a - 7*b) / ((a - b) pow 3),
+            (-(a pow 2) - a*b + 2*(b pow 2)) / ((a - b) pow 3),
+            (-2*(a pow 2) + a*b + (b pow 2)) / ((a - b) pow 3)
+        end
+            (- 8*(a pow 2) + 2*a*b) / ((a - b) pow 3),
+            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
+            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
+            ((a pow 3) + (a pow 2)*b  - 2*a*(b pow 2)) / ((a - b) pow 3)
+        end
+            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3),
+            (a*(b pow 2) - 3*(b pow 3)) / ((a - b) pow 3),
+            (-(a pow 2)*(b pow 2) + a*(b pow 3)) / ((a - b) pow 3),
+            (-(a pow 3)*b + (a pow 2)*(b pow 2)) / ((a - b) pow 3)
     ]
 
 //    fun baseMatrixDerivativeForAB(a: Double, b: Double) = mat[
@@ -377,26 +377,50 @@ class C2SplineNNBaseMatrix(
 //            0
 //    ]
 
+//    fun baseMatrixDerivativeForAB(a: Double, b: Double) = mat[
+//            0,
+//            0,
+//            0,
+//            0
+//        end
+//            (-6) / ((a - b) pow 3),
+//            (6) / ((a - b) pow 3),
+//            (3*a - 3*b) / ((a - b) pow 3),
+//            (3*a - 3*b) / ((a - b) pow 3)
+//        end
+//            (6*a + 6*b) / ((a - b) pow 3),
+//            (-6*a - 6*b) / ((a - b) pow 3),
+//            (-2*(a pow 2) - 2*a*b + 4*(b pow 2)) / ((a - b) pow 3),
+//            (-4*(a pow 2) + 2*a*b + 2*(b pow 2)) / ((a - b) pow 3)
+//        end
+//            (-6*a*b) / ((a - b) pow 3),
+//            (6*a*b) / ((a - b) pow 3),
+//            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
+//            ((a pow 3) + (a pow 2)*b - 2*a*(b pow 2)) / ((a - b) pow 3)
+//
+//    ]
+
     fun baseMatrixDerivativeForAB(a: Double, b: Double) = mat[
-            ((a pow 3) + (a pow 2)*b - 2*a*(b pow 2)) / ((a - b) pow 3),
-            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
-            (6*a*b) / ((a - b) pow 3),
-            (-6*a*b) / ((a - b) pow 3)
-         end
-            (-4*(a pow 2) + 2*a*b + 2*(b pow 2)) / ((a - b) pow 3),
-            (-2*(a pow 2) - 2*a*b + 4*(b pow 2)) / ((a - b) pow 3),
-            (-6*a - 6*b) / ((a - b) pow 3),
-            (6*a + 6*b) / ((a - b) pow 3)
-         end
-            (3*a - 3*b) / ((a - b) pow 3),
-            (3*a - 3*b) / ((a - b) pow 3),
-            (6) / ((a - b) pow 3),
-            (-6) / ((a - b) pow 3)
-         end
             0,
             0,
             0,
             0
+         end
+            (-6) / ((a - b) pow 3),
+            (6) / ((a - b) pow 3),
+            (3*a - 3*b) / ((a - b) pow 3),
+            (3*a - 3*b) / ((a - b) pow 3)
+         end
+            (14*a - 2*b) / ((a - b) pow 3),
+            (2*a - 14*b) / ((a - b) pow 3),
+            (-2*(a pow 2) - 2*a*b + 4*(b pow 2)) / ((a - b) pow 3),
+            (-4*(a pow 2) + 2*a*b + 2*(b pow 2)) / ((a - b) pow 3)
+         end
+            (-8*(a pow 2) + 2*a*b)  / ((a - b) pow 3),
+            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
+            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
+            ((a pow 3) + (a pow 2)*b - 2*a*(b pow 2)) / ((a - b) pow 3)
+
     ]
 
     private fun recalculateDerivates() {
