@@ -13,7 +13,11 @@ val BASE_MATRIX =
                  1, 0, 0, 0
         ]
 
-class C2SplineNN2(override val hiddenCounts: List<Int>) : SplineNN(hiddenCounts = hiddenCounts, baseMatrix = BASE_MATRIX) {
+class C2SplineNN2(
+       hiddenCounts: List<Int>,
+       splineInitFunction: ActivationFunction = SimpleActivationFunction.TANH
+
+) : SplineNN(hiddenCounts = hiddenCounts, baseMatrix = BASE_MATRIX, splineInitFunction = splineInitFunction) {
 
     private var derivates: List<Matrix<Double>> = emptyList()
 

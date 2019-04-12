@@ -3,7 +3,7 @@ import golem.matrix.Matrix
 import kotlin.math.roundToInt
 
 open class SplineNN(
-        override val hiddenCounts: List<Int>,
+        hiddenCounts: List<Int>,
         protected val splineInitFunction: ActivationFunction = SimpleActivationFunction.TANH,
         private val splineInitProbability: Double = 0.1,
         private val splineInitNoise: Double = 0.0,
@@ -180,7 +180,7 @@ open class SplineNN(
     }
 
 
-    protected open fun getSplineValues(preActFun: Matrix<Double>, layer: Int): SplineValues {
+    open fun getSplineValues(preActFun: Matrix<Double>, layer: Int): SplineValues {
         val indexes = getSplineIndexes(preActFun)
         val u = indexes.first.toSingleColumn()
         val uIndex = indexes.second.toSingleColumn()
@@ -252,11 +252,11 @@ open class SplineNN(
     }
 
     open fun computeQMat(uIndex: Matrix<Double>, layer: Int, inputs: Int): Matrix<Double> {
-        val qmat = create(Array(4) { i -> uIndex.mapIndexed { index, d ->
-            val row = Math.max(d.roundToInt() + i - 1, 0)
-            val col = index / inputs
-            values[layer][row, col]
-        }.toDoubleArray() }).T
+//        val qmat = create(Array(4) { i -> uIndex.mapIndexed { index, d ->
+//            val row = Math.max(d.roundToInt() + i - 1, 0)
+//            val col = index / inputs
+//            values[layer][row, col]
+//        }.toDoubleArray() }).T
         return when (update) {
             SplineUpdate.UPDATE_ALL -> {
 //                val indices = mutableListOf<Int>()
@@ -265,10 +265,10 @@ open class SplineNN(
                 create(Array(4) { i -> uIndex.mapIndexed { index, d -> values[layer][Math.max(d.roundToInt() + i - 1, 0), index / inputs] }.toDoubleArray() }).T
             }
             SplineUpdate.UPDATE_LAYER -> {
-                create(Array(4) { i -> uIndex.map { values[layer].T[it.roundToInt() + i] }.toDoubleArray() }).T
+                create(Array(4) { i -> uIndex.map { values[layer].T[it.roundToInt() + i - 1] }.toDoubleArray() }).T
             }
             SplineUpdate.UPDATE_SINGLE -> {
-                create(Array(4) { i -> uIndex.map { values[0].T[it.roundToInt() + i] }.toDoubleArray() }).T
+                create(Array(4) { i -> uIndex.map { values[0].T[it.roundToInt() + i - 1] }.toDoubleArray() }).T
             }
         }
     }

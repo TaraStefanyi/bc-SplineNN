@@ -2,7 +2,7 @@ import golem.*
 import golem.matrix.Matrix
 
 open class StandardNN(
-        open val hiddenCounts: List<Int>,
+        protected val hiddenCounts: List<Int>,
         private val activationFunction: ActivationFunction = SimpleActivationFunction.TANH,
         private val optimizer: Optimizer = CGOptimizer(),
         private val noiseEncoder: Double = 0.25,
@@ -67,6 +67,9 @@ open class StandardNN(
                 val r = sqrt(6.0 / (hiddenCounts.last() + outputsCount))
                 mutableWeights.add(rand(hiddenCounts.last() + 1, outputsCount) * 2 * r - r)
                 weights = mutableWeights.toList()
+            }
+            InitializationMethod.CUSTOM -> {
+                // do nothing here
             }
         }
         theta = flattenMatrixListVertically(weights)

@@ -1,3 +1,3 @@
 enum class InitializationMethod{
- GLOROT, AUTOENCODER
+ GLOROT, AUTOENCODER, CUSTOM
 }

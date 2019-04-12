@@ -3,7 +3,7 @@ import golem.matrix.Matrix
 
 class CGOptimizer: Optimizer {
     override fun optimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>) {
-        val results = minimize(network, weights, inputs, outputs, List(1) {500})
+        val results = minimize(network, weights, inputs, outputs, List(1) {100})
         val lastNonZeroIdx = results.fval.indexOfLast { it != 0.0 }
         val lastIndex = results.fval.toList().lastIndex
         if (lastNonZeroIdx < lastIndex) {

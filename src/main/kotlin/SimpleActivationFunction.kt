@@ -12,5 +12,11 @@ enum class SimpleActivationFunction : ActivationFunction {
         override fun derivative(s: Double): Double {
             return s * (1 - s)
         }
+    },
+    RELU() {
+        private val a = 0.01
+
+        override fun invoke(s: Double) = if (s >= 0) s else a * s
+        override fun derivative(s: Double) = if (s >= 0) 1.0 else a
     }
 }

@@ -2,7 +2,7 @@ import golem.*
 import golem.matrix.Matrix
 import kotlin.math.roundToInt
 
-class C2SplineNN(override val hiddenCounts: List<Int>) : SplineNN(hiddenCounts = hiddenCounts) {
+class C2SplineNN(hiddenCounts: List<Int>) : SplineNN(hiddenCounts = hiddenCounts) {
 
     private var derivates: List<Matrix<Double>> = emptyList()
 

@@ -4,7 +4,7 @@ import java.util.Collections.emptyList
 import kotlin.math.roundToInt
 
 class C2SplineNNBaseMatrix(
-        override val hiddenCounts: List<Int>,
+        hiddenCounts: List<Int>,
         private val splineInitFunction: ActivationFunction = SimpleActivationFunction.TANH,
         private val splineInitProbability: Double = 0.1,
         private val splineInitNoise: Double = 0.0,
