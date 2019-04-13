@@ -67,7 +67,7 @@ class C2SplineNN2(
         val last = splineInitFunction.derivative(controlPoints.last())
         val n = splineValues.count()
 
-        val rhs = DoubleArray(n - 2) { 3/samplingStep * (splineValues[it+2] - splineValues[it]) }
+        val rhs = DoubleArray(n - 2) { 3 * (splineValues[it+2] - splineValues[it]) }
         rhs[0] -= first
         rhs[n - 3] -= last
         val buffer = DoubleArray(n - 2) { 0.0 }

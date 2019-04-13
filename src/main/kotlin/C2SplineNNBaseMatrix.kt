@@ -8,10 +8,10 @@ class C2SplineNNBaseMatrix(
         private val splineInitFunction: ActivationFunction = SimpleActivationFunction.TANH,
         private val splineInitProbability: Double = 0.1,
         private val splineInitNoise: Double = 0.0,
-        private val samplingStep: Double = 1.5,
-        private val limit: Double = 30.0,
+        private val samplingStep: Double = 0.1,
+        private val limit: Double = 2.0,
         private val update: SplineUpdate = SplineUpdate.UPDATE_ALL
-): StandardNN(hiddenCounts = hiddenCounts) {
+) : StandardNN(hiddenCounts = hiddenCounts) {
 
     private var controlPoints: Matrix<Double> = mat[0]
     private val values: MutableList<Matrix<Double>> = mutableListOf()
@@ -49,7 +49,7 @@ class C2SplineNNBaseMatrix(
         values.addAll(initialValuesList)
 
         values.forEach { matrix ->
-            List(matrix.count()) {it}
+            List(matrix.count()) { it }
                     .shuffled()
                     .take(ceil(splineInitProbability * matrix.count()))
                     .forEach { matrix[it] += randn(1)[0] * splineInitNoise }
@@ -57,6 +57,7 @@ class C2SplineNNBaseMatrix(
 
         initialValues = flattenMatrixListVertically(initialValuesList)
         theta = create(theta.T.to2DArray()[0] + flattenMatrixListVertically(values).T.to2DArray()[0]).T
+        recalculateDerivates()
     }
 
     override fun passForward(inputs: Matrix<Double>): Outputs {
@@ -70,7 +71,7 @@ class C2SplineNNBaseMatrix(
         //hidden-to-hidden pass
         //LAST ITERATION: hidden-to-output pass
         (0 until layerCount).forEach { hiddenLayer ->
-            preActFun.add((if (postActFun.isEmpty()) inputs else postActFun.last()).addBiasColumn()*weights[hiddenLayer])
+            preActFun.add((if (postActFun.isEmpty()) inputs else postActFun.last()).addBiasColumn() * weights[hiddenLayer])
             val splineValues = getSplineValues(preActFun.last(), hiddenLayer)
             postActFun.add(splineValues.v)
             u.add(splineValues.u)
@@ -92,37 +93,37 @@ class C2SplineNNBaseMatrix(
         var u = passForwardInfo.first.last()
         var uIndex = passForwardInfo.second.last()
         var uVector = passForwardInfo.third.last().T
-        var baseMatrixes = baseMatrixes(uIndex, false)
+        var baseMatrixes = baseMatrixes(uIndex)
 
-        var grads = -2 * copyColumnVectorHorizontally(error.T.toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col}
+        var grads = -2 * copyColumnVectorHorizontally(error.T.toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col }
         gradsQ[gradsQ.lastIndex] = reshapeSplineGradients(outputsCount * inputs.numRows(), grads, uIndex)
         var delta = -2 * error emul getSplineDerivates(computedOutputs.preActFun.last(), u, uIndex, layerCount - 1).first
         //grads - tu sa vlozi ta delta (chyba) * uvector*B - to sa umiesti podla uindex
         //gradsq - matcia - v riadky - pocet kontrolnych bodov, stplce su jednotlive neurony
         //
-        gradsError[(parametersCountsCumulative[parametersCountsCumulative.lastIndex-1] until parametersCountsCumulative.last()), 0] = (computedOutputs.postActFun[computedOutputs.postActFun.lastIndex-1].addBiasColumn().T * delta).toSingleColumn()
+        gradsError[(parametersCountsCumulative[parametersCountsCumulative.lastIndex - 1] until parametersCountsCumulative.last()), 0] = (computedOutputs.postActFun[computedOutputs.postActFun.lastIndex - 1].addBiasColumn().T * delta).toSingleColumn()
 
         (hiddenCounts.lastIndex downTo 1).forEach { hiddenLayerIndex ->
             u = passForwardInfo.first[hiddenLayerIndex]
             uIndex = passForwardInfo.second[hiddenLayerIndex]
             uVector = passForwardInfo.third[hiddenLayerIndex].T
-            baseMatrixes = baseMatrixes(uIndex, false)
+            baseMatrixes = baseMatrixes(uIndex)
 
             delta = (delta * weights[hiddenLayerIndex + 1].dropLastRow().T)
-            grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col}
+            grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col }
             gradsQ[hiddenLayerIndex] = reshapeSplineGradients(hiddenCounts[hiddenLayerIndex] * inputs.numRows(), grads, uIndex)
 
             delta = delta emul getSplineDerivates(computedOutputs.preActFun[hiddenLayerIndex], u, uIndex, hiddenLayerIndex).first
-            gradsError[(parametersCountsCumulative[hiddenLayerIndex-1] until parametersCountsCumulative[hiddenLayerIndex]), 0] = (computedOutputs.postActFun[hiddenLayerIndex-1].addBiasColumn().T * delta).toSingleColumn()
+            gradsError[(parametersCountsCumulative[hiddenLayerIndex - 1] until parametersCountsCumulative[hiddenLayerIndex]), 0] = (computedOutputs.postActFun[hiddenLayerIndex - 1].addBiasColumn().T * delta).toSingleColumn()
         }
 
         u = passForwardInfo.first.first()
         uIndex = passForwardInfo.second.first()
         uVector = passForwardInfo.third.first().T
-        baseMatrixes = baseMatrixes(uIndex, false)
+        baseMatrixes = baseMatrixes(uIndex)
 
         delta = (delta * weights[1].dropLastRow().T)
-        grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col}
+        grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul uVector.mapColsIndexed { i, col -> baseMatrixes[i].T * col }
 
         gradsQ[0] = reshapeSplineGradients(hiddenCounts[0] * inputs.numRows(), grads, uIndex)
 
@@ -130,20 +131,20 @@ class C2SplineNNBaseMatrix(
 
             SplineUpdate.UPDATE_ALL -> {
                 var index = parametersCountsCumulative.last()
-                (0..hiddenCounts.size).forEach {layer ->
+                (0..hiddenCounts.size).forEach { layer ->
                     val neurons = if (layer == hiddenCounts.size) outputsCount else hiddenCounts[layer]
-                    gradsError[index until index + neurons*controlPoints.numRows(), 0] = create(Array(neurons) { neuron ->
-                        DoubleArray(controlPoints.numRows()) {controlPoint ->
-                            gradsQ[layer][controlPoint, neuron*inputs.numRows() until (neuron+1)*inputs.numRows()].elementSum()
+                    gradsError[index until index + neurons * controlPoints.numRows(), 0] = create(Array(neurons) { neuron ->
+                        DoubleArray(controlPoints.numRows()) { controlPoint ->
+                            gradsQ[layer][controlPoint, neuron * inputs.numRows() until (neuron + 1) * inputs.numRows()].elementSum()
                         }
                     }).T.toSingleColumn()
-                    index += neurons*controlPoints.numRows()
+                    index += neurons * controlPoints.numRows()
                 }
             }
             SplineUpdate.UPDATE_LAYER -> {
                 var index = parametersCountsCumulative.last()
                 (0..hiddenCounts.size).forEach { layer ->
-                    gradsError[index until index + controlPoints.numRows(), 0] = create(DoubleArray(controlPoints.numRows()) {controlPoint ->
+                    gradsError[index until index + controlPoints.numRows(), 0] = create(DoubleArray(controlPoints.numRows()) { controlPoint ->
                         gradsQ[layer].getRow(controlPoint).elementSum()
                     }).T
                     index += controlPoints.numRows()
@@ -152,7 +153,7 @@ class C2SplineNNBaseMatrix(
             SplineUpdate.UPDATE_SINGLE -> {
                 (0..hiddenCounts.size).forEach { layer ->
                     val index = parametersCountsCumulative.last()
-                    gradsError[index until index + controlPoints.numRows(), 0] += create(DoubleArray(controlPoints.numRows()) {controlPoint ->
+                    gradsError[index until index + controlPoints.numRows(), 0] += create(DoubleArray(controlPoints.numRows()) { controlPoint ->
                         gradsQ[layer].getRow(controlPoint).elementSum()
                     }).T
                 }
@@ -177,26 +178,26 @@ class C2SplineNNBaseMatrix(
         val g = zeros(controlPoints.numRows(), s)
         (0 until s).forEach {
             val intIndex = uIndex[it].roundToInt()
-            val range = if (intIndex == 0) 0..3 else intIndex-1..intIndex+2
-            g[ range, it ] = grads.getCol(it)
+            val range = if (intIndex == 0) 0..3 else intIndex - 1..intIndex + 2
+            g[range, it] = grads.getCol(it)
         }
         return g
     }
 
 
-    private fun getSplineValues(preActFun: Matrix<Double>, layer: Int): SplineValues {
+    fun getSplineValues(preActFun: Matrix<Double>, layer: Int): SplineValues {
         val indexes = getSplineIndexes(preActFun)
         val u = indexes.first.toSingleColumn()
         val uIndex = indexes.second.toSingleColumn()
-        val uVector = ones(u.numRows(), 4).mapMatIndexed { row, col, _ ->  pow(u[row, 0], 3 - col) }
+        val uVector = ones(u.numRows(), 4).mapMatIndexed { row, col, _ -> pow(u[row, 0], 3 - col) }
         val qMat = computeQMat(uIndex, layer, preActFun.numRows())
 
         val baseMatrixes = baseMatrixes(uIndex)
 //        val baseMatrixes= listOf(SplineType.CATMULROM.baseMatrix)
         val v = if (u.count() > 1) {
-//            val l = uVector.mapRowsToListIndexed { i, row -> dot(row * baseMatrixes[i], qMat.getRow(i)) }
-            val l = mutableListOf<Double>()
-            (uVector * baseMatrixes[0]).eachRow { l.add(dot(it, qMat.getRow(l.size))) }
+            val l = uVector.mapRowsToListIndexed { i, row -> dot(row * baseMatrixes[i], qMat.getRow(i)) }
+//            val l = mutableListOf<Double>()
+//            (uVector.mapRowsIndexed { i, matrix -> matrix * baseMatrixes[i] }).eachRow { l.add(dot(it, qMat.getRow(l.size))) }
             create(l.asSequence().chunked(preActFun.numRows()).map { it.toDoubleArray() }.toList().toTypedArray()).T
         } else {
             uVector * baseMatrixes.first() * qMat.T
@@ -204,7 +205,6 @@ class C2SplineNNBaseMatrix(
 
         return SplineValues(v, u, uIndex, uVector)
     }
-
 
 
     private fun getSplineIndexes(preActFun: Matrix<Double>, notInLast: Int = 4): Pair<Matrix<Double>, Matrix<Double>> {
@@ -226,19 +226,19 @@ class C2SplineNNBaseMatrix(
         val du = create(arrayOf(
                 (3 * (u epow 2)).T.to2DArray()[0],
                 (2 * u).T.to2DArray()[0],
-                DoubleArray(u.numRows()) {1.0},
-                DoubleArray(u.numRows()) {0.0}
+                DoubleArray(u.numRows()) { 1.0 },
+                DoubleArray(u.numRows()) { 0.0 }
         )).T
 
         val ddu = create(arrayOf(
                 (6 * u).T.to2DArray()[0],
-                DoubleArray(u.numRows()) {1.0},
-                DoubleArray(u.numRows()) {0.0},
-                DoubleArray(u.numRows()) {0.0}
+                DoubleArray(u.numRows()) { 1.0 },
+                DoubleArray(u.numRows()) { 0.0 },
+                DoubleArray(u.numRows()) { 0.0 }
         )).T
 
         val qMat = computeQMat(uIndex, layer, preActFun.numRows())
-        val baseMatrixes = baseMatrixes(uIndex, true)
+        val baseMatrixes = baseMatrixes(uIndex)
 
         val dx = if (u.count() > 1) {
             val l = du.mapRowsToListIndexed { i, row -> dot(row * baseMatrixes[i], qMat.getRow(i)) }
@@ -260,10 +260,10 @@ class C2SplineNNBaseMatrix(
     private fun computeQMat(uIndex: Matrix<Double>, layer: Int, inputs: Int): Matrix<Double> = when (update) {
         SplineUpdate.UPDATE_ALL -> {
             create(arrayOf(
-                    uIndex.mapIndexed { index, d -> values[layer][Math.max(d.roundToInt() - 1, 0), index / inputs] }.toDoubleArray(),
                     uIndex.mapIndexed { index, d -> values[layer][Math.max(d.roundToInt(), 0), index / inputs] }.toDoubleArray(),
-                    uIndex.mapIndexed { index, d -> derivates[layer][Math.max(d.roundToInt() - 1, 0), index / inputs] }.toDoubleArray(),
-                    uIndex.mapIndexed { index, d -> derivates[layer][Math.max(d.roundToInt(), 0), index / inputs] }.toDoubleArray()
+                    uIndex.mapIndexed { index, d -> values[layer][Math.max(d.roundToInt() + 1, 0), index / inputs] }.toDoubleArray(),
+                    uIndex.mapIndexed { index, d -> derivates[layer][Math.max(d.roundToInt(), 0), index / inputs] }.toDoubleArray(),
+                    uIndex.mapIndexed { index, d -> derivates[layer][Math.max(d.roundToInt() + 1, 0), index / inputs] }.toDoubleArray()
             )).T
         }
         SplineUpdate.UPDATE_LAYER -> {
@@ -298,18 +298,14 @@ class C2SplineNNBaseMatrix(
     }
 
     override fun computeObjectiveFunction(expectedOutputs: Matrix<Double>, computedOutputs: Outputs): Double {
-        var f = ((expectedOutputs - computedOutputs.postActFun.last()) epow 2).elementSum() / expectedOutputs.numRows() + LAMBDA*(theta[0 until parametersCountsCumulative.last(), 0] epow 2).elementSum()
+        var f = ((expectedOutputs - computedOutputs.postActFun.last()) epow 2).elementSum() / expectedOutputs.numRows() + LAMBDA * (theta[0 until parametersCountsCumulative.last(), 0] epow 2).elementSum()
         if (LAMBDA_Q0 > 0)
-            f += LAMBDA_Q0*((theta[parametersCountsCumulative.last() until theta.numRows(), 0] - initialValues) epow 2).elementSum()
+            f += LAMBDA_Q0 * ((theta[parametersCountsCumulative.last() until theta.numRows(), 0] - initialValues) epow 2).elementSum()
         return f
     }
 
-    private fun baseMatrixes(uIndex: Matrix<Double>, derivate: Boolean = false) = uIndex.mapRowsToList {
-        if (derivate)
-            baseMatrixDerivativeForAB(controlPoints[it[0].roundToInt()], controlPoints[it[0].roundToInt() + 1])
-        else
-            baseMatrixForAB(controlPoints[it[0].roundToInt()], controlPoints[it[0].roundToInt() + 1])
-    }
+    private fun baseMatrixes(uIndex: Matrix<Double>) =
+            uIndex.mapRowsToList {baseMatrixForAB(controlPoints[it[0].roundToInt()], controlPoints[it[0].roundToInt() + 1]) }
 
 //    fun baseMatrixForAB(a: Double, b: Double) = mat[
 //            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3),
@@ -335,24 +331,24 @@ class C2SplineNNBaseMatrix(
 
     fun baseMatrixForAB(a: Double, b: Double) = mat[
             -2 / ((a - b) pow 3),
-            2 / ((a - b) pow 3),
+            -2 / ((b - a) pow 3),
             1 / ((a - b) pow 2),
-            1 / ((a - b) pow 2)
-        end
-            (7*a - b) / ((a - b) pow 3),
-            (a - 7*b) / ((a - b) pow 3),
-            (-(a pow 2) - a*b + 2*(b pow 2)) / ((a - b) pow 3),
-            (-2*(a pow 2) + a*b + (b pow 2)) / ((a - b) pow 3)
-        end
-            (- 8*(a pow 2) + 2*a*b) / ((a - b) pow 3),
-            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
-            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
-            ((a pow 3) + (a pow 2)*b  - 2*a*(b pow 2)) / ((a - b) pow 3)
-        end
-            (3*(a pow 3) - (a pow 2)*b) / ((a - b) pow 3),
-            (a*(b pow 2) - 3*(b pow 3)) / ((a - b) pow 3),
-            (-(a pow 2)*(b pow 2) + a*(b pow 3)) / ((a - b) pow 3),
-            (-(a pow 3)*b + (a pow 2)*(b pow 2)) / ((a - b) pow 3)
+            1 / ((b - a) pow 2)
+                    end
+            3 * (a + b) / ((a - b) pow 3),
+            (a + b) / ((a - b) pow 3),
+            (-(a + 2 * b)) / ((a - b) pow 2),
+            (-(2 * a + b)) / ((b - a) pow 2)
+                    end
+            (-6*a*b / ((a-b)pow 3)),
+            (-6*a*b / ((b-a)pow 3)),
+            ((b pow 2) + 2*a*b)/ ((a-b)pow 2),
+            ((a pow 2) + 2*a*b)/ ((b-a)pow 2)
+                    end
+            ((b pow 2) *( 3*a-b))/ ((a-b)pow 3),
+            ((a pow 2) *( 3*b-a))/ ((b-a)pow 3),
+            ((b pow 2)*a) / ((a-b)pow 2),
+            ((a pow 2)*b) / ((b-a)pow 2)
     ]
 
 //    fun baseMatrixDerivativeForAB(a: Double, b: Double) = mat[
@@ -405,21 +401,21 @@ class C2SplineNNBaseMatrix(
             0,
             0,
             0
-         end
-            (-6) / ((a - b) pow 3),
+                    end
+                    (-6) / ((a - b) pow 3),
             (6) / ((a - b) pow 3),
-            (3*a - 3*b) / ((a - b) pow 3),
-            (3*a - 3*b) / ((a - b) pow 3)
-         end
-            (14*a - 2*b) / ((a - b) pow 3),
-            (2*a - 14*b) / ((a - b) pow 3),
-            (-2*(a pow 2) - 2*a*b + 4*(b pow 2)) / ((a - b) pow 3),
-            (-4*(a pow 2) + 2*a*b + 2*(b pow 2)) / ((a - b) pow 3)
-         end
-            (-8*(a pow 2) + 2*a*b)  / ((a - b) pow 3),
-            (-2*a*b + 8*(b pow 2)) / ((a - b) pow 3),
-            (2*(a pow 2)*b - a*(b pow 2) - (b pow 3)) / ((a - b) pow 3),
-            ((a pow 3) + (a pow 2)*b - 2*a*(b pow 2)) / ((a - b) pow 3)
+            (3 * a - 3 * b) / ((a - b) pow 3),
+            (3 * a - 3 * b) / ((a - b) pow 3)
+                    end
+                    (14 * a - 2 * b) / ((a - b) pow 3),
+            (2 * a - 14 * b) / ((a - b) pow 3),
+            (-2 * (a pow 2) - 2 * a * b + 4 * (b pow 2)) / ((a - b) pow 3),
+            (-4 * (a pow 2) + 2 * a * b + 2 * (b pow 2)) / ((a - b) pow 3)
+                    end
+                    (-8 * (a pow 2) + 2 * a * b) / ((a - b) pow 3),
+            (-2 * a * b + 8 * (b pow 2)) / ((a - b) pow 3),
+            (2 * (a pow 2) * b - a * (b pow 2) - (b pow 3)) / ((a - b) pow 3),
+            ((a pow 3) + (a pow 2) * b - 2 * a * (b pow 2)) / ((a - b) pow 3)
 
     ]
 
@@ -432,11 +428,11 @@ class C2SplineNNBaseMatrix(
         val last = splineInitFunction.derivative(controlPoints.last())
         val n = splineValues.count()
 
-        val rhs = DoubleArray(n - 2) { 3/samplingStep * (splineValues[it+2] - splineValues[it]) }
+        val rhs = DoubleArray(n - 2) { 3 / samplingStep * (splineValues[it + 2] - splineValues[it]) }
         rhs[0] -= first
         rhs[n - 3] -= last
         val buffer = DoubleArray(n - 2) { 0.0 }
-        solveTridiagonalSystem( 1.0 , 4.0 , 1.0 , rhs , n - 2 , buffer)
+        solveTridiagonalSystem(1.0, 4.0, 1.0, rhs, n - 2, buffer)
         return create(arrayOf(first).toDoubleArray() + rhs + last).T
     }
 
@@ -465,7 +461,13 @@ class C2SplineNNBaseMatrix(
 
         var i = numEquations - 1
         while (i-- > 0) {
-            rightSide[i] = rightSide[i] - buffer[i] * rightSide[i+ 1]
+            rightSide[i] = rightSide[i] - buffer[i] * rightSide[i + 1]
         }
     }
+}
+
+fun main() {
+    val network = C2SplineNNBaseMatrix(listOf())
+    val m = network.baseMatrixForAB(-2.0, -1.9)
+    println(m)
 }

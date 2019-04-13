@@ -1,31 +1,56 @@
+import golem.abs
 import golem.create
 import golem.to2DArray
 import java.io.File
 
 fun main() {
-    val runs = 1
-    val debug = true
-    val actFun = SimpleActivationFunction.RELU
+    val runs = 100
+    val debug = false
+    val actFun = SimpleActivationFunction.SIG
+    val dataset = Dataset.XOR
 
-    val dataset = Dataset.ADD
+    val testResults = List(runs) {dataset.doTest(it, actFun, debug = debug)}
 
-    val successRates = List(runs) {dataset.doTest(it, actFun, debug = debug)}.map { results -> results.map { if (it.second) 1 else 0 } }.reduce { acc, list -> acc.zip(list) {a, b -> a + b} }
-    println(successRates)
+    val successfulRuns = testResults
+            .map { results -> results.map { if (it.first) 1 else 0 } }
+            .reduce { acc, list -> acc.zip(list) {a, b -> a + b} }
+            .map { it.toDouble() }
+    println("Success rate: $successfulRuns")
+
+    val averageErrorSuccess = testResults
+            .map { results -> results.map { if (it.first) it.third else 0.0 } }
+            .reduce { acc, list -> acc.zip(list) {a, b -> a + b} }
+            .mapIndexed { i, totalError -> totalError / successfulRuns[i] }
+    println("Average error success: $averageErrorSuccess")
+
+    val averageErrorFail = testResults
+            .map { results -> results.map { if (!it.first) it.third else 0.0 } }
+            .reduce { acc, list -> acc.zip(list) {a, b -> a + b} }
+            .mapIndexed { i, totalError -> totalError / (runs - successfulRuns[i]) }
+    println("Average error fail: $averageErrorFail")
 }
 
 
 
 fun StandardNN.test(input: List<DoubleArray>, output: List<DoubleArray>, networkIndex: Int, tolerance: Double, debug: Boolean): Boolean {
     input.forEachIndexed { index, row ->
-        val result = this.test(create(row))[0]
-        val expected = output[index][0]
-        if (Math.abs(result - expected) > tolerance) {
+        val result = this.test(create(row))
+        val expected = create(output[index])
+        if (abs(result - expected).any { it > tolerance }) {
             if (debug) println("network: $networkIndex\t\texpected: $expected\t\tgot: $result")
             return false
         }
     }
     return true
 }
+
+fun StandardNN.computeAverageError(input: List<DoubleArray>, output: List<DoubleArray>): Double =
+    input.mapIndexed { index, row ->
+        val result = this.test(create(row))
+        val expected = create(output[index])
+        abs(result - expected).elementSum() / result.numCols()
+    }.sum() / input.size
+
 
 enum class Dataset(
         private val scaleOptions: ScaleOptions,
@@ -42,7 +67,7 @@ enum class Dataset(
             addSamples: Int = 5,
             testSampleSize: Int = 5,
             debug: Boolean = false
-    ): Array<Triple<Boolean, Boolean, Int>> {
+    ): Array<Triple<Boolean, Int, Double>> {
 
         println("Executing test number ${testIndex + 1}...")
 
@@ -89,6 +114,7 @@ enum class Dataset(
                 SplineNN(hiddenCounts = hiddenCounts, splineInitFunction = actFun),
                 C2SplineNN2(hiddenCounts = hiddenCounts, splineInitFunction = actFun),
                 StandardNN(hiddenCounts = hiddenCounts, activationFunction = actFun)
+//                C2SplineNNBaseMatrix(hiddenCounts = hiddenCounts, splineInitFunction = actFun)
         )
 
         val trained = Array(networks.size) {Triple(false, false, 0)}
@@ -111,8 +137,9 @@ enum class Dataset(
             }
         }
 
-        if (debug) trained.forEach { println(it) }
-        return trained
+        val results = trained.mapIndexed { index, triple -> Triple(triple.second, triple.third, networks[index].computeAverageError(testInputList, testOutputList)) }.toTypedArray()
+        if (debug) results.forEachIndexed { index, triple ->  println("$index - $triple") }
+        return results
     }
 
     enum class ScaleOptions {

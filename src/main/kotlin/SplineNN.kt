@@ -10,7 +10,7 @@ open class SplineNN(
         protected val samplingStep: Double = 0.1,
         private val limit: Double = 2.0,
         private val baseMatrix: Matrix<Double> = SplineType.CATMULROM.baseMatrix,
-        protected val update: SplineUpdate = SplineUpdate.UPDATE_ALL
+        protected val update: SplineUpdate = SplineUpdate.UPDATE_SINGLE
 ): StandardNN(hiddenCounts = hiddenCounts) {
 
     protected var controlPoints: Matrix<Double> = mat[0]
