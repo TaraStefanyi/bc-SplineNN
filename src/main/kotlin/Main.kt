@@ -1,17 +1,18 @@
 import golem.create
 import golem.mat
+import network.*
 import java.io.File
 
-fun main(args: Array<String>) {
-    val lines = File("test_data1.txt").readLines()
+fun main() {
+    val lines = File("datasets/xor/xor_short.txt").readLines()
     val topology = lines.first().split(" ").map { it.toInt() }
     val hiddenCounts = topology.subList(1, topology.lastIndex)
     val inputs = create(lines.asSequence().filter { it.startsWith("in: ") }.map { input -> input.split(" ").asSequence().drop(1).map { it.toDouble() }.toList().toDoubleArray() }.toList().toTypedArray())
     val outputs = create(lines.asSequence().filter { it.startsWith("out: ") }.map { output -> output.split(" ").asSequence().drop(1).map { it.toDouble() }.toList().toDoubleArray() }.toList().toTypedArray())
-    val network = C2SplineNN2(hiddenCounts = hiddenCounts)
-//    val network = C2SplineNNBaseMatrix(hiddenCounts = hiddenCounts)
+    val network = C2SplineNNBaseMatrix(hiddenCounts = hiddenCounts)
+//    val network = network.C2SplineNNBaseMatrix(hiddenCounts = hiddenCounts)
 //    val matt = network.baseMatrixForAB(0.7, 0.8)
-//    val network = StandardNN(hiddenCounts = hiddenCounts)
+//    val network = network.StandardNN(hiddenCounts = hiddenCounts)
     network.initialize(inputs, outputs, InitializationMethod.GLOROT)
     network.train(inputs, outputs)
     val output2 = network.test(mat[0, 0])
@@ -23,11 +24,11 @@ fun main(args: Array<String>) {
     println("${output4[0]} expecting 1")
     println("${output5[0]} expecting 0")
 
-//    var n: StandardNN
+//    var n: network.StandardNN
 //    val file = File("results.txt")
 //    (0 until 200 ).forEach { iteration ->
-//        n = SplineNN(hiddenCounts = hiddenCounts)
-////        n = StandardNN(hiddenCounts = hiddenCounts)
+//        n = network.SplineNN(hiddenCounts = hiddenCounts)
+////        n = network.StandardNN(hiddenCounts = hiddenCounts)
 //        n.initialize(inputs, outputs, InitializationMethod.GLOROT)
 //        n.weights.forEach { file.appendText("${it.repr()}\n") }
 //        n.train(inputs, outputs)
@@ -40,14 +41,14 @@ fun main(args: Array<String>) {
 }
 
 
-//fun main(args: Array<String>) {
+//fun network.main(args: Array<String>) {
 //    val lines = File("chemical.txt").readLines()
 //    val topology = lines.first().substring(1).split(" ").map { it.toInt() }
 //    val hiddenCounts = topology.subList(1, topology.lastIndex)
 //    val inputs = create(lines.asSequence().filter { it.startsWith("in: ") }.map { input -> input.split(" ").asSequence().drop(1).map { it.toDouble() }.toList().toDoubleArray() }.toList().toTypedArray())
 //    val outputs = create(lines.asSequence().filter { it.startsWith("out: ") }.map { output -> output.split(" ").asSequence().drop(1).map { it.toDouble() }.toList().toDoubleArray() }.toList().toTypedArray())
-//    val network = SplineNN(hiddenCounts = hiddenCounts)
-////    val network = StandardNN(hiddenCounts = hiddenCounts)
+//    val network = network.SplineNN(hiddenCounts = hiddenCounts)
+////    val network = network.StandardNN(hiddenCounts = hiddenCounts)
 //    network.initialize(inputs, outputs, InitializationMethod.GLOROT)
 //    network.train(inputs, outputs)
 //    val output2 = network.test(mat[157.00,  9596.00,   4714.00,  376.00,  2.58,  407.00,  564.00,  510354.00])
