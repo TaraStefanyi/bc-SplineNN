@@ -14,7 +14,7 @@ fun main() {
 //    val matt = network.baseMatrixForAB(0.7, 0.8)
 //    val network = network.StandardNN(hiddenCounts = hiddenCounts)
     network.initialize(inputs, outputs, InitializationMethod.GLOROT)
-    network.train(inputs, outputs)
+    network.train(inputs, outputs, 300)
     val output2 = network.test(mat[0, 0])
     val output3 = network.test(mat[0, 1])
     val output4 = network.test(mat[1, 0])

@@ -9,14 +9,13 @@ import java.io.FileInputStream
 class MnistDataset(
         private val tolerance: Double = 0.05,
         private val addSamples: Int = 1000
-) : Dataset {
-    override var data: Data? = null
+) : Dataset() {
 
     override fun loadDataset(): Data {
         val (trainInputList, trainOutputList) = readDataFiles("datasets/mnist/train-images", "datasets/mnist/train-labels")
         val (testInputList, testOutputList) = readDataFiles("datasets/mnist/test-images", "datasets/mnist/test-labels")
 
-        this.data = Data(
+        return Data(
                 hiddenCounts = listOf(30),
                 tolerance = tolerance,
                 considerNegativeAsZero = true,
@@ -27,7 +26,6 @@ class MnistDataset(
                 testInputList = testInputList,
                 testOutputList = testOutputList
         )
-        return this.data!!
     }
 
     @Throws(IOException::class)

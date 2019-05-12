@@ -1,4 +1,4 @@
-import dataset.TextDataset
+import dataset.XorDataset
 import golem.create
 import golem.mat
 import golem.plot
@@ -6,7 +6,7 @@ import golem.pow
 import network.*
 
 fun main() {
-    val data = TextDataset.XOR.loadDataset()
+    val data = XorDataset().data
 //    val network = network.SplineNN(hiddenCounts = hiddenCounts, splineInitFunction = SimpleActivationFunction.RELU)
     val network = SplineNN(hiddenCounts = data.hiddenCounts, splineInitFunction = SimpleActivationFunction.TANH)
     network.initialize(data.inputMatrix, data.outputMatrix, InitializationMethod.GLOROT)
@@ -15,7 +15,7 @@ fun main() {
 //    val x = arrayOf(0.0, 0.025, 0.033, 0.05, 0.066, 0.075, 0.1).toDoubleArray()
     plot(x, network.getSplineValues(create(x).T, 1).v, color = "red")
 
-    network.train(data.inputMatrix, data.outputMatrix)
+    network.train(data.inputMatrix, data.outputMatrix, 300)
     plot(x, network.getSplineValues(create(x).T, 1).v)
 
 //    println(SimpleActivationFunction.RELU.invoke(0.0))

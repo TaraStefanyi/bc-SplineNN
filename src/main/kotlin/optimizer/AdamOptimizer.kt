@@ -3,10 +3,10 @@ package optimizer
 import network.StandardNN
 import golem.*
 import golem.matrix.Matrix
+import shuffled
 
 class AdamOptimizer: Optimizer {
-    override fun optimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>) {
-        val epochs = 1000
+    override fun optimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>, epochs: Int): List<Double> {
         val batchSize = 300
         val beta1 = 0.9
         val beta2 = 0.999
@@ -15,8 +15,8 @@ class AdamOptimizer: Optimizer {
 
         var currentIdx = 0
         var w = weights.copy()
-        val i = inputs.copy()
-        val o = outputs.copy()
+        var i = inputs.copy()
+        var o = outputs.copy()
         val fval = zeros(epochs, 1)
         val gval = zeros(epochs, 1)
 
@@ -25,13 +25,18 @@ class AdamOptimizer: Optimizer {
 
         var idx: IntRange
 
+        val loss = mutableListOf<Double>()
+
         for (n in 0 until epochs) {
             if (currentIdx + batchSize > i.numRows()) {
                 idx = currentIdx until i.numRows()
                 currentIdx = 0
                 if (batchSize < Double.POSITIVE_INFINITY) {
                     //shuffle??
-                    shuffle(i, o)
+                    shuffled(inputs, outputs).let {
+                        i = it.first
+                        o = it.second
+                    }
                 }
             } else {
                 idx = currentIdx until currentIdx+batchSize
@@ -41,35 +46,24 @@ class AdamOptimizer: Optimizer {
             val inputsBatch = i[idx, 0 until i.numCols()]
             val outputsBatch = o[idx, 0 until o.numCols()]
 
-            var computedOutputsBatch = network.passForward(inputsBatch)
-            var g = network.passBackward(inputsBatch, outputsBatch, computedOutputsBatch)
-            var grads = g.gradsError + g.gradsWeights
+            val computedOutputsBatch = network.passForward(inputsBatch)
+            val g = network.passBackward(inputsBatch, outputsBatch, computedOutputsBatch)
+            val grads = g.gradsError + g.gradsWeights
+
+            loss.add(network.computeObjectiveFunction(outputsBatch, computedOutputsBatch))
 
             mt = mt * beta1 +  grads * (1 - beta1)
             vt = vt * beta2 +  (grads epow 2) * (1 - beta2)
-            var mtHat = mt / (1 - pow(beta1, n+1))
-            var vtHat = vt / (1 - pow(beta2, n+1))
+            val mtHat = mt / (1 - pow(beta1, n+1))
+            val vtHat = vt / (1 - pow(beta2, n+1))
 
-            w = w - (mtHat * eta) emul (sqrt(vtHat + eps) epow -1)
+            w -= ((mtHat * eta) emul ((sqrt(vtHat) + eps) epow -1))
 
             fval[n, 0] = network.computeObjectiveFunction(outputsBatch, computedOutputsBatch)
             gval[n, 0] = grads.norm()
 
             network.reshapeWeightFromVector(w)
-
         }
+        return loss
     }
-
-    private fun shuffle(inputs: Matrix<Double>, outputs: Matrix<Double>) {
-        val s = List(inputs.numRows()) {it}.shuffled()
-        val i = inputs.copy()
-        val o = outputs.copy()
-        val inputsColRange = 0 until i.numCols()
-        val outputsColRange = 0 until o.numCols()
-        s.forEachIndexed { newIndex, oldIndex ->
-            inputs[newIndex, inputsColRange] = i.getRow(oldIndex)
-            outputs[newIndex, outputsColRange] = o.getRow(oldIndex)
-        }
-    }
-
 }

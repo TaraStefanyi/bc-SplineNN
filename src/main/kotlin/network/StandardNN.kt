@@ -17,7 +17,7 @@ import toSingleColumn
 open class StandardNN(
         protected val hiddenCounts: List<Int>,
         private val activationFunction: ActivationFunction = SimpleActivationFunction.TANH,
-        private val optimizer: Optimizer = CGOptimizer(),
+        private val optimizer: Optimizer = AdamOptimizer(),
         private val noiseEncoder: Double = 0.25,
         protected val layerCount: Int = hiddenCounts.size + 1
 ) {
@@ -72,7 +72,7 @@ open class StandardNN(
                     val output = inputs.mapMat { if (Math.random() < noiseEncoder) 0.0 else it }
                     val network = StandardNN(hiddenCounts = List(1) { hiddenCounts[k] })
                     network.initialize(input, output, InitializationMethod.GLOROT)
-                    network.train(input, output)
+                    network.train(input, output, 300)
                     mutableWeights.add(network.weights[0])
                     input = network.passForward(input).postActFun[0]
                     print("")
@@ -90,9 +90,8 @@ open class StandardNN(
         parametersCountsCumulative = (1..parametersCounts.size).map { parametersCounts.asSequence().take(it).sum() }
     }
 
-    fun train(inputs: Matrix<Double>, outputs: Matrix<Double>) {
-        optimizer.optimize(this, theta, inputs, outputs)
-    }
+    fun train(inputs: Matrix<Double>, outputs: Matrix<Double>, epochs: Int): List<Double> =
+        optimizer.optimize(this, theta, inputs, outputs, epochs)
 
     fun test(inputs: Matrix<Double>): Matrix<Double> {
         return passForward(inputs).postActFun.last()
@@ -107,7 +106,8 @@ open class StandardNN(
         //LAST ITERATION: hidden-to-output pass
         (0 until layerCount).forEach { hiddenLayer ->
             preActFun.add((if (postActFun.isEmpty()) inputs else postActFun.last()).addBiasColumn() * weights[hiddenLayer])
-            postActFun.add(preActFun.last().mapMat { activationFunction.invoke(it) })
+//            postActFun.add(preActFun.last().mapMat { activationFunction.invoke(it) })
+            postActFun.add(if (postActFun.isEmpty()) preActFun.last() else preActFun.last().mapMat { activationFunction.invoke(it) })
         }
 
         return Outputs(preActFun, postActFun)

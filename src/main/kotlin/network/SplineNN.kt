@@ -24,7 +24,7 @@ open class SplineNN(
         protected val samplingStep: Double = 0.05,
         private val limit: Double = 2.0,
         private val baseMatrix: Matrix<Double> = SplineType.BSPLINE.baseMatrix,
-        protected val update: SplineUpdate = SplineUpdate.UPDATE_ALL
+        protected val update: SplineUpdate = SplineUpdate.UPDATE_LAYER
 ): StandardNN(hiddenCounts = hiddenCounts) {
 
     protected var controlPoints: Matrix<Double> = mat[0]
@@ -120,7 +120,7 @@ open class SplineNN(
             uVector = passForwardInfo.third[hiddenLayerIndex].T
 
             delta = (delta * weights[hiddenLayerIndex + 1].dropLastRow().T)
-            grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul (baseMatrix.T * uVector)
+                grads = copyColumnVectorHorizontally(delta.toSingleColumn().toList().toDoubleArray(), 4).T emul (baseMatrix.T * uVector)
             gradsQ[hiddenLayerIndex] = reshapeSplineGradients(hiddenCounts[hiddenLayerIndex] * inputs.numRows(), grads, uIndex)
 
             delta = delta emul getSplineDerivates(computedOutputs.preActFun[hiddenLayerIndex], u, uIndex, hiddenLayerIndex).first

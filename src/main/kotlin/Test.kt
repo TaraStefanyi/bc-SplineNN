@@ -1,4 +1,5 @@
 import dataset.*
+import golem.plot
 
 fun main() {
     val runs = 1
@@ -6,7 +7,8 @@ fun main() {
     val actFun = SimpleActivationFunction.SIG
     val dataset = MnistDataset()
 
-    val testResults = List(runs) {dataset.doTest(it, actFun, debug = debug)}
+    val testResults = List(runs) {dataset.doTest(it, actFun, 10, 1000, debug = debug)}
+//    val testResults = List(runs) {dataset.doTestBuckets(it, actFun, 300, debug = debug)}
 
     val networks = testResults.first().map { it.network }
 
@@ -39,4 +41,6 @@ fun main() {
     println("Average error on success: $averageErrorSuccess")
     println("Average error on fail: $averageErrorFail")
     println("Average samples used on success: $averageSamplesUsedSuccess")
+
+    testResults[0].forEach { plot(it.lossFunction.toDoubleArray()) }
 }

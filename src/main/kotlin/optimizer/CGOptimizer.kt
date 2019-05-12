@@ -11,8 +11,8 @@ import golem.*
 import golem.matrix.Matrix
 
 class CGOptimizer: Optimizer {
-    override fun optimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>) {
-        val results = minimize(network, weights, inputs, outputs, List(1) { 300 })
+    override fun optimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>, epochs: Int): List<Double> {
+        val results = minimize(network, weights, inputs, outputs, epochs)
         val lastNonZeroIdx = results.fval.indexOfLast { it != 0.0 }
 //        val lastNonZeroIdx = Math.max(results.fval.indexOfLast { it != 0.0 }, 0)
         val lastIndex = results.fval.toList().lastIndex
@@ -22,6 +22,7 @@ class CGOptimizer: Optimizer {
         }
 
         network.reshapeWeightFromVector(results.weights)
+        return results.fval.toList()
     }
 
     private fun backPropagation(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, expectedOutputs: Matrix<Double>): BackPropagationResults {
@@ -33,7 +34,7 @@ class CGOptimizer: Optimizer {
         return BackPropagationResults(fval, g)
     }
 
-    private fun minimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>, length: List<Int>): MinimizeResults {
+    private fun minimize(network: StandardNN, weights: Matrix<Double>, inputs: Matrix<Double>, outputs: Matrix<Double>, epochs: Int): MinimizeResults {
         var x1: Double; var x2: Double; var x3: Double; var x4 = 0.0
         var d0: Double; var d1: Double; var d2: Double; var d3: Double; var d4 = 0.0
         var f1: Double; var f2: Double; var f3: Double; var f4 = 0.0
@@ -43,15 +44,13 @@ class CGOptimizer: Optimizer {
         var df3: Matrix<Double>
         var x = weights.copy()
 
-        var red = 1
-        if (length.size == 2) red = length[1] else if (length.size != 1) throw IllegalArgumentException()
-        val len = length[0]
+        val red = 1
         var i = 0
         var lsFailed = true
         var (f0, df0) = backPropagation(network, x, inputs, outputs)
 
-        val fX = zeros(len, 1)
-        val dfX = zeros(len, 1)
+        val fX = zeros(epochs, 1)
+        val dfX = zeros(epochs, 1)
 
         fX[0] = f0
         dfX[0] = df0.norm()
@@ -60,11 +59,11 @@ class CGOptimizer: Optimizer {
         d0 = (-s.T * s)[0]
         x3 = red/(1.0 - d0)
 
-        while (i < len) {
+        while (i < epochs) {
             x0Copy = x.copy()
             f0Copy = f0
             df0Copy = df0.copy()
-            m = min(MAX, len-i)
+            m = min(MAX, epochs-i)
 
             while (true) {
                 x2 = 0.0
@@ -181,7 +180,7 @@ class CGOptimizer: Optimizer {
                 x = x0Copy
                 f0 = f0Copy
                 df0 = df0Copy
-                if (lsFailed || i > abs(len)) break
+                if (lsFailed || i > abs(epochs)) break
                 s = -df0
                 d0 = (-s.T*s)[0]
                 x3 = 1/(1-d0)

@@ -90,3 +90,16 @@ fun <T, U> Matrix<T>.mapRowsToListIndexed(f: (i: Int, Matrix<T>) -> U): List<U> 
     }
     return a
 }
+
+fun shuffled(inputs: Matrix<Double>, outputs: Matrix<Double>): Pair<Matrix<Double>, Matrix<Double>> {
+    val s = List(inputs.numRows()) {it}.shuffled()
+    val i = zeros(inputs.numRows(), inputs.numCols())
+    val o = zeros(outputs.numRows(), outputs.numCols())
+    val inputsColRange = 0 until i.numCols()
+    val outputsColRange = 0 until o.numCols()
+    s.forEachIndexed { newIndex, oldIndex ->
+        i[newIndex, inputsColRange] = inputs.getRow(oldIndex)
+        o[newIndex, outputsColRange] = outputs.getRow(oldIndex)
+    }
+    return Pair(i, o)
+}

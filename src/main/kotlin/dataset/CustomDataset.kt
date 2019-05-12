@@ -3,21 +3,14 @@ package dataset
 import golem.create
 import java.io.File
 
-enum class TextDataset (
+abstract class CustomDataset(
         private val scaler: Scaler,
         private val filename: String,
         private val tolerance: Double,
         private val addSamples: Int = 5,
         private val testSampleSize: Int = 5
-) : Dataset {
-    XOR(Scaler.DO_NOT_SCALE, "datasets/xor/xor_short.txt", 0.05),
-    CHEMICAL(Scaler.SCALE_SEPARATELY, "datasets/chemical/chemical.txt", 0.05),
-    ADD(Scaler.SCALE_TOGETHER, "datasets/add/add.txt", 0.05);
-
-    override var data: Data? = null
-
+) : Dataset() {
     override fun loadDataset(): Data {
-        if (data != null) return this.data!!
         val lines = File(filename).readLines()
         val topology = lines.first().split(" ").map { it.toInt() }
 
@@ -54,7 +47,7 @@ enum class TextDataset (
         val trainInputList = inputList.subList(0, inputList.size - testSampleSize)
         val trainOutputList = outputList.subList(0, outputList.size - testSampleSize)
 
-        this.data = Data(
+        return Data(
                 hiddenCounts = topology.subList(1, topology.lastIndex),
                 tolerance = tolerance,
                 considerNegativeAsZero = false,
@@ -65,6 +58,5 @@ enum class TextDataset (
                 testInputList = inputList.subList(inputList.size - testSampleSize, inputList.size),
                 testOutputList = outputList.subList(outputList.size - testSampleSize, outputList.size)
         )
-        return this.data!!
     }
 }

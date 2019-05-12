@@ -2,46 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="069dcc55-3675-40ab-9ff4-e267fd7bb5bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/Data.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/MnistDataset.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/Scaler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/TextDataset.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/AddDataset.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/ChemicalDataset.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/CustomDataset.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/XorDataset.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/SgdMomentumOptimizer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/SgdOptimizer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/add/add.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chemical.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/chemical/chemical.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chemical_test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/spline-nn_main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_100_70it_standard.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_100_70it_standard_wrong.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_500_70_iterations.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_50_270it.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_50_270it_wrong.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_50_70it_autoencoder.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_50_70it_autoencoder_wrong.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_with_weights_100_70it.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results_with_weights_100_70it_wrong.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultsrggf.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AdamOptimizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/C2SplineNN2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/C2SplineNN.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/C2SplineNNBaseMatrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNBaseMatrix.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/C2SplineNNFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CGOptimizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Optimizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/Optimizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SimpleActivationFunction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SimpleActivationFunction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SplineNN.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StandardNN.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Visualization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Visualization.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/xor/xor_short.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/xor/xor_long.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dataset/MnistDataset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/MnistDataset.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dataset/TextDataset.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/optimizer/Optimizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/optimizer/Optimizer.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -139,65 +121,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/TextDataset.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/SgdOptimizer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
-                <element signature="e#17#56#0" expanded="true" />
+                <element signature="e#19#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="40" column="144" selection-start-line="40" selection-start-column="144" selection-end-line="40" selection-end-column="144" />
-              <folding>
-                <element signature="e#17#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/Data.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNN.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Visualization.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" selection-start-line="18" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#115#0" expanded="true" />
-              </folding>
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -205,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state relative-caret-position="2108">
+              <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <element signature="e#17#370#0" expanded="true" />
               </folding>
@@ -215,12 +176,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/MnistDataset.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNN.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="816">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding>
-                <element signature="e#17#121#0" expanded="true" />
+                <element signature="e#17#174#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -229,8 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="158" column="60" selection-start-line="158" selection-start-column="60" selection-end-line="158" selection-end-column="60" />
+            <state relative-caret-position="1972">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="e#17#306#0" expanded="true" />
               </folding>
@@ -239,13 +200,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-              <folding>
-                <element signature="e#19#154#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Gradients.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -256,10 +223,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -280,6 +247,8 @@
       <find>hiddenCounts</find>
       <find>computeQ</find>
       <find>recalculateDerivates</find>
+      <find>len</find>
+      <find>fX</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -301,7 +270,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/C2SplineNNConstBaseMatrix.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/InitializationMethod.kt" />
         <option value="$PROJECT_DIR$/chemical_test.txt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Utils.kt" />
         <option value="$PROJECT_DIR$/chemical.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/C2SplineNN.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/DatasetGenerator.kt" />
@@ -313,22 +281,31 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/dataset/Scaler.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/StandardNN.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNFunctions.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNBaseMatrix.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/SimpleActivationFunction.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Visualization.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/network/C2SplineNN.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dataset/ImageDataset.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dataset/Data.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dataset/TextDataset.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/dataset/MnistDataset.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/CustomDataset.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/AddDataset.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/XorDataset.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/ChemicalDataset.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Visualization.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/Utils.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/optimizer/Optimizer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/optimizer/SGDOptimizer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Test.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/optimizer/SgdMomentumOptimizer.kt" />
       </list>
     </option>
   </component>
@@ -338,10 +315,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="190" />
-    <option name="y" value="-35" />
-    <option name="width" value="980" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="30" />
+    <option name="width" value="1920" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -350,45 +326,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bc-SplineNN" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bc-SplineNN" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bc-SplineNN" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bc-SplineNN" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bc-SplineNN" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bc-SplineNN" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bc-SplineNN" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bc-SplineNN" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bc-SplineNN" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bc-SplineNN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spline-nn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bc-SplineNN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="optimizer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +380,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554315807681" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-backend-mtj/0.9/ea0b60170753351c70b8084f67346bce40a8b235/golem-backend-mtj-0.9.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mnist-neuralnetwork-master" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -630,11 +617,25 @@
       <workItem from="1555744690314" duration="2969000" />
       <workItem from="1555857565629" duration="10889000" />
       <workItem from="1555919032781" duration="6803000" />
+      <workItem from="1556000692875" duration="329000" />
+      <workItem from="1556106938268" duration="3476000" />
+      <workItem from="1556289907528" duration="318000" />
+      <workItem from="1556528952983" duration="1860000" />
+      <workItem from="1556622111735" duration="394000" />
+      <workItem from="1556622586048" duration="649000" />
+      <workItem from="1556629356026" duration="4345000" />
+      <workItem from="1556784201426" duration="106000" />
+      <workItem from="1556816240402" duration="9000" />
+      <workItem from="1557045812277" duration="7361000" />
+      <workItem from="1557076013503" duration="6359000" />
+      <workItem from="1557488769876" duration="13849000" />
+      <workItem from="1557558314729" duration="14031000" />
+      <workItem from="1557657554292" duration="239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334051000" />
+    <option name="totallyTimeSpent" value="387376000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,13 +648,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="846" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.50149256" side_tool="true" weight="0.20566802" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49774775" visible="true" weight="0.22214764" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49774775" visible="true" weight="0.16778524" />
       <window_info id="Structure" order="6" sideWeight="0.5022523" side_tool="true" weight="0.21879195" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4979757" weight="0.31092438" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5020243" side_tool="true" weight="0.20140105" />
@@ -661,7 +663,7 @@
       <window_info anchor="bottom" id="Messages" order="3" weight="0.33753502" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.33193278" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32924694" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4979757" weight="0.34733894" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49959514" weight="0.35714287" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -696,25 +698,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt</url>
-          <line>54</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt</url>
-          <line>47</line>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt</url>
-          <line>49</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt</url>
-          <line>51</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
@@ -786,14 +788,6 @@
           <properties />
           <option name="timeStamp" value="281" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt</url>
-          <line>89</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="282" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -856,69 +850,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/io/Console.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/generated/_Arrays.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="6791" column="26" selection-start-line="6791" selection-start-column="26" selection-end-line="6791" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.mpicbg.scicomp/krangl/0.10.3/40414f57efe3ab01241ada1e1dec4250ce94d690/krangl-0.10.3-sources.jar!/krangl/DataFrame.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3417">
-          <caret line="206" column="14" selection-start-line="206" selection-start-column="14" selection-end-line="206" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-csv/1.3/7841722762e93d6bd4419f91e140b6a16e167fe1/commons-csv-1.3-sources.jar!/org/apache/commons/csv/CSVFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="1180" column="58" lean-forward="true" selection-start-line="1180" selection-start-column="58" selection-end-line="1180" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.mpicbg.scicomp/krangl/0.10.3/40414f57efe3ab01241ada1e1dec4250ce94d690/krangl-0.10.3-sources.jar!/krangl/TableIO.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-917">
-          <caret line="163" column="17" lean-forward="true" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.holgerbrandl/kravis/0.5/d4d7d12223b132f7fd0b6704148af35a83d60f23/kravis-0.5-sources.jar!/kravis/device/SwingPlottingDevice.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="131" column="105" lean-forward="true" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/ProcessBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="1047" column="18" selection-start-line="1047" selection-start-column="18" selection-end-line="1047" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.holgerbrandl/kravis/0.5/d4d7d12223b132f7fd0b6704148af35a83d60f23/kravis-0.5-sources.jar!/kravis/render/LocalR.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.holgerbrandl/kravis/0.5/d4d7d12223b132f7fd0b6704148af35a83d60f23/kravis-0.5-sources.jar!/kravis/render/RenderEngine.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.holgerbrandl/kravis/0.5/d4d7d12223b132f7fd0b6704148af35a83d60f23/kravis-0.5-sources.jar!/kravis/GGPlot2.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -926,27 +857,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/kotlin/util/Tuples.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/plot.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="101" column="27" lean-forward="true" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/matrix/MatrixFactory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/kotlin/util/Tuples.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/plot.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/matrix/MatrixFactory.kt" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/reflect/Constructor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -954,54 +867,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.matrix-toolkits-java/mtj/1.0.4/a330e7163ee69dcc9892a2d801521c8c399415d2/mtj-1.0.4-sources.jar!/no/uib/cipr/matrix/AbstractMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
-          <folding>
-            <element signature="e#9957#9958#0" expanded="true" />
-            <element signature="e#9993#9994#0" expanded="true" />
-            <element signature="e#10053#10054#0" expanded="true" />
-            <element signature="e#10103#10104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-backend-mtj/0.9/a151b0f1213ba1d3ef56c8323b67e012f2ea471b/golem-backend-mtj-0.9-sources.jar!/golem/matrix/mtj/backend/mtj.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-backend-mtj/0.9/a151b0f1213ba1d3ef56c8323b67e012f2ea471b/golem-backend-mtj-0.9-sources.jar!/golem/matrix/mtj/MTJMatrix.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/platformsupport/factories.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/options.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/creators.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.matrix-toolkits-java/mtj/1.0.4/a330e7163ee69dcc9892a2d801521c8c399415d2/mtj-1.0.4-sources.jar!/no/uib/cipr/matrix/AbstractMatrix.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-backend-mtj/0.9/a151b0f1213ba1d3ef56c8323b67e012f2ea471b/golem-backend-mtj-0.9-sources.jar!/golem/matrix/mtj/backend/mtj.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-backend-mtj/0.9/a151b0f1213ba1d3ef56c8323b67e012f2ea471b/golem-backend-mtj-0.9-sources.jar!/golem/matrix/mtj/MTJMatrix.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/platformsupport/factories.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/options.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/creators.kt" />
     <entry file="file://$PROJECT_DIR$/chemical_test.txt" />
     <entry file="file://$PROJECT_DIR$/datasets/chemical/chemical.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1016,16 +887,6 @@
         <state relative-caret-position="-67464" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/Scaler.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="e#17#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1033,38 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="26" column="93" selection-start-line="26" selection-start-column="93" selection-end-line="26" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNFunctions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/matrix/Matrix.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datasets/add/add.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Utils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1085,27 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNBaseMatrix.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8007">
-          <caret line="489" column="129" selection-start-line="489" selection-start-column="129" selection-end-line="489" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/Optimizer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logfile.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/SimpleActivationFunction.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1114,90 +926,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/generated/_Collections.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/Scaler.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+          <folding>
+            <element signature="e#17#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/AddDataset.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/224a3bcfa1c088dd5d7c4a3958a68427b44c65dc/kotlin-stdlib-common-1.3.21-sources.jar!/generated/_Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="2232" column="40" selection-start-line="2232" selection-start-column="40" selection-end-line="2232" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/xor/xor_short.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNN.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Visualization.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" selection-start-line="18" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-          <folding>
-            <element signature="e#19#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="e#17#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="158" column="60" selection-start-line="158" selection-start-column="60" selection-end-line="158" selection-end-column="60" />
-          <folding>
-            <element signature="e#17#306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/TextDataset.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-          <folding>
-            <element signature="e#17#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/TextDataset.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/MnistDataset.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="119">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <element signature="e#17#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/ChemicalDataset.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/mnist-neuralnetwork-master/digit.iml" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Visualization.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/CustomDataset.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#17#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1209,20 +994,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/xor/xor_short.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNBaseMatrix.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8007">
+          <caret line="489" column="129" selection-start-line="489" selection-start-column="129" selection-end-line="489" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNNFunctions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Utils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/Dataset.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="40" column="144" selection-start-line="40" selection-start-column="144" selection-end-line="40" selection-end-column="144" />
+        <state relative-caret-position="1139">
+          <caret line="68" column="228" selection-start-line="68" selection-start-column="228" selection-end-line="68" selection-end-column="228" />
           <folding>
             <element signature="e#17#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/CGOptimizer.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#19#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/Optimizer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="134" selection-start-line="6" selection-start-column="134" selection-end-line="6" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/XorDataset.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/golem/golem-core/0.9/9c90170e7bfa3443c853a243c3b281d5f856b4d3/golem-core-0.9-sources.jar!/golem/matrix/Matrix.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/SgdMomentumOptimizer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="67" lean-forward="true" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+          <folding>
+            <element signature="e#19#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Test.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/SgdOptimizer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#19#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/dataset/TestResult.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/SplineNN.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+          <folding>
+            <element signature="e#17#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/C2SplineNN.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="e#17#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/network/StandardNN.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#17#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Gradients.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/optimizer/AdamOptimizer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1233,9 +1158,80 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spline-nn</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: com.github.fommil.netlib:all:pom:1.1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
