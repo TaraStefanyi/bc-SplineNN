@@ -4,8 +4,8 @@ import golem.plot
 fun main() {
     val runs = 1
     val debug = true
-    val actFun = SimpleActivationFunction.SIG
-    val dataset = MnistDataset()
+    val actFun = SimpleActivationFunction.TANH
+    val dataset = XorDataset()
 
     val testResults = List(runs) {dataset.doTest(it, actFun, 10, 1000, debug = debug)}
 //    val testResults = List(runs) {dataset.doTestBuckets(it, actFun, 300, debug = debug)}
@@ -42,5 +42,7 @@ fun main() {
     println("Average error on fail: $averageErrorFail")
     println("Average samples used on success: $averageSamplesUsedSuccess")
 
-    testResults[0].forEach { plot(it.lossFunction.toDoubleArray()) }
+    val colors = arrayOf("r", "b", "g")
+
+    testResults[0].forEachIndexed { i, result -> plot(null, result.lossFunction.toDoubleArray(), color = colors[i], lineLabel = result.network) }
 }

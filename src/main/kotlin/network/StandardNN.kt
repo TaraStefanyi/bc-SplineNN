@@ -106,8 +106,8 @@ open class StandardNN(
         //LAST ITERATION: hidden-to-output pass
         (0 until layerCount).forEach { hiddenLayer ->
             preActFun.add((if (postActFun.isEmpty()) inputs else postActFun.last()).addBiasColumn() * weights[hiddenLayer])
-//            postActFun.add(preActFun.last().mapMat { activationFunction.invoke(it) })
-            postActFun.add(if (postActFun.isEmpty()) preActFun.last() else preActFun.last().mapMat { activationFunction.invoke(it) })
+            postActFun.add(preActFun.last().mapMat { activationFunction.invoke(it) })
+//            postActFun.add(if (postActFun.isEmpty()) preActFun.last() else preActFun.last().mapMat { activationFunction.invoke(it) })
         }
 
         return Outputs(preActFun, postActFun)
