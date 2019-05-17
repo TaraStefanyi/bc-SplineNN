@@ -51,19 +51,8 @@ open class StandardNN(
                         else -> (rand(hiddenCounts[layerNum-1] + 1, hiddenCounts[layerNum]) * 2*rs[layerNum]-rs[layerNum])
                     }
                 }
-
-
-
-//                weights[0][0, 0 until 4] = mat[-0.59694320421237,   0.8384677463706,   0.26257962877519,  0.67684881116294]
-//                weights[0][1, 0 until 4] = mat[-0.35482676613166,   0.51174161630215,  0.37532251818258, -0.79785062149002]
-//                weights[1][0, 0] = -0.17722359507361
-//                weights[1][1, 0] = -1.07638705599713
-//                weights[1][2, 0] = 0.91992661598543
-//                weights[1][3, 0] = -0.93500047977467
-
                 // set zero to biases
                 weights.forEach { it.setRow(it.numRows() - 1, fill(1, it.numCols(), 0.0)) }
-                println()
             }
             InitializationMethod.AUTOENCODER -> {
                 var input = inputs.copy()
@@ -75,7 +64,6 @@ open class StandardNN(
                     network.train(input, output, 300)
                     mutableWeights.add(network.weights[0])
                     input = network.passForward(input).postActFun[0]
-                    print("")
                 }
                 val r = sqrt(6.0 / (hiddenCounts.last() + outputsCount))
                 mutableWeights.add(rand(hiddenCounts.last() + 1, outputsCount) * 2 * r - r)
@@ -107,7 +95,6 @@ open class StandardNN(
         (0 until layerCount).forEach { hiddenLayer ->
             preActFun.add((if (postActFun.isEmpty()) inputs else postActFun.last()).addBiasColumn() * weights[hiddenLayer])
             postActFun.add(preActFun.last().mapMat { activationFunction.invoke(it) })
-//            postActFun.add(if (postActFun.isEmpty()) preActFun.last() else preActFun.last().mapMat { activationFunction.invoke(it) })
         }
 
         return Outputs(preActFun, postActFun)
@@ -148,7 +135,6 @@ open class StandardNN(
 
     open fun computeObjectiveFunction(expectedOutputs: Matrix<Double>, computedOutputs: Outputs): Double {
         return ((expectedOutputs - computedOutputs.postActFun.last()) epow 2).elementSum() / expectedOutputs.numRows() + LAMBDA * (theta epow 2).elementSum()
-
     }
 }
 
@@ -170,10 +156,3 @@ fun StandardNN.computeAverageError(input: List<DoubleArray>, output: List<Double
             val expected = create(output[index])
             abs(result - expected).elementSum() / result.numCols()
         }.sum() / input.size
-
-//fun network.main(args: Array<String>) {
-//    val output = mat[1.0, 1.0, 1.0]
-//    val input = mat[2, 2, 2]
-//    val standardNN = network.StandardNN(outputsCount = 3, inputsCount = 3, hiddenCounts = List(1) {2})
-//    standardNN.initialize(input, output, standardNN.initMethod)
-//}

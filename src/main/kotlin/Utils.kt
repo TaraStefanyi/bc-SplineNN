@@ -2,9 +2,7 @@ import golem.*
 import golem.matrix.Matrix
 
 val LAMBDA = pow(10.0, -5)
-//val LAMBDA = pow(10.0, -4)
 val LAMBDA_Q0 = pow(10.0, -5)
-//val LAMBDA_Q0 = pow(10.0, -1)
 const val INT = 0.1
 const val EXT = 3.0
 const val MAX = 20

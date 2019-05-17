@@ -18,12 +18,6 @@ fun main() {
     network.train(data.inputMatrix, data.outputMatrix, 300)
     plot(x, network.getSplineValues(create(x).T, 1).v)
 
-//    println(SimpleActivationFunction.RELU.invoke(0.0))
-//    println(SimpleActivationFunction.RELU.invoke(0.1))
-//    println(SimpleActivationFunction.RELU.derivative(0.0))
-//    println(SimpleActivationFunction.RELU.derivative(0.1))
-//    plot(x, getSplineValue(x))
-//    plot(x, getSplineValueC1(x), color = "#FF0000")
 }
 
 fun getSplineValue(x: DoubleArray) =

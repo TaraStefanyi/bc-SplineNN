@@ -111,7 +111,6 @@ open class SplineNN(
         var delta = -2 * error emul getSplineDerivates(computedOutputs.preActFun.last(), u, uIndex, layerCount - 1).first
         //grads - tu sa vlozi ta delta (chyba) * uvector*B - to sa umiesti podla uindex
         //gradsq - matcia - v riadky - pocet kontrolnych bodov, stplce su jednotlive neurony
-        //
         gradsError[(parametersCountsCumulative[parametersCountsCumulative.lastIndex-1] until parametersCountsCumulative.last()), 0] = (computedOutputs.postActFun[computedOutputs.postActFun.lastIndex-1].addBiasColumn().T * delta).toSingleColumn()
 
         (hiddenCounts.lastIndex downTo 1).forEach { hiddenLayerIndex ->
@@ -266,16 +265,8 @@ open class SplineNN(
     }
 
     open fun computeQMat(uIndex: Matrix<Double>, layer: Int, inputs: Int): Matrix<Double> {
-//        val qmat = create(Array(4) { i -> uIndex.mapIndexed { index, d ->
-//            val row = Math.max(d.roundToInt() + i - 1, 0)
-//            val col = index / inputs
-//            values[layer][row, col]
-//        }.toDoubleArray() }).T
         return when (update) {
             SplineUpdate.UPDATE_ALL -> {
-//                val indices = mutableListOf<Int>()
-//                uIndex.eachIndexed { _, col, d -> indices.customAdd(values[layer].sub2ind(d.roundToInt() - 1, col)) }
-//                create(Array(4) { i -> indices.map { values[layer].T[it + i] }.toDoubleArray() }).T
                 create(Array(4) { i -> uIndex.mapIndexed { index, d -> values[layer][Math.max(Math.min(d.roundToInt() + i - 1, values[layer].numRows() - 1), 0), index / inputs] }.toDoubleArray() }).T
             }
             SplineUpdate.UPDATE_LAYER -> {
@@ -297,8 +288,6 @@ open class SplineNN(
                 i += matrix.numRows()
             }
         }
-
-//        println()
     }
 
     override fun computeObjectiveFunction(expectedOutputs: Matrix<Double>, computedOutputs: Outputs): Double {

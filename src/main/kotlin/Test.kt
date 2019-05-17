@@ -2,9 +2,9 @@ import dataset.*
 import golem.plot
 
 fun main() {
-    val runs = 1
-    val debug = true
-    val actFun = SimpleActivationFunction.TANH
+    val runs = 1000
+    val debug = false
+    val actFun = SimpleActivationFunction.RELU
     val dataset = XorDataset()
 
     val testResults = List(runs) {dataset.doTest(it, actFun, 10, 1000, debug = debug)}
@@ -44,5 +44,14 @@ fun main() {
 
     val colors = arrayOf("r", "b", "g")
 
-    testResults[0].forEachIndexed { i, result -> plot(null, result.lossFunction.toDoubleArray(), color = colors[i], lineLabel = result.network) }
+//    testResults[0].forEachIndexed { i, result -> plot(null, result.lossFunction.toDoubleArray(), color = colors[i], lineLabel = result.network) }
+
+    val averageLossFunction = testResults
+            .map { results -> results.map { it.lossFunction } }
+            .reduce { acc, list -> acc.zip(list) {a, b ->
+                (0 until maxOf(a.size, b.size)).map { a.getOrElse(it) {0.0} + b.getOrElse(it) {0.0} }
+            } }
+            .map { sum -> sum.map { it / runs } }
+
+    averageLossFunction.forEachIndexed { i, result -> plot(null, result.toDoubleArray(), color = colors[i], lineLabel = networks[i]) }
 }
